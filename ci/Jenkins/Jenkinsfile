@@ -16,7 +16,7 @@ pipeline {
         stage('Build') {
             steps{
                 dir('src/iwnil_client') {
-                    sh "docker build dimoybiyca/iwnil-client:0.${env.BUILD_NUMBER} ."
+                    sh "docker build -t dimoybiyca/iwnil-client:0.${env.BUILD_NUMBER} ."
                 }
             }
         }
