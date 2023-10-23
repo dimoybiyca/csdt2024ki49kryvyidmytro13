@@ -1,0 +1,23 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+
+.send {
+  display: inline;
+  align-self: flex-start;
+  color: #fed766;
+  background-color: #acacb3de;
+  padding: 10px;
+  margin-bottom: 10px;
+  padding-right: 50px;
+}
+
+.receive {
+  display: inline;
+  color: #009fb7;
+  background-color: #272727ca;
+  padding: 10px;
+  align-self: flex-end;
+  padding-left: 50px;
+}

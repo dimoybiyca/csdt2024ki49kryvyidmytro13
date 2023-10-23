@@ -1,0 +1,13 @@
+<div class="main">
+  <div class="control">
+    <input #message class="message" type="text" placeholder="Message" />
+
+    <button class="btn" (click)="onSend(message.value); message.value = ''">
+      Send
+    </button>
+  </div>
+
+  <div class="list">
+    <iwnil-list></iwnil-list>
+  </div>
+</div>
