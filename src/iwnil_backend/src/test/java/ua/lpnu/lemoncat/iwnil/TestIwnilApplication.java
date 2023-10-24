@@ -1,8 +1,6 @@
 package ua.lpnu.lemoncat.iwnil;
 
-import org.springframework.boot.test.context.TestConfiguration;
-
-@TestConfiguration(proxyBeanMethods = false)
+//@TestConfiguration(proxyBeanMethods = false)
 public class TestIwnilApplication {
 
 //	@Bean

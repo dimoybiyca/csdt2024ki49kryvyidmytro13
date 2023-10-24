@@ -22,6 +22,8 @@ public class SerialBuffer {
         while(buffer.isEmpty()) {
             Thread.sleep(10);
         }
-        return buffer.removeLast();
+        String mes = buffer.get(0);
+        buffer.clear();
+        return mes;
     }
 }
