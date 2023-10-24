@@ -1,0 +1,12 @@
+---
+- name: Ubuntu Server
+  hosts: main
+  roles:
+    - role: preconfig
+      tags: preconfig
+    - role: swarm_init
+      tags: swarm_init
+    - role: deploy
+      tags: deploy
+    - role: swarm_leave
+      tags: swarm_leave

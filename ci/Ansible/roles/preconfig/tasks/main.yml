@@ -1,0 +1,91 @@
+---
+- name: Update system
+  become: true
+  block:
+    - name: Update packages
+      ansible.builtin.apt:
+        update_cache: true
+        upgrade: safe
+
+- name: Installation Docker
+  become: true
+  block:
+    - name: Add universe
+      ansible.builtin.apt_repository:
+        repo: "deb http://us.archive.ubuntu.com/ubuntu/ {{ ansible_distribution_release }} universe"
+        state: present
+
+    - name: Installation additional packages
+      ansible.builtin.apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - gnupg
+          - lsb-release
+          - python3-pip
+        cache_valid_time: 86400
+
+    - name: Add Docker key
+      ansible.builtin.apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+        keyring: /usr/share/keyrings/docker-archive-keyring.gpg
+
+    - name: Installation stable repository
+      ansible.builtin.apt_repository:
+        repo: >
+          deb
+          [
+            arch=amd64
+            signed-by=/usr/share/keyrings/docker-archive-keyring.gpg
+          ]
+          https://download.docker.com/linux/ubuntu
+          {{ ansible_lsb.codename }} stable
+        state: present
+        filename: docker
+
+    - name: Installation Docker-ce
+      ansible.builtin.apt:
+        name: docker-ce
+        update-cache: true
+
+    - name: Check Docker status
+      ansible.builtin.service:
+        name: docker
+        state: restarted
+        enabled: true
+
+- name: Installation Docker-compose
+  become: true
+  block:
+    - name: Get the latest version of Docker-compose
+      ansible.builtin.uri:
+        url: https://api.github.com/repos/docker/compose/releases/latest
+        body_format: json
+      register: page
+
+    - name: Installation Docker-compose
+      ansible.builtin.get_url:
+        url: "https://github.com/docker/compose/releases/download/{{ page.json.tag_name }}/docker-compose-linux-x86_64"
+        dest: /usr/local/bin/docker-compose
+        mode: "0755"
+
+- name: Configuring additional python packages
+  block:
+    - name: Installation pip packages
+      ansible.builtin.pip:
+        name:
+          - docker
+
+- name: Completing installation
+  become: true
+  block:
+    - name: Add user into docker group
+      ansible.builtin.user:
+        name: "{{ ansible_user }}"
+        groups: docker
+        append: true
+
+    - name: Reboot
+      ansible.builtin.reboot:

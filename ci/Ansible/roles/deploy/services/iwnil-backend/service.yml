@@ -1,0 +1,14 @@
+---
+- name: "[{{ name }}] Deploy service"
+  block:
+    - name: "[{{ name }}] Deploy service"
+      community.docker.docker_swarm_service:
+        name: "{{ name }}"
+        image: "{{ docker_registry }}/{{ name }}:{{ version }}"
+        state: present
+        networks:
+          - name: "{{ network_name }}"
+        mounts:
+          - type: bind
+            source: /dev/ttyUSB0
+            target: /dev/ttyUSB0
