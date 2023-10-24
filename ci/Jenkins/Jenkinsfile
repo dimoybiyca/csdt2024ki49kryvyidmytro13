@@ -16,8 +16,18 @@ pipeline {
         stage('Build') {
             steps{
                 dir('src/iwnil_client') {
-                    sh "docker build -t dimoybiyca/iwnil-client:0.${env.BUILD_NUMBER} ."
+                    sh "docker build -t 192.168.0.51:5000/iwnil-client:0.${env.BUILD_NUMBER} ."
                 }
+                dir('src/iwnil_backend') {
+                    sh "mvn spring-boot:build-image -f pom.xml"
+                    sh "docker tag 192.168.0.51:5000/iwnil-backend:1488 192.168.0.51:5000/iwnil-backend:0.${env.BUILD_NUMBER} ."
+                }
+            }
+        }
+        stage('Publish') {
+            steps{
+                sh "docker push 192.168.0.51:5000/iwnil-client:0.${env.BUILD_NUMBER}"
+                sh "docker push 192.168.0.51:5000/iwnil-backend:0.${env.BUILD_NUMBER}"
             }
         }
     }
