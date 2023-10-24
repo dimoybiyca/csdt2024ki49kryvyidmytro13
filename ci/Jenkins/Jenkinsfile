@@ -5,7 +5,7 @@ pipeline {
         stage('Clenup') {
             steps {
                 deleteDir()
-                sh "docker images -q '192.168.0.51:5000/iwnil-*'" | xargs docker rmi"
+                sh "docker images -q '192.168.0.51:5000/iwnil-*' | xargs docker rmi"
             }
         }
         stage('Pull') {
