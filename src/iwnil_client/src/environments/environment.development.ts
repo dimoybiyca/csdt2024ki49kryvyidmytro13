@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  serverUrl: 'http://iwnil-backend:9000/',
+  serverUrl: 'http://192.168.0.53:9000/',
 };
