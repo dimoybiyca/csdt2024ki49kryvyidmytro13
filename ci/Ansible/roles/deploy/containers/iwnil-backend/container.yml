@@ -1,0 +1,19 @@
+---
+- name: "[{{ name }}] Deploy container"
+  block:
+    - name: "[{{ name }}] Deploy container"
+      community.docker.docker_container:
+        name: "{{ name }}"
+        image: "{{ docker_registry }}/{{ name }}:{{ version }}"
+        pull: yes
+        state: started
+        networks:
+          - name: "{{ network_name }}"
+        devices:
+          - "/dev/ttyUSB0:/dev/ttyUSB0"
+        ports:
+          - "9000:9000"
+        exposed_ports:
+          - 9000
+        env:
+          serverUrl: "http://iwnil-backend:9000/"

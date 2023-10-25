@@ -1,3 +1,0 @@
----
-- name: Delete swarm
-  command: "docker swarm leave --force"
