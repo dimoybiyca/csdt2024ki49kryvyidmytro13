@@ -5,7 +5,7 @@ pipeline {
         stage('Clenup') {
             steps {
                 deleteDir()
-                sh "docker image prune"
+                sh "docker image prune -af"
             }
         }
         stage('Pull') {
