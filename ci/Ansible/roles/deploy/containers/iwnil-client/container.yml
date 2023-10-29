@@ -1,0 +1,17 @@
+---
+- name: "[{{ name }}] Deploy container"
+  block:
+    - name: "[{{ name }}] Deploy container"
+      community.docker.docker_container:
+        name: "{{ name }}"
+        image: "{{ docker_registry }}/{{ name }}:{{ version }}"
+        pull: yes
+        state: started
+        networks:
+          - name: "{{ network_name }}"
+        devices:
+          - "/dev/ttyUSB0:/dev/ttyUSB0"
+        ports:
+          - "80:80"
+        exposed_ports:
+          - 80

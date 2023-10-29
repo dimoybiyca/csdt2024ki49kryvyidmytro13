@@ -1,0 +1,8 @@
+---
+- name: Ubuntu Server
+  hosts: main
+  roles:
+    - role: preconfig
+      tags: preconfig
+    - role: deploy
+      tags: deploy

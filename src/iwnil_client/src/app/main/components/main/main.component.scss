@@ -1,0 +1,31 @@
+.main {
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #acacb35a;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.message {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn {
+  background-color: #272727;
+  border: none;
+  width: 100px;
+  color: inherit;
+  transition: all 0.3s;
+
+  &:hover {
+    color: rgb(141, 0, 0);
+    transform: scale(1.1);
+  }
+}

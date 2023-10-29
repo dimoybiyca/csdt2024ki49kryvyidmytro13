@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+
+    stages{
+        stage('Clenup') {
+            steps {
+                deleteDir()
+            }
+        }
+        stage('Pull') {
+            steps{
+                git branch: 'feature/develop/task2',
+                    url: 'https://github.com/dimoybiyca/csdt2024ki49kryvyidmytro13.git'
+            }
+        }
+        stage('Build') {
+            steps{
+                dir('src/iwnil_client') {
+                    sh "docker build -t 192.168.0.51:5000/iwnil-client:0.${env.BUILD_NUMBER} ."
+                    sh "docker tag 192.168.0.51:5000/iwnil-client:0.${env.BUILD_NUMBER} 192.168.0.51:5000/iwnil-client:latest"
+                }
+                dir('src/iwnil_backend') {
+                    sh "mvn spring-boot:build-image -f pom.xml"
+                    sh "docker tag 192.168.0.51:5000/iwnil-backend:1488 192.168.0.51:5000/iwnil-backend:0.${env.BUILD_NUMBER}"
+                    sh "docker tag 192.168.0.51:5000/iwnil-backend:1488 192.168.0.51:5000/iwnil-backend:latest"
+                }
+            }
+        }
+        stage('Publish') {
+            steps{
+                sh "docker push 192.168.0.51:5000/iwnil-client:0.${env.BUILD_NUMBER}"
+                sh "docker push 192.168.0.51:5000/iwnil-backend:0.${env.BUILD_NUMBER}"
+                sh "docker push 192.168.0.51:5000/iwnil-client:latest"
+                sh "docker push 192.168.0.51:5000/iwnil-backend:latest"
+            }
+        }
+        stage('Deploy') {
+            steps{
+                dir('ci/Ansible') {
+                    sh "ansible-playbook -i inventory all.yml --tags='deploy'"
+                }
+            }
+        }
+    }
+}

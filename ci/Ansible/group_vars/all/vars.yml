@@ -1,0 +1,8 @@
+---
+services:
+  - name: iwnil-client
+    version: latest
+  - name: iwnil-backend
+    version: latest
+
+docker_registry: 192.168.0.51:5000
