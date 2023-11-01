@@ -17,7 +17,7 @@ public class SerialBuffer {
     }
 
     public String pop() throws InterruptedException {
-        while(buffer.size() > 0) {
+        while(buffer.size() == 0) {
             Thread.sleep(30);
         }
         String mes = buffer.poll();
