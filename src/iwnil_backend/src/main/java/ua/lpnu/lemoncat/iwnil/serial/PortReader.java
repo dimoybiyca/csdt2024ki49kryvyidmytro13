@@ -24,6 +24,7 @@ public class PortReader implements SerialPortEventListener {
         if(event.isRXCHAR() && event.getEventValue() > 0) {
             try {
                 String receivedData = serialPort.readString(event.getEventValue());
+
                 if(receivedData.contains("%")) {
                     sb = new StringBuilder("");
                     sb.append(receivedData.substring(receivedData.indexOf("%")));

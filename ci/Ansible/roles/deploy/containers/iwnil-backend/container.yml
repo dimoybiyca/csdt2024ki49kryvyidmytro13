@@ -15,5 +15,3 @@
           - "9000:9000"
         exposed_ports:
           - 9000
-        env:
-          serverUrl: "http://iwnil-backend:9000/"

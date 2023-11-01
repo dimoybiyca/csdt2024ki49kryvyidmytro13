@@ -104,7 +104,7 @@ public class ConnectionMonitor extends Thread {
         if(read != null && read.startsWith("1111")) {
             log.info("port was found");
             this.port = port;
-
+            serialPort.writeString("200");
         }
     }
 
