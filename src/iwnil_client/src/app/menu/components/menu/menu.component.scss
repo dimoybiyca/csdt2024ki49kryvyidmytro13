@@ -1,0 +1,9 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  height: 100%;
+  max-height: 500px;
+}

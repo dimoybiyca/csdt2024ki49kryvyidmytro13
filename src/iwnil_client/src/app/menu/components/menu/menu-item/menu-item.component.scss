@@ -1,0 +1,14 @@
+.menu-item {
+}
+
+.btn {
+  opacity: 60%;
+  font-size: 60px;
+  width: 500px;
+  padding: 15px;
+
+  &:hover {
+    opacity: 80%;
+    transform: translateY(-10px);
+  }
+}

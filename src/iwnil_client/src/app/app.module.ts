@@ -11,6 +11,7 @@ import { MainModule } from 'src/app/main/main.module';
 import { HeaderModule } from 'src/app/shared/modules/header/header.module';
 import { FooterModule } from 'src/app/shared/modules/footer/footer.module';
 import { GameModule } from 'src/app/game/game.module';
+import { MenuModule } from 'src/app/menu/menu.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -21,6 +22,7 @@ import { GameModule } from 'src/app/game/game.module';
     GameModule,
     FooterModule,
     HeaderModule,
+    MenuModule,
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({

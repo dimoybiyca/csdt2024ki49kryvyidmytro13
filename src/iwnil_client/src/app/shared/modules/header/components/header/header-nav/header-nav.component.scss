@@ -1,0 +1,31 @@
+.nav {
+  display: block;
+  height: 100%;
+  &-list {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &-elem {
+    height: 100%;
+    font-size: 48px;
+    padding: 0 35px;
+    transition: all 0.3s;
+
+    &:hover {
+      color: rgb(164, 0, 0);
+      background-color: rgba(128, 128, 128, 0.439);
+    }
+  }
+
+  &-link {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.active {
+  color: rgb(164, 0, 0);
+}

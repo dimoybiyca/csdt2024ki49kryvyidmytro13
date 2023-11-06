@@ -18,14 +18,9 @@
 }
 
 .btn {
-  background-color: #272727;
-  border: none;
   width: 100px;
-  color: inherit;
-  transition: all 0.3s;
 
   &:hover {
-    color: rgb(141, 0, 0);
     transform: scale(1.1);
   }
 }
