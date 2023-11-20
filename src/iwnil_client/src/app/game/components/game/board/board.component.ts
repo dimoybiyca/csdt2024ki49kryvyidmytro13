@@ -9,6 +9,7 @@ import {
   nextMoveSelector,
 } from 'src/app/game/store/selectors';
 import { newGameAction } from 'src/app/menu/store/actions/menu.action';
+import { isLoadingSelector } from 'src/app/menu/store/selectors';
 import { CellTypes } from 'src/app/shared/data/cell-types.enum';
 import { GameStatus } from 'src/app/shared/data/game-status.enum';
 
@@ -21,6 +22,7 @@ export class BoardComponent implements OnInit {
   $nextMove: Observable<number | null>;
   $gameStatus: Observable<GameStatus | null>;
   myboard: number[][];
+  isLoadingGame: boolean;
 
   constructor(private store: Store) {}
 
@@ -39,14 +41,24 @@ export class BoardComponent implements OnInit {
     this.store
       .pipe(select(boardSelector))
       .subscribe((board) => (this.myboard = board));
+
+    this.store
+      .pipe(select(isLoadingSelector))
+      .subscribe((isLoading) => (this.isLoadingGame = isLoading));
   }
 
   initBoard() {
     this.store
       .pipe(select(isGameInitializedSelector), take(1))
       .subscribe((isGameInitialized) => {
-        if (!isGameInitialized) {
-          this.store.dispatch(newGameAction());
+        if (!isGameInitialized && !this.isLoadingGame) {
+          this.store.dispatch(
+            newGameAction({
+              firstPlayer: 'MAN',
+              secondPlayer: 'MAN',
+              aiType: 'RANDOM',
+            })
+          );
         }
       });
   }

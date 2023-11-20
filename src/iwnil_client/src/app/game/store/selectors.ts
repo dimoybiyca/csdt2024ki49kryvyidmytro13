@@ -18,7 +18,7 @@ export const firstPlayerSelector = createSelector(
 
 export const secondPlayerSelector = createSelector(
   gameFeatureSelector,
-  (state: GameStateInterface) => state.firstPlayer
+  (state: GameStateInterface) => state.secondPlayer
 );
 
 export const nextMoveSelector = createSelector(

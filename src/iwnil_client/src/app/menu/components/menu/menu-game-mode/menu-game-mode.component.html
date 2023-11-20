@@ -1,0 +1,30 @@
+<div class="menu">
+  <iwnil-menu-item
+    mode="2 Players"
+    (btnClick)="onTwoPlayersClick()"
+  ></iwnil-menu-item>
+
+  <div class="pvsai">
+    <iwnil-menu-item
+      mode="Player vs AI(Random)"
+      (btnClick)="onPlayerVsAIClick('RANDOM')"
+    ></iwnil-menu-item>
+
+    <iwnil-menu-item
+      mode="Player vs AI(Best move)"
+      (btnClick)="onPlayerVsAIClick('BEST_MOVE')"
+    ></iwnil-menu-item>
+  </div>
+
+  <div class="twoai">
+    <iwnil-menu-item
+      mode="2 AI(Random)"
+      (btnClick)="onTwoAIClick('RANDOM')"
+    ></iwnil-menu-item>
+
+    <iwnil-menu-item
+      mode="2 AI(Best move)"
+      (btnClick)="onTwoAIClick('BEST_MOVE')"
+    ></iwnil-menu-item>
+  </div>
+</div>

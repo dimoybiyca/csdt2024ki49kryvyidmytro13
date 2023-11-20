@@ -1,0 +1,18 @@
+<div class="item">
+  <div class="item-data">
+    <span class="first-player">1: {{ saveProps.firstPlayer }}</span>
+    <span class="second-player">2: {{ saveProps.secondPlayer }}</span>
+    <span class="game-status">status: {{ saveProps.gameStatus }}</span>
+    <span
+      class="ai-type"
+      *ngIf="saveProps.firstPlayer == 'AI' || saveProps.secondPlayer == 'AI'"
+    >
+      AI type: {{ saveProps.aiType }}
+    </span>
+  </div>
+
+  <div class="item-control">
+    <button class="btn btn-load" (click)="onLoad()">LOAD</button>
+    <button class="btn btn-delete" (click)="onDelete()">DELETE</button>
+  </div>
+</div>

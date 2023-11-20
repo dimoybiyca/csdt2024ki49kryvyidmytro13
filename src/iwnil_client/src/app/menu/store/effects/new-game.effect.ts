@@ -14,8 +14,8 @@ export class NewGameEffect {
   newGame$ = createEffect(() =>
     this.actions$.pipe(
       ofType(newGameAction),
-      switchMap(() => {
-        return this.menuService.newGame().pipe(
+      switchMap(({ firstPlayer, secondPlayer, aiType }) => {
+        return this.menuService.newGame(firstPlayer, secondPlayer, aiType).pipe(
           map((response: NewGameResponseInterface) => {
             return newGameSuccessAction(response);
           }),

@@ -1,12 +1,17 @@
 package ua.lpnu.lemoncat.iwnil.services;
 
+import jssc.SerialPortException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 import ua.lpnu.lemoncat.iwnil.DTO.GameDTO;
+import ua.lpnu.lemoncat.iwnil.DTO.NewGameDTO;
 import ua.lpnu.lemoncat.iwnil.converters.GameConverter;
+import ua.lpnu.lemoncat.iwnil.data.AIType;
 import ua.lpnu.lemoncat.iwnil.data.GameStatus;
 import ua.lpnu.lemoncat.iwnil.model.Game;
+import ua.lpnu.lemoncat.iwnil.serial.SerialBuffer;
+import ua.lpnu.lemoncat.iwnil.serial.SerialCommunicator;
 
 import javax.xml.bind.JAXBException;
 
@@ -16,21 +21,22 @@ import javax.xml.bind.JAXBException;
 public class GameService {
     private final GameConverter converter;
     private final GameProcessor gameProcessor;
+    private final SerialCommunicator serialCommunicator;
+    private final SerialBuffer serialBuffer;
 
-    public Game newGame() {
+    public Game newGame(String firstPlayer, String secondPlayer, AIType aiType) {
         int[][] arr = new int[10][10];
 
         for(int[] ints : arr) {
-            for(int anInt : ints) {
-                anInt = 0;
-            }
+            for(int anInt : ints) anInt = 0;
         }
 
         return Game.builder()
                 .gameStatus(GameStatus.IN_PROGRES)
-                .firstPlayer("MAN")
-                .secondPlayer("MAN")
+                .firstPlayer(firstPlayer)
+                .secondPlayer(secondPlayer)
                 .nextMove(1)
+                .aiType(aiType)
                 .board(arr)
                 .build();
     }
@@ -40,18 +46,37 @@ public class GameService {
         return gameProcessor.process(game);
     }
 
-    public void newGameTest() throws JAXBException {
-        String[] twoDArray = new String[10];
+    public Game picoMove(Game game) throws JAXBException {
+        GameDTO gameDTO = converter.toDTO(game);
+        String xml = converter.objectToXml(gameDTO);
+        System.out.println(xml);
 
-        for(int i = 0; i < 10; i++) {
-            twoDArray[i] = String.valueOf(i);
+        return sendToPico(xml);
+    }
+
+    public Game picoNewGame(String firstPlayer, String secondPlayer, AIType aiType) throws JAXBException {
+        NewGameDTO dto = NewGameDTO.builder()
+                .firstPlayer(firstPlayer)
+                .secondPlayer(secondPlayer)
+                .aiType(aiType)
+                .build();
+        String xml = converter.objectToXml(dto);
+        System.out.println(xml);
+
+        return sendToPico(xml);
+    }
+
+    private Game sendToPico(String xml) {
+        try {
+            serialCommunicator.sendMessage(xml);
+
+            String responseStr = serialBuffer.pop().substring(6);
+            System.out.println(responseStr);
+            GameDTO response = converter.xmlToObject(responseStr);
+            System.out.print("response " + response);
+            return converter.toObject(response);
+        } catch(JAXBException | SerialPortException | InterruptedException e) {
+            throw new RuntimeException(e);
         }
-        GameDTO game = new GameDTO("MAN", "MAN", 1, GameStatus.NEW, twoDArray);
-
-        String xml = converter.objectToXml(game);
-        log.info("XML Representation: {}", xml);
-
-        GameDTO game2 = converter.xmlToObject(xml);
-        log.info("Game2: {}", game2);
     }
 }

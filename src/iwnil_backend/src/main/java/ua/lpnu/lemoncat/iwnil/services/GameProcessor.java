@@ -12,18 +12,26 @@ import java.util.LinkedList;
 public class GameProcessor {
 
     private Game game;
-    private FixedQueue<Coordinates> crossQueue = new FixedQueue<>(10);
-    private FixedQueue<Coordinates> digQueue = new FixedQueue<>(10);
+    private int numCols;
+    private int numRows;
+    private final FixedQueue<Coordinates> crossQueue = new FixedQueue<>(10);
 
     public Game process(Game game) {
-        this.game = game;
-        processNewMove();
-        checkToe();
-        changeNextPlayer();
+        initData(game);
+        //processNewMove();
+        //checkToe();
+        //changeNextPlayer();
         resize();
 
         return game;
     }
+
+    private void initData(Game game) {
+        this.game = game;
+        this.numCols = game.getBoard()[0].length;
+        this.numRows = game.getBoard().length;
+    }
+
 
     private void resize() {
         resizeLeft(game.getBoard());
@@ -92,9 +100,9 @@ public class GameProcessor {
 
     private void resizeLeft(int[][] board) {
         boolean needResize = false;
-        for(int y = 0; y < board.length; y++) {
+        for(int[] ints : board) {
             for(int x = 0; x < 3; x++) {
-                if(board[y][x] != CellTypes.EMPTY.getValue()) {
+                if(ints[x] != CellTypes.EMPTY.getValue()) {
                     needResize = true;
                     break;
                 }
@@ -120,9 +128,9 @@ public class GameProcessor {
 
     private void resizeRight(int[][] board) {
         boolean needResize = false;
-        for(int y = 0; y < board.length; y++) {
+        for(int[] ints : board) {
             for(int x = board[0].length - 3; x < board[0].length; x++) {
-                if(board[y][x] != CellTypes.EMPTY.getValue()) {
+                if(ints[x] != CellTypes.EMPTY.getValue()) {
                     needResize = true;
                     break;
                 }
@@ -145,6 +153,7 @@ public class GameProcessor {
             game.setBoard(newBoard);
         }
     }
+
 
     private void checkToe() {
         CellTypes cellType = game.getNextMove() == 1 ? CellTypes.TIC : CellTypes.TAC;
@@ -202,16 +211,81 @@ public class GameProcessor {
     }
 
     private boolean checkDiag(CellTypes cellType) {
-        
+        return checkDiagRight(cellType) || checkDiagLeft(cellType);
     }
 
-    private void changeNextPlayer() {
-        this.game.setNextMove(game.getNextMove() == 1 ? 2 : 1);
+    private boolean checkDiagLeft(CellTypes cellType) {
+        for(int d = 0; d < numRows + numCols - 1; d++) {
+            int row = Math.max(0, d - numCols + 1);
+            int col = Math.min(d, numCols - 1);
+
+            int count = 0;
+            crossQueue.clear();
+            while(row < numRows && col >= 0) {
+                count = updateCount(count, col, row, cellType);
+
+                if(++row < numRows &&
+                        --col > 0 &&
+                        this.game.getBoard()[row][col] != cellType.getValue() &&
+                        count >= 3) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
+
+    private boolean checkDiagRight(CellTypes cellType) {
+        for(int d = numRows - 1; d >= 0; d--) {
+            if(checkDiagLine(d, 0, cellType)) {
+                return true;
+            }
+        }
+
+        for(int d = 1; d < numCols; d++) {
+            if(checkDiagLine(0, d, cellType)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private boolean checkDiagLine(int row, int col, CellTypes cellType) {
+        int count = 0;
+        crossQueue.clear();
+        while(row < numRows && col < numCols) {
+            count = updateCount(count, col, row, cellType);
+
+            if(++row < numRows &&
+                    ++col < numCols &&
+                    this.game.getBoard()[row][col] != cellType.getValue() &&
+                    count >= 3) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private int updateCount(int count, int x, int y, CellTypes cellType) {
+        this.crossQueue.add(new Coordinates(x, y));
+
+        return this.game.getBoard()[y][x] == cellType.getValue() ? count + 1 : 0;
+    }
+
 
     private void processNewMove() {
         if(isMANMove()) {
             this.processMANMove();
+        } else if(isAIMove()) {
+            this.processAIMove();
+        }
+
+        if(game.getSecondPlayer().equals("AI")) {
+            this.changeNextPlayer();
+            this.processAIMove();
         }
     }
 
@@ -220,26 +294,84 @@ public class GameProcessor {
         game.getBoard()[pos.y][pos.x] = game.getNextMove() == 1 ? CellTypes.TIC.getValue() : CellTypes.TAC.getValue();
     }
 
-    private Coordinates findNewMove() {
-        int[][] board = game.getBoard();
+    private void processAIMove() {
+        CellTypes cellType = game.getNextMove() == 1 ? CellTypes.TAC : CellTypes.TIC;
 
-        for(int y = 0; y < board.length; y++) {
-            for(int x = 0; x < board[0].length; x++) {
-                if(board[y][x] == CellTypes.NEW_MOVE.getValue()) {
-                    return new Coordinates(x, y);
+        switch(game.getAiType()) {
+            case RANDOM -> processAIRandomMove(cellType);
+            case BEST_MOVE -> processAIBestMove(cellType);
+        }
+    }
+
+    private void processAIRandomMove(CellTypes cellType) {
+        while(true) {
+            for(int y = (int) Math.round(Math.random() * (this.numRows - 1)); y < numRows; y++) {
+                for(int x = (int) Math.round(Math.random() * (this.numCols - 1)); y < numCols; y++) {
+                    if(game.getBoard()[y][x] == CellTypes.EMPTY.getValue()) {
+                        game.getBoard()[y][x] = cellType.getValue();
+                        return;
+                    }
                 }
             }
+        }
+    }
+
+    private void processAIBestMove(CellTypes cellType) {
+        while(true) {
+            for(int y = (int) Math.round(Math.random() * (this.numRows - 1)); y < numRows; y++) {
+                for(int x = (int) Math.round(Math.random() * (this.numCols - 1)); y < numCols; y++) {
+                    if(game.getBoard()[y][x] == cellType.getValue()) {
+                        for(int i = -1; i <= 1; i++) {
+                            for(int j = -1; j <= 1; j++) {
+                                if(y + i > 0 && y + i < numRows && x + j > 0 && x + j < numCols) {
+                                    if(game.getBoard()[y + i][x + j] == CellTypes.EMPTY.getValue()) {
+                                        game.getBoard()[y + 1][x + j] = cellType.getValue();
+                                        return;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private boolean isMANMove() {
+        return game.getNextMove() == 1 ? game.getFirstPlayer().equals("MAN") : game.getSecondPlayer().equals("MAN");
+    }
+
+    private boolean isAIMove() {
+        return game.getNextMove() == 1 ? game.getFirstPlayer().equals("AI") : game.getSecondPlayer().equals("AI");
+    }
+
+    private Coordinates findNewMove() {
+        Coordinates newMove = findCell(CellTypes.NEW_MOVE);
+
+        if(newMove != null) {
+            return newMove;
         }
 
         throw new RuntimeException("There is no new move");
     }
 
-    private boolean isMANMove() {
-        if(game.getNextMove() == 1) {
-            return game.getFirstPlayer().equals("MAN");
-        } else {
-            return game.getSecondPlayer().equals("MAN");
+    private Coordinates findCell(CellTypes cellType) {
+        int[][] board = game.getBoard();
+
+        for(int y = 0; y < board.length; y++) {
+            for(int x = 0; x < board[0].length; x++) {
+                if(board[y][x] == cellType.getValue()) {
+                    return new Coordinates(x, y);
+                }
+            }
         }
+
+        return null;
+    }
+
+
+    private void changeNextPlayer() {
+        this.game.setNextMove(game.getNextMove() == 1 ? 2 : 1);
     }
 
     private void finishGame(CellTypes cellType) {

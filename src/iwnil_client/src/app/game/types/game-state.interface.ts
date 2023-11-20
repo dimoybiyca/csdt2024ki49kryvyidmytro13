@@ -8,5 +8,6 @@ export interface GameStateInterface {
   firstPlayer: PlayerType | null;
   secondPlayer: PlayerType | null;
   nextMove: number | null;
+  aiType: string | null;
   gameStatus: GameStatus;
 }

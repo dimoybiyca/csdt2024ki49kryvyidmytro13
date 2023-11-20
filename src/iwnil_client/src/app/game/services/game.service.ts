@@ -33,11 +33,10 @@ export class GameService {
       board: board.map((row) => [...row]),
       nextMove: this.game.nextMove,
       gameStatus: this.game.gameStatus,
+      aiType: this.game.aiType,
     } as GameInterface;
 
     tempGame.board[row][column] = CellTypes.NEW_MOVE;
-    tempGame.board[row][column] = CellTypes.NEW_MOVE;
-    console.log(tempGame);
 
     return this.http.post<NewGameResponseInterface>(urls.move, tempGame);
   }

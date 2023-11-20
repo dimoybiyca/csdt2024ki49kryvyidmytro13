@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: iwnil-backend
+  data:
+    mongodb:
+      uri: "mongodb://mongodb:mongodb@192.168.0.53:27017/iwnil?authSource=admin"
 
 logging:
   pattern:
