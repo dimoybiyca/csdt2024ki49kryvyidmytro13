@@ -8,7 +8,7 @@ import ua.lpnu.lemoncat.iwnil.serial.SerialCommunicator;
 
 @Service
 @RequiredArgsConstructor
-public class Task1Service {
+public class Task2Service {
 
     private final SerialCommunicator serialCommunicator;
     private final SerialBuffer serialBuffer;
