@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuSavesComponent } from './menu-saves.component';
+import { StoreModule } from '@ngrx/store';
 
 describe('MenuSavesComponent', () => {
   let component: MenuSavesComponent;
@@ -8,7 +9,8 @@ describe('MenuSavesComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuSavesComponent]
+      imports: [StoreModule.forRoot()],
+      declarations: [MenuSavesComponent],
     });
     fixture = TestBed.createComponent(MenuSavesComponent);
     component = fixture.componentInstance;

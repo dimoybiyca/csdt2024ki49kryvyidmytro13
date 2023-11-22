@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ListComponent } from './list.component';
+import { StoreModule } from '@ngrx/store';
 
 describe('ListComponent', () => {
   let component: ListComponent;
@@ -8,7 +9,8 @@ describe('ListComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ListComponent]
+      imports: [StoreModule.forRoot()],
+      declarations: [ListComponent],
     });
     fixture = TestBed.createComponent(ListComponent);
     component = fixture.componentInstance;
