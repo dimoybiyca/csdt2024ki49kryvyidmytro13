@@ -13,7 +13,7 @@ The point of this course is to create a simple game using hardware and software.
 | 13 | Kryvyi Dmytro | tic-tac-toe (unlimited board) | XML |
 
 ## Project details
-![Communication schema drawing](https://github.com/dimoybiyca/csdt2024ki49kryvyidmytro13/blob/feature/develop/task2/media/Communication_Schema.jpg?raw=true)
+![Communication schema drawing](https://github.com/dimoybiyca/csdt2024ki49kryvyidmytro13/blob/feature/develop/task3/media/Communication_Schema.jpg?raw=true)
 Details about technology, program language, and Hardware that will be
 used in next tasks.
 ### Software
@@ -23,7 +23,7 @@ The frontend part of application will be written using Angular 2 with Ngrx as a 
 In order to combine the frontend and the hardware, spring boot will be used, which will process requests from the Angular, transfer them to Arduino and send the response back. Programing language - Java
 
 ### Hardware
-Arduino nano will be used as a server. Programing language - C++
+Raspberry Pi PICO will be used as a server. Programing language - C++, Framework - Arduino
 
 ### DevOps
 Ansible and Jenkins will be used to simplify and automate build and deploy. Frontend and Backend will be conterised with docker
@@ -61,16 +61,19 @@ Info how to build and run application
  mvn spring-boot:build-image -f pom.xml
  docker run -d -p 9000:9000 -devices /dev/ttyUSB0:/dev/ttyUSB0 iwnil-backend:<version>
  ```
-### Arduino nano
- > You can use any known tool to flash Arduino
- > I am using PlatformIO extension for VS Code
- 
- To flash from cli using PlatformIO core
- ```sh 
- cd iwnil_hardware
- pio run --target upload
- ```
- 
+### Raspberry Pi PICO
+1. Hold the BOOTSEL button on board
+2. Plug in a micro usb cable
+3. Release the button when board will appear in list of devices on your PC
+4. Move a firmware.uf2 file to RPI-RP2
+5. Ready
+
+### MongoDB
+`Required CPU with AVX support othervise use mongo:4.4.6 or lower`
+```sh
+docker run -e MONGO_INITDB_ROOT_USERNAME=mongodb -e MONGO_INITDB_ROOT_PASSWORD=mongodb -p 27017:27017 -d mongo
+```
+
 ## References
 - [VS Code] - Code editor with extensions for versatile development.
 - [Node] - JavaScript runtime for server-side applications.
@@ -83,8 +86,12 @@ Info how to build and run application
 - [Jenkins] - CI/CD automation server.
 - [Docker] - Container platform for app development.
 - [Arduino] - Open-source electronics platform for DIY projects.
+- [Raspberry Pi] - Compact, low-cost computer board used for learning and hobby projects.
 - [PlatformIO] - Embedded development ecosystem with IoT support.
+- [MongoDB] - Popular, open-source NoSQL database management system designed for flexibility and scalability
 
+[Raspberry Pi]: <https://www.raspberrypi.com/>
+[MongoDB]: <https://www.mongodb.com/>
 [VS Code]: <https://code.visualstudio.com/>
 [Angular]: <https://angular.io/>
 [NgRx]: <https://ngrx.io/>
@@ -97,3 +104,4 @@ Info how to build and run application
 [Docker]: <https://www.docker.com/>
 [Arduino]: <https://www.arduino.cc/>
 [PlatformIO]: <https://platformio.org/install/cli>
+
