@@ -1,0 +1,23 @@
+<map id="include/game/GameProcessor.h" name="include/game/GameProcessor.h">
+<area shape="rect" id="Node000001" title="Definition of the GameProcessor class." alt="" coords="235,5,462,33"/>
+<area shape="rect" id="Node000002" href="$Game_8h.html" title="Definition of the Game class." alt="" coords="42,81,156,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="305,36,159,79,157,74,303,31"/>
+<area shape="rect" id="Node000006" href="$Game__Status_8h.html" title=" " alt="" coords="180,81,341,109"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="334,36,289,73,286,69,331,31"/>
+<area shape="rect" id="Node000007" href="$FixedQueue_8h.html" title="Definition of the FixedQueue class." alt="" coords="366,81,507,109"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="366,31,411,69,407,73,362,36"/>
+<area shape="rect" id="Node000009" href="$Coordinates_8h.html" title="Definition of the Coordinates struct." alt="" coords="489,157,600,184"/>
+<area shape="poly" id="edge12_Node000001_Node000009" title=" " alt="" coords="433,31,480,49,502,62,521,79,538,109,545,141,540,142,533,111,517,83,499,67,478,54,431,36"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,232,89,260"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,111,68,132,53,158,47,188,47,217,41,217,42,187,49,156,64,128,83,107"/>
+<area shape="rect" id="Node000004" href="$Board_8h.html" title="Game Board encapsulation." alt="" coords="63,157,135,184"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="102,109,102,141,96,141,96,109"/>
+<area shape="rect" id="Node000005" href="$Game__Object_8h.html" title=" " alt="" coords="124,232,245,260"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="124,107,150,127,173,155,184,186,188,217,182,217,179,188,169,158,147,131,120,111"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="92,186,67,221,63,218,88,183"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="136,154,153,157,161,170,159,179,152,184,148,180,154,176,156,171,150,162,135,159"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="116,183,159,220,156,224,113,187"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="403,157,464,184"/>
+<area shape="poly" id="edge10_Node000007_Node000008" title=" " alt="" coords="439,109,437,141,432,141,433,109"/>
+<area shape="poly" id="edge11_Node000007_Node000009" title=" " alt="" coords="457,107,514,146,511,150,454,111"/>
+</map>

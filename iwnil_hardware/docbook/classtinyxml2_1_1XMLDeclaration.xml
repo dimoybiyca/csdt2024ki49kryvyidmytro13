@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtinyxml2_1_1XMLDeclaration" xml:lang="en-US">
+<title>tinyxml2::XMLDeclaration Class Reference</title>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary></indexterm>
+<para>
+<computeroutput>#include &lt;tinyxml2.h&gt;</computeroutput>
+</para>
+Inheritance diagram for tinyxml2::XMLDeclaration:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLDeclaration__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for tinyxml2::XMLDeclaration:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLDeclaration__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> * <link linkend="_classtinyxml2_1_1XMLDeclaration_1aa24eb89ab36119e0b18ee06c82ff6c24">ToDeclaration</link> ()</para>
+
+<para>Safely cast to a Declaration, or null. </para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> * <link linkend="_classtinyxml2_1_1XMLDeclaration_1a74e324fe0195ed20d7c2cc33adc0728c">ToDeclaration</link> () const</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_classtinyxml2_1_1XMLDeclaration_1a5f376019fb34752eb248548f42f32045">Accept</link> (<link linkend="_classtinyxml2_1_1XMLVisitor">XMLVisitor</link> *visitor) const</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLDeclaration_1ab9a3acf9ddf1210289742a9b1c1c513a">ShallowClone</link> (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> *document) const</para>
+</listitem>
+            <listitem><para>virtual bool <link linkend="_classtinyxml2_1_1XMLDeclaration_1aa26b70011694e9b9e9480b929e9b78d6">ShallowEqual</link> (const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *compare) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classtinyxml2_1_1XMLNode">tinyxml2::XMLNode</link>        <itemizedlist>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a6ce3bbe80357f5a4dc5db31a66f2bb18">GetDocument</link> () const</para>
+
+<para>Get the <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> that owns this <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link>. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a48d1695f7c834129e072548957a50501">GetDocument</link> ()</para>
+
+<para>Get the <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> that owns this <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link>. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a9417e1f8a9787ae27741605493514b18">ToElement</link> ()</para>
+
+<para>Safely cast to an Element, or null. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLText">XMLText</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a0aea8c9c5853c35a06da1988486abc60">ToText</link> ()</para>
+
+<para>Safely cast to Text, or null. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLComment">XMLComment</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a5dc13f02ae49e3fa609e426f47c8466d">ToComment</link> ()</para>
+
+<para>Safely cast to a Comment, or null. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a6107c3f57ab6e0755959947762953652">ToDocument</link> ()</para>
+
+<para>Safely cast to a Document, or null. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLUnknown">XMLUnknown</link> * <link linkend="_classtinyxml2_1_1XMLNode_1aa8a2dd38b786c3b8d406c2047753cbfd">ToUnknown</link> ()</para>
+
+<para>Safely cast to an Unknown, or null. </para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a717b5e8a2dd19f1375e388eb749a773c">ToElement</link> () const</para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLText">XMLText</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a0563966a4e8df58a3bf1b323eedf839a">ToText</link> () const</para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLComment">XMLComment</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ae78cbef093b115895c1a7b06960396da">ToComment</link> () const</para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ad7e7fd167ffb01b64e3371c0d2cda19b">ToDocument</link> () const</para>
+</listitem>
+            <listitem><para>virtual const <link linkend="_classtinyxml2_1_1XMLUnknown">XMLUnknown</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ab956088fd1ec09c933804000a7a984ea">ToUnknown</link> () const</para>
+</listitem>
+            <listitem><para>const char * <link linkend="_classtinyxml2_1_1XMLNode_1a0485e51c670e741884cfd8362274d680">Value</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLNode_1a09dd68cf9eae137579f6e50f36487513">SetValue</link> (const char *val, bool staticMem=false)</para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1XMLNode_1a9b5fc636646fda761d342c72e91cb286">GetLineNum</link> () const</para>
+
+<para>Gets the line number the node is in, if the document was parsed from a file. </para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a4d76b30d1bf4b166d3e4fa3419d51595">Parent</link> () const</para>
+
+<para>Get the parent of this node on the DOM. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ae092b35e0f94c27ad96d0ac92c038e1e">Parent</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classtinyxml2_1_1XMLNode_1ac3ab489e6e202a3cd1762d3b332e89d4">NoChildren</link> () const</para>
+
+<para>Returns true if this node has no children. </para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1abcc2e572dce329539689b426a0840661">FirstChild</link> () const</para>
+
+<para>Get the first child node, or null if none exists. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a3cc3c85d40ce73d6f5849a35debfccfc">FirstChild</link> ()</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a1bec132dcf085284e0a10755f2cf0d57">FirstChildElement</link> (const char *name=0) const</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a46c460e1494ccc2691f515a34e78abc0">FirstChildElement</link> (const char *name=0)</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a69a29bb8263ff5e9815be180bf27e7af">LastChild</link> () const</para>
+
+<para>Get the last child node, or null if none exists. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a5029f38433f2c547ab2c67d20944563f">LastChild</link> ()</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a609e02f02044f39b928d1a3e0de9f532">LastChildElement</link> (const char *name=0) const</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a4b3ee7343ed49c2054fe64ef5639b2ff">LastChildElement</link> (const char *name=0)</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a92ee96b0d8628bc609f1d34e56d69dfa">PreviousSibling</link> () const</para>
+
+<para>Get the previous (left) sibling node of this node. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a5cbc1d7444770fb364a431441b81f21a">PreviousSibling</link> ()</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a9453cda5e970375a7b1b2099f8a7c40a">PreviousSiblingElement</link> (const char *name=0) const</para>
+
+<para>Get the previous (left) sibling element of this node, with an optionally supplied name. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1abee2e91cc895adfb8ba24b0b6ec14f00">PreviousSiblingElement</link> (const char *name=0)</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1af986c568061b020cf6232bec091388c0">NextSibling</link> () const</para>
+
+<para>Get the next (right) sibling node of this node. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a05d04a9c06dc48ff8473c77774ee94eb">NextSibling</link> ()</para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a14ea560df31110ff07a9f566171bf797">NextSiblingElement</link> (const char *name=0) const</para>
+
+<para>Get the next (right) sibling element of this node, with an optionally supplied name. </para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a83f054589f5a669c0dcca72bfd6bfb09">NextSiblingElement</link> (const char *name=0)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ae3b422e98914d6002ca99bb1d2837103">InsertEndChild</link> (<link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *addThis)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ae6ab0f078ab8edba2e2c6d1d81a3661e">LinkEndChild</link> (<link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *addThis)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1ac609a8f3ea949027f439280c640bbaf2">InsertFirstChild</link> (<link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *addThis)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a9275138a1b8dd5d8e2c26789bdc23ac8">InsertAfterChild</link> (<link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *afterThis, <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *addThis)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLNode_1a0360085cc54df5bff85d5c5da13afdce">DeleteChildren</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLNode_1a363b6edbd6ebd55f8387d2b89f2b0921">DeleteChild</link> (<link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> *node)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a3bb369fd733f1989b751d99a9417adab">DeepClone</link> (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> *target) const</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLNode_1a002978fc889cc011d143185f2377eca2">SetUserData</link> (void *userData)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_classtinyxml2_1_1XMLNode_1a18cc02ebd0b06f6bf5db7ef87653e00e">GetUserData</link> () const</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Protected Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLDeclaration_1aef9586f2ce5df5feba74dde49a242b06">XMLDeclaration</link> (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> *doc)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLDeclaration_1a2a33ec2e9619f03687d048d24b2acaf5">~XMLDeclaration</link> ()</para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1XMLDeclaration_1a42a2a36f4d78dc745063b79c16538b9b">ParseDeep</link> (char *p, <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> *parentEndTag, int *curLineNumPtr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Protected Member Functions inherited from <link linkend="_classtinyxml2_1_1XMLNode">tinyxml2::XMLNode</link>        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode_1a29868df6ca383d574f584dfdd15105b6">XMLNode</link> (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> *)</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLNode_1a8ae1bcd23a08ce5c5f97b2ab347b0893">~XMLNode</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLDeclaration_1a5229cc0b31f034f93289af27ec3e2836">XMLDeclaration</link> (const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp;)</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp; <link linkend="_classtinyxml2_1_1XMLDeclaration_1a19a67f4d9cb5aaf57c7767864e32f6b8">operator=</link> (const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classtinyxml2_1_1XMLDeclaration_1a4eee3bda60c60a30e4e8cd4ea91c4c6e">XMLDocument</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_classtinyxml2_1_1XMLNode">tinyxml2::XMLNode</link>        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a8d2d2be0bb6797625551eb0e91f0ff62">_document</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a176dd1c4965c21c366de192164aa2c13">_parent</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair">StrPair</link> <link linkend="_classtinyxml2_1_1XMLNode_1a3ea9884098b8379de2bb5ab3fc85c0fc">_value</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1XMLNode_1ab336ed023e15be202ff3b410be01b804">_parseLineNum</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1aa20c91e4213dc930c5bdf420322ca342">_firstChild</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a099b6560ae44ab9edb8453aaf1a3747b">_lastChild</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a9739eb0fb9a1188266052055e7a6bf6b">_prev</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * <link linkend="_classtinyxml2_1_1XMLNode_1a27e985496b37dd00eb5b9cf59b9e3fb1">_next</link></para>
+</listitem>
+            <listitem><para>void * <link linkend="_classtinyxml2_1_1XMLNode_1ac2d5cc463a6c95ec5907d57a119c56da">_userData</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>In correct XML the declaration is the first entry in the file. <literallayout><computeroutput>    &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+</computeroutput></literallayout></para>
+
+<para>TinyXML-2 will happily read or write files without a declaration, however.</para>
+
+<para>The text of the declaration isn&apos;t interpreted. It is parsed and written as a string. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1aef9586f2ce5df5feba74dde49a242b06"/><section>
+    <title>XMLDeclaration()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>XMLDeclaration</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>XMLDeclaration</secondary></indexterm>
+<para><computeroutput>tinyxml2::XMLDeclaration::XMLDeclaration (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * doc)<computeroutput>[explicit]</computeroutput>, <computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a2a33ec2e9619f03687d048d24b2acaf5"/><section>
+    <title>~XMLDeclaration()</title>
+<indexterm><primary>~XMLDeclaration</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>~XMLDeclaration</secondary></indexterm>
+<para><computeroutput>virtual tinyxml2::XMLDeclaration::~XMLDeclaration ( )<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a5229cc0b31f034f93289af27ec3e2836"/><section>
+    <title>XMLDeclaration()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>XMLDeclaration</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>XMLDeclaration</secondary></indexterm>
+<para><computeroutput>tinyxml2::XMLDeclaration::XMLDeclaration (const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a5f376019fb34752eb248548f42f32045"/><section>
+    <title>Accept()</title>
+<indexterm><primary>Accept</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>Accept</secondary></indexterm>
+<para><computeroutput>virtual bool tinyxml2::XMLDeclaration::Accept (<link linkend="_classtinyxml2_1_1XMLVisitor">XMLVisitor</link> * visitor) const<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Accept a hierarchical visit of the nodes in the TinyXML-2 DOM. Every node in the XML tree will be conditionally visited and the host will be called back via the <link linkend="_classtinyxml2_1_1XMLVisitor">XMLVisitor</link> interface.</para>
+
+<para>This is essentially a SAX interface for TinyXML-2. (Note however it doesn&apos;t re-parse the XML for the callbacks, so the performance of TinyXML-2 is unchanged by using this interface versus any other.)</para>
+
+<para>The interface has been based on ideas from:</para>
+
+<para><itemizedlist>
+<listitem>
+<para><link xlink:href="http://www.saxproject.org/">http://www.saxproject.org/</link></para>
+</listitem><listitem>
+<para><link xlink:href="http://c2.com/cgi/wiki?HierarchicalVisitorPattern">http://c2.com/cgi/wiki?HierarchicalVisitorPattern</link></para>
+</listitem></itemizedlist>
+</para>
+
+<para>Which are both good references for &quot;visiting&quot;.</para>
+
+<para>An example of using <link linkend="_classtinyxml2_1_1XMLDeclaration_1a5f376019fb34752eb248548f42f32045">Accept()</link>: <literallayout><computeroutput>XMLPrinter printer;
+tinyxmlDoc.Accept( &amp;printer );
+const char* xmlcstr = printer.CStr();
+</computeroutput></literallayout> </para>
+<para>
+Implements <link linkend="_classtinyxml2_1_1XMLNode_1a81e66df0a44c67a7af17f3b77a152785">tinyxml2::XMLNode</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a19a67f4d9cb5aaf57c7767864e32f6b8"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput><link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp; tinyxml2::XMLDeclaration::operator= (const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a42a2a36f4d78dc745063b79c16538b9b"/><section>
+    <title>ParseDeep()</title>
+<indexterm><primary>ParseDeep</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>ParseDeep</secondary></indexterm>
+<para><computeroutput>char * tinyxml2::XMLDeclaration::ParseDeep (char * p, <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> * parentEndTag, int * curLineNumPtr)<computeroutput>[protected]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_classtinyxml2_1_1XMLNode_1ac7df464d8029c9b91e96ab2499222afe">tinyxml2::XMLNode</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1ab9a3acf9ddf1210289742a9b1c1c513a"/><section>
+    <title>ShallowClone()</title>
+<indexterm><primary>ShallowClone</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>ShallowClone</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * tinyxml2::XMLDeclaration::ShallowClone (<link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link> * document) const<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Make a copy of this node, but not its children. You may pass in a Document pointer that will be the owner of the new Node. If the &apos;document&apos; is null, then the node returned will be allocated from the current Document. (this-&gt;<link linkend="_classtinyxml2_1_1XMLNode_1a48d1695f7c834129e072548957a50501">GetDocument()</link>)</para>
+
+<para>Note: if called on a <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link>, this will return null. </para>
+<para>
+Implements <link linkend="_classtinyxml2_1_1XMLNode_1a9046880c05b81ad99ee645f4b2a53ecd">tinyxml2::XMLNode</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1aa26b70011694e9b9e9480b929e9b78d6"/><section>
+    <title>ShallowEqual()</title>
+<indexterm><primary>ShallowEqual</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>ShallowEqual</secondary></indexterm>
+<para><computeroutput>virtual bool tinyxml2::XMLDeclaration::ShallowEqual (const <link linkend="_classtinyxml2_1_1XMLNode">XMLNode</link> * compare) const<computeroutput>[virtual]</computeroutput></computeroutput></para>
+<para>Test if 2 nodes are the same, but don&apos;t test children. The 2 nodes do not need to be in the same Document.</para>
+
+<para>Note: if called on a <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link>, this will return false. </para>
+<para>
+Implements <link linkend="_classtinyxml2_1_1XMLNode_1a7ce18b751c3ea09eac292dca264f9226">tinyxml2::XMLNode</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1aa24eb89ab36119e0b18ee06c82ff6c24"/><section>
+    <title>ToDeclaration()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>ToDeclaration</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>ToDeclaration</secondary></indexterm>
+<para><computeroutput>virtual <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> * tinyxml2::XMLDeclaration::ToDeclaration ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Safely cast to a Declaration, or null. </para>
+</para>
+<para>
+Reimplemented from <link linkend="_classtinyxml2_1_1XMLNode_1a12aa783a3a4445ad5557c7d56cd8dc4a">tinyxml2::XMLNode</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a74e324fe0195ed20d7c2cc33adc0728c"/><section>
+    <title>ToDeclaration()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>ToDeclaration</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>ToDeclaration</secondary></indexterm>
+<para><computeroutput>virtual const <link linkend="_classtinyxml2_1_1XMLDeclaration">XMLDeclaration</link> * tinyxml2::XMLDeclaration::ToDeclaration ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Reimplemented from <link linkend="_classtinyxml2_1_1XMLNode_1a93ef0d07257e5c8f62dc869ef4e23b3b">tinyxml2::XMLNode</link>.</para>
+</section>
+</section>
+<section>
+<title>Friends And Related Symbol Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLDeclaration_1a4eee3bda60c60a30e4e8cd4ea91c4c6e"/><section>
+    <title>XMLDocument</title>
+<indexterm><primary>XMLDocument</primary><secondary>tinyxml2::XMLDeclaration</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLDeclaration</primary><secondary>XMLDocument</secondary></indexterm>
+<para><computeroutput>friend class <link linkend="_classtinyxml2_1_1XMLDocument">XMLDocument</link><computeroutput>[friend]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

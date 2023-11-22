@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_Coordinates_8h" xml:lang="en-US">
+<title>include/utils/Coordinates.h File Reference</title>
+<indexterm><primary>include/utils/Coordinates.h</primary></indexterm>
+<para>
+
+<para>Definition of the <link linkend="_structCoordinates">Coordinates</link> struct. </para>
+ 
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="Coordinates_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structCoordinates">Coordinates</link></para>
+
+<para>A struct representing 2D coordinates with x and y values. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_Coordinates_8h_1a5ee5ff1d36013c0c89323bb6cf59674b">COORDINATES_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Definition of the <link linkend="_structCoordinates">Coordinates</link> struct. </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_Coordinates_8h_1a5ee5ff1d36013c0c89323bb6cf59674b"/><section>
+    <title>COORDINATES_H</title>
+<indexterm><primary>COORDINATES_H</primary><secondary>Coordinates.h</secondary></indexterm>
+<indexterm><primary>Coordinates.h</primary><secondary>COORDINATES_H</secondary></indexterm>
+<para><computeroutput>#define COORDINATES_H</computeroutput></para></section>
+</section>
+</section>

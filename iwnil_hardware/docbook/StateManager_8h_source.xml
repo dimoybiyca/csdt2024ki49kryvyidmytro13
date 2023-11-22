@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_StateManager_8h_source" xml:lang="en-US">
+<title>StateManager.h</title>
+<indexterm><primary>include/StateManager.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+8 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+9 <emphasis role="preprocessor">#ifndef&#32;STATE_MANAGER_H</emphasis>
+10 
+11 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_State__Enum_8h">enum/State_Enum.h</link>&quot;</emphasis>
+12 
+13 <emphasis role="preprocessor">#define&#32;STATE_MANAGER_H</emphasis>
+14 
+19 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classStateManager">StateManager</link>
+20 {
+21 <emphasis role="keyword">private</emphasis>:
+22 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_classStateManager">StateManager</link>&#32;*<link linkend="_classStateManager_1aa99b9d4009f5d2a1ecb7768bb8cf1683">_stateManager</link>;&#32;
+23 &#32;&#32;&#32;&#32;<link linkend="_State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8">State</link>&#32;<link linkend="_classStateManager_1a71e6c0905e5552da8118b08f51233857">connectionState</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+29 &#32;&#32;&#32;&#32;<link linkend="_classStateManager_1a3e2be96d935eb56813b096a885d58587">StateManager</link>();
+30 
+31 <emphasis role="keyword">public</emphasis>:
+38 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_classStateManager">StateManager</link>&#32;*<link linkend="_classStateManager_1ac4e8e1fb2f83d33319a8c951513219bd">getInstance</link>();
+39 
+45 &#32;&#32;&#32;&#32;<link linkend="_State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8">State</link>&#32;<link linkend="_classStateManager_1aaf687e03246cffc3d8f331c24d58166d">getConnectionState</link>();
+46 
+52 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classStateManager_1ae214e2dc1224054cf0a56b1ed57a22cc">setConnectionState</link>(<link linkend="_State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8">State</link>&#32;<link linkend="_classStateManager_1a71e6c0905e5552da8118b08f51233857">connectionState</link>);
+53 };
+54 
+55 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

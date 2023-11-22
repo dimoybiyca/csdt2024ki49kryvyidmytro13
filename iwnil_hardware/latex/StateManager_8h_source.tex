@@ -1,0 +1,30 @@
+\doxysection{State\+Manager.\+h}
+\hypertarget{StateManager_8h_source}{}\label{StateManager_8h_source}\index{include/StateManager.h@{include/StateManager.h}}
+\mbox{\hyperlink{StateManager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ STATE\_MANAGER\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{State__Enum_8h}{enum/State\_Enum.h}}"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#define\ STATE\_MANAGER\_H}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classStateManager}{StateManager}}}
+\DoxyCodeLine{00020\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classStateManager}{StateManager}}\ *\mbox{\hyperlink{classStateManager_aa99b9d4009f5d2a1ecb7768bb8cf1683}{\_stateManager}};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{State__Enum_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\ \mbox{\hyperlink{classStateManager_a71e6c0905e5552da8118b08f51233857}{connectionState}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classStateManager_a3e2be96d935eb56813b096a885d58587}{StateManager}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{classStateManager}{StateManager}}\ *\mbox{\hyperlink{classStateManager_ac4e8e1fb2f83d33319a8c951513219bd}{getInstance}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{State__Enum_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\ \mbox{\hyperlink{classStateManager_aaf687e03246cffc3d8f331c24d58166d}{getConnectionState}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classStateManager_ae214e2dc1224054cf0a56b1ed57a22cc}{setConnectionState}}(\mbox{\hyperlink{State__Enum_8h_a5d74787dedbc4e11c1ab15bf487e61f8}{State}}\ \mbox{\hyperlink{classStateManager_a71e6c0905e5552da8118b08f51233857}{connectionState}});}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classGameProcessor" xml:lang="en-US">
+<title>GameProcessor Class Reference</title>
+<indexterm><primary>GameProcessor</primary></indexterm>
+<para>
+
+<para>A class responsible for processing the game logic and moves. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;GameProcessor.h&gt;</computeroutput>
+</para>
+Collaboration diagram for GameProcessor:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGameProcessor__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classGameProcessor_1ab11c0deeb780d8995b8b896c1c4b8541">GameProcessor</link> ()</para>
+
+<para>Constructor for the <link linkend="_classGameProcessor">GameProcessor</link> class. </para>
+</listitem>
+            <listitem><para><link linkend="_classGame">Game</link> * <link linkend="_classGameProcessor_1a43b93fd619f6d26a7a857c2ba878bc8e">process</link> (<link linkend="_classGame">Game</link> *<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>)</para>
+
+<para>Processes the current state of the game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classGameProcessor_1a27ed8da0e891ccdc8c39cc0295b3e888">finishGame</link> (int cellType)</para>
+
+<para>Finishes the game and updates its status. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1ac92f2239927fdc66a2abef53dba6708b">checkToe</link> ()</para>
+
+<para>Checks for a toe in the game. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1a9b4038f01958c4b82058263980cda8fd">checkRow</link> (int cellType)</para>
+
+<para>Checks for a winning row. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1a01805ba1b094f77ff939e721d28dd328">checkCol</link> (int cellType)</para>
+
+<para>Checks for a winning column. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1aff3573a9a2e0561dc2552b8541b4e816">checkDiag</link> (int cellType)</para>
+
+<para>Checks for a winning diagonal. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1a0fc7f6da401fa4b22b201aa693d7c0ba">checkDiagLeft</link> (int cellType)</para>
+
+<para>Checks for a winning diagonal (left-to-right). </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1ae4168b5174d1d3765ef37c7bcce80e9a">checkDiagRight</link> (int cellType)</para>
+
+<para>Checks for a winning diagonal (right-to-left). </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1a55a928faeaef643114fddc0c30eb9e1f">checkDiagLine</link> (int row, int col, int cellType)</para>
+
+<para>Checks for a winning diagonal line starting from a given position. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classGameProcessor_1a9523296f8b6e923a815166889dffc3bd">updateCount</link> (int count, int x, int y, int celltype)</para>
+
+<para>Updates the count of consecutive cells of the same type. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1a5bb99e252a49f48391f0197ce29b6d91">processNewMove</link> ()</para>
+
+<para>Processes a new move in the game. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1a14400dd82bb980eecd992b4507dbac91">processMANMove</link> ()</para>
+
+<para>Processes a move made by a human player. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1a404f1d11747bd5456e4be2dcd5396a6e">processAIMove</link> ()</para>
+
+<para>Processes a move made by an AI player. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1a050b9a9847a0f2f7db003243f70aa819">processAIRandomMove</link> (int cellType)</para>
+
+<para>Processes a random move made by the AI player. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGameProcessor_1a5573bd87a0fff2e4c414087477a6c6d4">processAIBestMove</link> (int celltype)</para>
+
+<para>Processes the best move made by the AI player. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1a5cf56ea58b8435b467cafaa7db4c8d0f">isMANMove</link> ()</para>
+
+<para>Checks if it&apos;s the turn of a human player. </para>
+</listitem>
+            <listitem><para>boolean <link linkend="_classGameProcessor_1ae281b585e533039255af373913b1df2e">isAIMove</link> ()</para>
+
+<para>Checks if it&apos;s the turn of an AI player. </para>
+</listitem>
+            <listitem><para><link linkend="_structCoordinates">Coordinates</link> <link linkend="_classGameProcessor_1a4508bb9143f3e4ea52a61abbf7db8db7">findNewMove</link> ()</para>
+
+<para>Finds a new move for the current player. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classGameProcessor_1aba05a15f61f18bb517b0b076fdcc5407">rows</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classGameProcessor_1a900ffa42130b54c463705e7ccb543959">cols</link></para>
+</listitem>
+            <listitem><para><link linkend="_classGame">Game</link> * <link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link></para>
+</listitem>
+            <listitem><para><link linkend="_classFixedQueue">FixedQueue</link> <link linkend="_classGameProcessor_1a8701cb939ffff0264ed91cb981dcd4ad">queue</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A class responsible for processing the game logic and moves. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classGameProcessor_1ab11c0deeb780d8995b8b896c1c4b8541"/><section>
+    <title>GameProcessor()</title>
+<indexterm><primary>GameProcessor</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>GameProcessor</secondary></indexterm>
+<para><computeroutput>GameProcessor::GameProcessor ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_classGameProcessor">GameProcessor</link> class. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classGameProcessor_1a01805ba1b094f77ff939e721d28dd328"/><section>
+    <title>checkCol()</title>
+<indexterm><primary>checkCol</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkCol</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkCol (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning column. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if a winning column is found, false otherwise. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1aff3573a9a2e0561dc2552b8541b4e816"/><section>
+    <title>checkDiag()</title>
+<indexterm><primary>checkDiag</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkDiag</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkDiag (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning diagonal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if a winning diagonal is found, false otherwise. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a0fc7f6da401fa4b22b201aa693d7c0ba"/><section>
+    <title>checkDiagLeft()</title>
+<indexterm><primary>checkDiagLeft</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkDiagLeft</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkDiagLeft (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning diagonal (left-to-right). </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if a winning diagonal (left-to-right) is found, false otherwise. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a55a928faeaef643114fddc0c30eb9e1f"/><section>
+    <title>checkDiagLine()</title>
+<indexterm><primary>checkDiagLine</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkDiagLine</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkDiagLine (int row, int col, int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning diagonal line starting from a given position. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>row</entry><entry>
+<para>The starting row. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>col</entry><entry>
+<para>The starting column. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true if a line is winnind. </para>
+
+<para>false if line is not winning </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1ae4168b5174d1d3765ef37c7bcce80e9a"/><section>
+    <title>checkDiagRight()</title>
+<indexterm><primary>checkDiagRight</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkDiagRight</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkDiagRight (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning diagonal (right-to-left). </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if a winning diagonal (right-to-left) is found, false otherwise. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a9b4038f01958c4b82058263980cda8fd"/><section>
+    <title>checkRow()</title>
+<indexterm><primary>checkRow</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkRow</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::checkRow (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a winning row. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the player to check for a win (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>True if a winning row is found, false otherwise. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1ac92f2239927fdc66a2abef53dba6708b"/><section>
+    <title>checkToe()</title>
+<indexterm><primary>checkToe</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>checkToe</secondary></indexterm>
+<para><computeroutput>void GameProcessor::checkToe ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks for a toe in the game. </para>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a4508bb9143f3e4ea52a61abbf7db8db7"/><section>
+    <title>findNewMove()</title>
+<indexterm><primary>findNewMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>findNewMove</secondary></indexterm>
+<para><computeroutput><link linkend="_structCoordinates">Coordinates</link> GameProcessor::findNewMove ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Finds a new move for the current player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The coordinates of the new move. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a27ed8da0e891ccdc8c39cc0295b3e888"/><section>
+    <title>finishGame()</title>
+<indexterm><primary>finishGame</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>finishGame</secondary></indexterm>
+<para><computeroutput>void GameProcessor::finishGame (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Finishes the game and updates its status. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the winning player (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classGameProcessor_1ae281b585e533039255af373913b1df2e"/><section>
+    <title>isAIMove()</title>
+<indexterm><primary>isAIMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>isAIMove</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::isAIMove ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks if it&apos;s the turn of an AI player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true if current move is made by AI </para>
+
+<para>false if current move is made by human player. </para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGameProcessor_ae281b585e533039255af373913b1df2e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a5cf56ea58b8435b467cafaa7db4c8d0f"/><section>
+    <title>isMANMove()</title>
+<indexterm><primary>isMANMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>isMANMove</secondary></indexterm>
+<para><computeroutput>boolean GameProcessor::isMANMove ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Checks if it&apos;s the turn of a human player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>true if current move is made by human player. </para>
+
+<para>false if current move is made by AI </para>
+</formalpara>
+</para>
+Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGameProcessor_a5cf56ea58b8435b467cafaa7db4c8d0f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a43b93fd619f6d26a7a857c2ba878bc8e"/><section>
+    <title>process()</title>
+<indexterm><primary>process</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>process</secondary></indexterm>
+<para><computeroutput><link linkend="_classGame">Game</link> * GameProcessor::process (<link linkend="_classGame">Game</link> * game)</computeroutput></para><para>
+
+<para>Processes the current state of the game. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>game</entry><entry>
+<para>The current game instance. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the updated game instance. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a5573bd87a0fff2e4c414087477a6c6d4"/><section>
+    <title>processAIBestMove()</title>
+<indexterm><primary>processAIBestMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>processAIBestMove</secondary></indexterm>
+<para><computeroutput>void GameProcessor::processAIBestMove (int celltype)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Processes the best move made by the AI player. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the AI player (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classGameProcessor_1a404f1d11747bd5456e4be2dcd5396a6e"/><section>
+    <title>processAIMove()</title>
+<indexterm><primary>processAIMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>processAIMove</secondary></indexterm>
+<para><computeroutput>void GameProcessor::processAIMove ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Processes a move made by an AI player. </para>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a050b9a9847a0f2f7db003243f70aa819"/><section>
+    <title>processAIRandomMove()</title>
+<indexterm><primary>processAIRandomMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>processAIRandomMove</secondary></indexterm>
+<para><computeroutput>void GameProcessor::processAIRandomMove (int cellType)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Processes a random move made by the AI player. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>cellType</entry><entry>
+<para>The type of the AI player (1 or 2). </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classGameProcessor_1a14400dd82bb980eecd992b4507dbac91"/><section>
+    <title>processMANMove()</title>
+<indexterm><primary>processMANMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>processMANMove</secondary></indexterm>
+<para><computeroutput>void GameProcessor::processMANMove ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Processes a move made by a human player. </para>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a5bb99e252a49f48391f0197ce29b6d91"/><section>
+    <title>processNewMove()</title>
+<indexterm><primary>processNewMove</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>processNewMove</secondary></indexterm>
+<para><computeroutput>void GameProcessor::processNewMove ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Processes a new move in the game. </para>
+</para>
+</section>
+<anchor xml:id="_classGameProcessor_1a9523296f8b6e923a815166889dffc3bd"/><section>
+    <title>updateCount()</title>
+<indexterm><primary>updateCount</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>updateCount</secondary></indexterm>
+<para><computeroutput>int GameProcessor::updateCount (int count, int x, int y, int celltype)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Updates the count of consecutive cells of the same type. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>count</entry><entry>
+<para>The current count. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>x</entry><entry>
+<para>The x-coordinate of the cell. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>y</entry><entry>
+<para>The y-coordinate of the cell. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>celltype</entry><entry>
+<para>The type of the player (1 or 2).</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>The updated count. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classGameProcessor_1a900ffa42130b54c463705e7ccb543959"/><section>
+    <title>cols</title>
+<indexterm><primary>cols</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>cols</secondary></indexterm>
+<para><computeroutput>int GameProcessor::cols<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The number of columns in the game board. </para>
+</section>
+<anchor xml:id="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92"/><section>
+    <title>game</title>
+<indexterm><primary>game</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>game</secondary></indexterm>
+<para><computeroutput><link linkend="_classGame">Game</link>* GameProcessor::game<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>Pointer to the current game instance. </para>
+</section>
+<anchor xml:id="_classGameProcessor_1a8701cb939ffff0264ed91cb981dcd4ad"/><section>
+    <title>queue</title>
+<indexterm><primary>queue</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>queue</secondary></indexterm>
+<para><computeroutput><link linkend="_classFixedQueue">FixedQueue</link> GameProcessor::queue<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>Fixed-size queue to track recent moves. </para>
+</section>
+<anchor xml:id="_classGameProcessor_1aba05a15f61f18bb517b0b076fdcc5407"/><section>
+    <title>rows</title>
+<indexterm><primary>rows</primary><secondary>GameProcessor</secondary></indexterm>
+<indexterm><primary>GameProcessor</primary><secondary>rows</secondary></indexterm>
+<para><computeroutput>int GameProcessor::rows<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The number of rows in the game board. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/game/<link linkend="_GameProcessor_8h">GameProcessor.h</link></section>
+</section>

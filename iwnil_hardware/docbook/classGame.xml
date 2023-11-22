@@ -1,0 +1,475 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classGame" xml:lang="en-US">
+<title>Game Class Reference</title>
+<indexterm><primary>Game</primary></indexterm>
+<para>
+
+<para>A class representing a game with players, status, and a game board. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Game.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Game:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGame__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classGame_1acb85e6adbb0fe80811507f18a5d029ec">Game</link> (String <link linkend="_classGame_1acd2b096faadc418700fc67ce839eaa5e">gameStatus</link>, String <link linkend="_classGame_1afbb87c0f34b073fd8fe9deba3fdffc83">firstPlayer</link>, String <link linkend="_classGame_1a6d1e144f691962294b084d7605356630">secondPlayer</link>, byte <link linkend="_classGame_1add991eb9652696444b437dd48eea51d9">nextMove</link>, String <link linkend="_classGame_1a089cd41684bef602a97c15f0981a256f">aiType</link>)</para>
+
+<para>Constructor for the <link linkend="_classGame">Game</link> class. </para>
+</listitem>
+            <listitem><para><link linkend="_classGame_1a5b906f060f2100223f6961ad842a86f9">Game</link> (String <link linkend="_classGame_1acd2b096faadc418700fc67ce839eaa5e">gameStatus</link>, String <link linkend="_classGame_1afbb87c0f34b073fd8fe9deba3fdffc83">firstPlayer</link>, String <link linkend="_classGame_1a6d1e144f691962294b084d7605356630">secondPlayer</link>, byte <link linkend="_classGame_1add991eb9652696444b437dd48eea51d9">nextMove</link>, String <link linkend="_classGame_1a089cd41684bef602a97c15f0981a256f">aiType</link>, <link linkend="_classBoard">Board</link> *<link linkend="_classGame_1ae38e501e177586af48d2e2300b6be4ba">board</link>)</para>
+
+<para>Constructor for the <link linkend="_classGame">Game</link> class with an existing game board. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGame_1ad0fe77703efd5a6322081b2c74407a69">changeNextPlayer</link> ()</para>
+
+<para>Changes the player whose turn is next. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1a7b3f0f0b004dda8d7907c52e0184d718">getGameStatus</link> ()</para>
+
+<para>Gets the current game status. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classGame_1af730540262edbb927ad39e2eb51d25ab">setGameStatus</link> (String <link linkend="_classGame_1acd2b096faadc418700fc67ce839eaa5e">gameStatus</link>)</para>
+
+<para>Sets the game status. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1ab07d047e6bb3c9c3e06c0e45ef873668">getAIType</link> ()</para>
+
+<para>Gets the type of AI player, if applicable. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1abb18cb83bdb5b1e24001901add328e16">getFirstPlayer</link> ()</para>
+
+<para>Gets the type of the first player. </para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1a9cf29e6a05f4d49fb8ae25cee7411556">getSecondPlayer</link> ()</para>
+
+<para>Gets the type of the second player. </para>
+</listitem>
+            <listitem><para>byte <link linkend="_classGame_1a5a273ef95d4bbf74a45c8334b04c5748">getNextMove</link> ()</para>
+
+<para>Gets the identifier of the player whose turn is next. </para>
+</listitem>
+            <listitem><para><link linkend="_classBoard">Board</link> * <link linkend="_classGame_1aac82d38c4540fcfaef89059865d1ce31">getBoard</link> ()</para>
+
+<para>Gets a pointer to the game board. </para>
+</listitem>
+            <listitem><para><link linkend="_classGame_1ae3d112ca6e0e55150d2fdbc704474530">~Game</link> ()</para>
+
+<para>Destructor for the <link linkend="_classGame">Game</link> class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_classGame">Game</link> * <link linkend="_classGame_1af05ac5bb1ca046db7a9cc3d7d264c89c">newGame</link> (String <link linkend="_classGame_1afbb87c0f34b073fd8fe9deba3fdffc83">firstPlayer</link>, String <link linkend="_classGame_1a6d1e144f691962294b084d7605356630">secondPlayer</link>, String <link linkend="_classGame_1a089cd41684bef602a97c15f0981a256f">aiType</link>)</para>
+
+<para>Factory method to create a new <link linkend="_classGame">Game</link> instance. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>String <link linkend="_classGame_1acd2b096faadc418700fc67ce839eaa5e">gameStatus</link></para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1afbb87c0f34b073fd8fe9deba3fdffc83">firstPlayer</link></para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1a6d1e144f691962294b084d7605356630">secondPlayer</link></para>
+</listitem>
+            <listitem><para>byte <link linkend="_classGame_1add991eb9652696444b437dd48eea51d9">nextMove</link></para>
+</listitem>
+            <listitem><para>String <link linkend="_classGame_1a089cd41684bef602a97c15f0981a256f">aiType</link></para>
+</listitem>
+            <listitem><para><link linkend="_classBoard">Board</link> * <link linkend="_classGame_1ae38e501e177586af48d2e2300b6be4ba">board</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A class representing a game with players, status, and a game board. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classGame_1acb85e6adbb0fe80811507f18a5d029ec"/><section>
+    <title>Game()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game (String gameStatus, String firstPlayer, String secondPlayer, byte nextMove, String aiType)</computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_classGame">Game</link> class. </para>
+</para>
+
+<para>Create a game with standart <link linkend="_classBoard">Board</link></para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gameStatus</entry><entry>
+<para>The initial status of the game. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>firstPlayer</entry><entry>
+<para>The type of the first player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>secondPlayer</entry><entry>
+<para>The type of the second player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nextMove</entry><entry>
+<para>The identifier of the player whose turn is next (1 or 2). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>aiType</entry><entry>
+<para>The type of AI player, if applicable. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classGame_1a5b906f060f2100223f6961ad842a86f9"/><section>
+    <title>Game()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>Game</secondary></indexterm>
+<para><computeroutput>Game::Game (String gameStatus, String firstPlayer, String secondPlayer, byte nextMove, String aiType, <link linkend="_classBoard">Board</link> * board)</computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_classGame">Game</link> class with an existing game board. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gameStatus</entry><entry>
+<para>The initial status of the game. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>firstPlayer</entry><entry>
+<para>The type of the first player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>secondPlayer</entry><entry>
+<para>The type of the second player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nextMove</entry><entry>
+<para>The identifier of the player whose turn is next (1 or 2). </para>
+</entry>
+                            </row>
+                            <row>
+<entry>aiType</entry><entry>
+<para>The type of AI player, if applicable. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>board</entry><entry>
+<para>Pointer to an existing game board. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classGame_1ae3d112ca6e0e55150d2fdbc704474530"/><section>
+    <title>~Game()</title>
+<indexterm><primary>~Game</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>~Game</secondary></indexterm>
+<para><computeroutput>Game::~Game ( )</computeroutput></para><para>
+
+<para>Destructor for the <link linkend="_classGame">Game</link> class. </para>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classGame_1ad0fe77703efd5a6322081b2c74407a69"/><section>
+    <title>changeNextPlayer()</title>
+<indexterm><primary>changeNextPlayer</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>changeNextPlayer</secondary></indexterm>
+<para><computeroutput>void Game::changeNextPlayer ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Changes the player whose turn is next. </para>
+</para>
+</section>
+<anchor xml:id="_classGame_1ab07d047e6bb3c9c3e06c0e45ef873668"/><section>
+    <title>getAIType()</title>
+<indexterm><primary>getAIType</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getAIType</secondary></indexterm>
+<para><computeroutput>String Game::getAIType ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the type of AI player, if applicable. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The type of AI player. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGame_1aac82d38c4540fcfaef89059865d1ce31"/><section>
+    <title>getBoard()</title>
+<indexterm><primary>getBoard</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getBoard</secondary></indexterm>
+<para><computeroutput><link linkend="_classBoard">Board</link> * Game::getBoard ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets a pointer to the game board. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A pointer to the game board. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGame_1abb18cb83bdb5b1e24001901add328e16"/><section>
+    <title>getFirstPlayer()</title>
+<indexterm><primary>getFirstPlayer</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getFirstPlayer</secondary></indexterm>
+<para><computeroutput>String Game::getFirstPlayer ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the type of the first player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The type of the first player. </para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGame_abb18cb83bdb5b1e24001901add328e16_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classGame_1a7b3f0f0b004dda8d7907c52e0184d718"/><section>
+    <title>getGameStatus()</title>
+<indexterm><primary>getGameStatus</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getGameStatus</secondary></indexterm>
+<para><computeroutput>String Game::getGameStatus ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the current game status. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The current game status. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGame_1a5a273ef95d4bbf74a45c8334b04c5748"/><section>
+    <title>getNextMove()</title>
+<indexterm><primary>getNextMove</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getNextMove</secondary></indexterm>
+<para><computeroutput>byte Game::getNextMove ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the identifier of the player whose turn is next. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The identifier of the player whose turn is next (1 or 2). </para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGame_a5a273ef95d4bbf74a45c8334b04c5748_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classGame_1a9cf29e6a05f4d49fb8ae25cee7411556"/><section>
+    <title>getSecondPlayer()</title>
+<indexterm><primary>getSecondPlayer</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>getSecondPlayer</secondary></indexterm>
+<para><computeroutput>String Game::getSecondPlayer ( )<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the type of the second player. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The type of the second player. </para>
+</formalpara>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classGame_a9cf29e6a05f4d49fb8ae25cee7411556_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classGame_1af05ac5bb1ca046db7a9cc3d7d264c89c"/><section>
+    <title>newGame()</title>
+<indexterm><primary>newGame</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>newGame</secondary></indexterm>
+<para><computeroutput>static <link linkend="_classGame">Game</link> * Game::newGame (String firstPlayer, String secondPlayer, String aiType)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Factory method to create a new <link linkend="_classGame">Game</link> instance. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>firstPlayer</entry><entry>
+<para>The name of the first player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>secondPlayer</entry><entry>
+<para>The name of the second player. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>aiType</entry><entry>
+<para>The type of AI player, if applicable.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to the new <link linkend="_classGame">Game</link> instance. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classGame_1af730540262edbb927ad39e2eb51d25ab"/><section>
+    <title>setGameStatus()</title>
+<indexterm><primary>setGameStatus</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>setGameStatus</secondary></indexterm>
+<para><computeroutput>void Game::setGameStatus (String gameStatus)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Sets the game status. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>gameStatus</entry><entry>
+<para>The new game status. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classGame_1a089cd41684bef602a97c15f0981a256f"/><section>
+    <title>aiType</title>
+<indexterm><primary>aiType</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>aiType</secondary></indexterm>
+<para><computeroutput>String Game::aiType<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The type of AI player, if applicable. </para>
+</section>
+<anchor xml:id="_classGame_1ae38e501e177586af48d2e2300b6be4ba"/><section>
+    <title>board</title>
+<indexterm><primary>board</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>board</secondary></indexterm>
+<para><computeroutput><link linkend="_classBoard">Board</link>* Game::board<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>Pointer to the game board. </para>
+</section>
+<anchor xml:id="_classGame_1afbb87c0f34b073fd8fe9deba3fdffc83"/><section>
+    <title>firstPlayer</title>
+<indexterm><primary>firstPlayer</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>firstPlayer</secondary></indexterm>
+<para><computeroutput>String Game::firstPlayer<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The type of the first player. </para>
+</section>
+<anchor xml:id="_classGame_1acd2b096faadc418700fc67ce839eaa5e"/><section>
+    <title>gameStatus</title>
+<indexterm><primary>gameStatus</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>gameStatus</secondary></indexterm>
+<para><computeroutput>String Game::gameStatus<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The status of the game (e.g., &quot;IN_PROGRES&quot;, &quot;PLAYER1_WIN&quot;). </para>
+</section>
+<anchor xml:id="_classGame_1add991eb9652696444b437dd48eea51d9"/><section>
+    <title>nextMove</title>
+<indexterm><primary>nextMove</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>nextMove</secondary></indexterm>
+<para><computeroutput>byte Game::nextMove<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The identifier of the player whose turn is next (1 or 2). </para>
+</section>
+<anchor xml:id="_classGame_1a6d1e144f691962294b084d7605356630"/><section>
+    <title>secondPlayer</title>
+<indexterm><primary>secondPlayer</primary><secondary>Game</secondary></indexterm>
+<indexterm><primary>Game</primary><secondary>secondPlayer</secondary></indexterm>
+<para><computeroutput>String Game::secondPlayer<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>The type of the second player. </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/game/<link linkend="_Game_8h">Game.h</link></section>
+</section>

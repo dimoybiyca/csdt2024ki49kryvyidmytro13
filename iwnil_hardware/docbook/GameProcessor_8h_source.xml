@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_GameProcessor_8h_source" xml:lang="en-US">
+<title>GameProcessor.h</title>
+<indexterm><primary>include/game/GameProcessor.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+7 
+8 <emphasis role="preprocessor">#ifndef&#32;GAME_PROCESSOR_H</emphasis>
+9 
+10 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Game_8h">game/Game.h</link>&quot;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Game__Status_8h">enum/Game_Status.h</link>&quot;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_FixedQueue_8h">utils/FixedQueue.h</link>&quot;</emphasis>
+13 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Coordinates_8h">utils/Coordinates.h</link>&quot;</emphasis>
+14 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Coordinates_8h">utils/Coordinates.h</link>&quot;</emphasis>
+15 
+16 <emphasis role="preprocessor">#define&#32;GAME_PROCESSOR_H</emphasis>
+17 
+22 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classGameProcessor">GameProcessor</link>
+23 {
+24 <emphasis role="keyword">private</emphasis>:
+25 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classGameProcessor_1aba05a15f61f18bb517b0b076fdcc5407">rows</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+26 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classGameProcessor_1a900ffa42130b54c463705e7ccb543959">cols</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+27 &#32;&#32;&#32;&#32;<link linkend="_classGame">Game</link>&#32;*<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+28 &#32;&#32;&#32;&#32;<link linkend="_classFixedQueue">FixedQueue</link>&#32;<link linkend="_classGameProcessor_1a8701cb939ffff0264ed91cb981dcd4ad">queue</link>;&#32;
+35 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a27ed8da0e891ccdc8c39cc0295b3e888">finishGame</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+36 
+40 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1ac92f2239927fdc66a2abef53dba6708b">checkToe</link>();
+41 
+48 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1a9b4038f01958c4b82058263980cda8fd">checkRow</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+49 
+56 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1a01805ba1b094f77ff939e721d28dd328">checkCol</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+57 
+64 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1aff3573a9a2e0561dc2552b8541b4e816">checkDiag</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+65 
+72 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1a0fc7f6da401fa4b22b201aa693d7c0ba">checkDiagLeft</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+73 
+80 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1ae4168b5174d1d3765ef37c7bcce80e9a">checkDiagRight</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+81 
+92 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1a55a928faeaef643114fddc0c30eb9e1f">checkDiagLine</link>(<emphasis role="keywordtype">int</emphasis>&#32;row,&#32;<emphasis role="keywordtype">int</emphasis>&#32;col,&#32;<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+93 
+104 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classGameProcessor_1a9523296f8b6e923a815166889dffc3bd">updateCount</link>(<emphasis role="keywordtype">int</emphasis>&#32;count,&#32;<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">int</emphasis>&#32;celltype);
+105 
+109 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a5bb99e252a49f48391f0197ce29b6d91">processNewMove</link>();
+110 
+114 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a14400dd82bb980eecd992b4507dbac91">processMANMove</link>();
+115 
+119 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a404f1d11747bd5456e4be2dcd5396a6e">processAIMove</link>();
+120 
+126 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a050b9a9847a0f2f7db003243f70aa819">processAIRandomMove</link>(<emphasis role="keywordtype">int</emphasis>&#32;cellType);
+127 
+133 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classGameProcessor_1a5573bd87a0fff2e4c414087477a6c6d4">processAIBestMove</link>(<emphasis role="keywordtype">int</emphasis>&#32;celltype);
+134 
+141 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1a5cf56ea58b8435b467cafaa7db4c8d0f">isMANMove</link>()
+142 &#32;&#32;&#32;&#32;{
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1a5a273ef95d4bbf74a45c8334b04c5748">getNextMove</link>()&#32;==&#32;1&#32;?&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1abb18cb83bdb5b1e24001901add328e16">getFirstPlayer</link>().equals(<emphasis role="stringliteral">&quot;MAN&quot;</emphasis>)&#32;:&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1a9cf29e6a05f4d49fb8ae25cee7411556">getSecondPlayer</link>().equals(<emphasis role="stringliteral">&quot;MAN&quot;</emphasis>);
+144 &#32;&#32;&#32;&#32;};
+145 
+152 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>&#32;<link linkend="_classGameProcessor_1ae281b585e533039255af373913b1df2e">isAIMove</link>()
+153 &#32;&#32;&#32;&#32;{
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1a5a273ef95d4bbf74a45c8334b04c5748">getNextMove</link>()&#32;==&#32;1&#32;?&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1abb18cb83bdb5b1e24001901add328e16">getFirstPlayer</link>().equals(<emphasis role="stringliteral">&quot;AI&quot;</emphasis>)&#32;:&#32;<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>-&gt;<link linkend="_classGame_1a9cf29e6a05f4d49fb8ae25cee7411556">getSecondPlayer</link>().equals(<emphasis role="stringliteral">&quot;AI&quot;</emphasis>);
+155 &#32;&#32;&#32;&#32;};
+156 
+161 &#32;&#32;&#32;&#32;<link linkend="_structCoordinates">Coordinates</link>&#32;<link linkend="_classGameProcessor_1a4508bb9143f3e4ea52a61abbf7db8db7">findNewMove</link>();
+162 
+163 <emphasis role="keyword">public</emphasis>:
+167 &#32;&#32;&#32;&#32;<link linkend="_classGameProcessor_1ab11c0deeb780d8995b8b896c1c4b8541">GameProcessor</link>()&#32;:&#32;<link linkend="_classGameProcessor_1a8701cb939ffff0264ed91cb981dcd4ad">queue</link>(10){};
+168 
+175 &#32;&#32;&#32;&#32;<link linkend="_classGame">Game</link>&#32;*<link linkend="_classGameProcessor_1a43b93fd619f6d26a7a857c2ba878bc8e">process</link>(<link linkend="_classGame">Game</link>&#32;*<link linkend="_classGameProcessor_1ab86315cb574fa8f30c4557da995aaf92">game</link>);
+176 };
+177 
+178 <emphasis role="preprocessor">#endif&#32;</emphasis><emphasis role="comment">//&#32;GAME_PROCESSOR_H</emphasis>
+</programlisting></section>

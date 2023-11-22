@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_structtinyxml2_1_1MemPoolT_1_1Block">tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Block</link><link linkend="_classBoard">Board</link>
+<para>Encapsulation of the game board </para>
+<link linkend="_structCoordinates">Coordinates</link>
+<para>A struct representing 2D coordinates with x and y values </para>
+<link linkend="_classtinyxml2_1_1XMLDocument_1_1DepthTracker">tinyxml2::XMLDocument::DepthTracker</link><link linkend="_classtinyxml2_1_1DynArray">tinyxml2::DynArray&lt; T, INITIAL_SIZE &gt;</link><link linkend="_classFixedQueue">FixedQueue</link>
+<para>A class representing a fixed-size queue of <link linkend="_structCoordinates">Coordinates</link> </para>
+<link linkend="_classGame">Game</link>
+<para>A class representing a game with players, status, and a game board </para>
+<link linkend="_classGameDTO">GameDTO</link>
+<para>Data Transfer Object for serial communication </para>
+<link linkend="_classGameProcessor">GameProcessor</link>
+<para>A class responsible for processing the game logic and moves </para>
+<link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</link><link linkend="_classtinyxml2_1_1MemPool">tinyxml2::MemPool</link><link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</link><link linkend="_classNewGameDTO">NewGameDTO</link>
+<para>Data Transfer Object for creating a new game </para>
+<link linkend="_classStateManager">StateManager</link>
+<para>Program state manager </para>
+<link linkend="_classtinyxml2_1_1StrPair">tinyxml2::StrPair</link><link linkend="_classtinyxml2_1_1XMLAttribute">tinyxml2::XMLAttribute</link><link linkend="_classtinyxml2_1_1XMLComment">tinyxml2::XMLComment</link><link linkend="_classtinyxml2_1_1XMLConstHandle">tinyxml2::XMLConstHandle</link><link linkend="_classtinyxml2_1_1XMLDeclaration">tinyxml2::XMLDeclaration</link><link linkend="_classtinyxml2_1_1XMLDocument">tinyxml2::XMLDocument</link><link linkend="_classtinyxml2_1_1XMLElement">tinyxml2::XMLElement</link><link linkend="_classtinyxml2_1_1XMLHandle">tinyxml2::XMLHandle</link><link linkend="_classtinyxml2_1_1XMLNode">tinyxml2::XMLNode</link><link linkend="_classtinyxml2_1_1XMLPrinter">tinyxml2::XMLPrinter</link><link linkend="_classtinyxml2_1_1XMLText">tinyxml2::XMLText</link><link linkend="_classtinyxml2_1_1XMLUnknown">tinyxml2::XMLUnknown</link><link linkend="_classtinyxml2_1_1XMLUtil">tinyxml2::XMLUtil</link><link linkend="_classtinyxml2_1_1XMLVisitor">tinyxml2::XMLVisitor</link></section>

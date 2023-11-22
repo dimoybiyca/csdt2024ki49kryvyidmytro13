@@ -1,0 +1,416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classBoard" xml:lang="en-US">
+<title>Board Class Reference</title>
+<indexterm><primary>Board</primary></indexterm>
+<para>
+
+<para>Encapsulation of the game board. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Board.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Board:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classBoard__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classBoard_1aaf26049ef790a1707f7214516c317bad">Board</link> (int <link linkend="_classBoard_1ab0678710e0cb026be902dbb6a8ad8c40">rows</link>, int <link linkend="_classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371">cols</link>)</para>
+
+<para>Construct a new <link linkend="_classBoard">Board</link> object with the specified dimensions. </para>
+</listitem>
+            <listitem><para><link linkend="_classBoard_1a6e7d1f85d3aef331ba4b68f2d45eaa5f">Board</link> (String array, int <link linkend="_classBoard_1ab0678710e0cb026be902dbb6a8ad8c40">rows</link>, int <link linkend="_classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371">cols</link>)</para>
+
+<para>Construct a new <link linkend="_classBoard">Board</link> object from a string representation of the board. </para>
+</listitem>
+            <listitem><para><link linkend="_classBoard_1af73f45730119a1fd8f6670f53f959e68">~Board</link> ()</para>
+
+<para>Destructor for the <link linkend="_classBoard">Board</link> class. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1a9a687827f2edb98b2fb2e95b68d56e68">resize</link> ()</para>
+
+<para>Resize the board to accommodate moves. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classBoard_1aea5fab2da45ada7e6c878b5ed43d5ea1">getRows</link> ()</para>
+
+<para>Get the number of rows in the board. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classBoard_1abe6f2cdf451b87b990c352229dfca6b8">getCols</link> ()</para>
+
+<para>Get the number of columns in the board. </para>
+</listitem>
+            <listitem><para>byte ** <link linkend="_classBoard_1a0825958ae7b2524a6cf19aad03394916">getMap</link> ()</para>
+
+<para>Get a pointer to the two-dimensional array representing the board. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>byte ** <link linkend="_classBoard_1acf67e47586ce31a13558ae88da8eebd4">createMap</link> (int <link linkend="_classBoard_1ab0678710e0cb026be902dbb6a8ad8c40">rows</link>, int <link linkend="_classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371">cols</link>)</para>
+
+<para>Create a Map object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1a76d88245ca9d3a3da82fd73d33984d34">resizeTop</link> ()</para>
+
+<para>resize array at top </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1aa0396f479ad842cd2bfd386e8eb80162">resizeBottom</link> ()</para>
+
+<para>resize array at bottom </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1a83e7136178db7b1be8f4bfbde6e8590b">resizeLeft</link> ()</para>
+
+<para>resize array at left </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1ad58208598e6ac7d2706c12485509be69">resizeRight</link> ()</para>
+
+<para>resize array at left </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1a0b13b5ed321036fe830c1b9d030f851d">setNewMap</link> (byte **newMap, byte newRows, byte newCols)</para>
+
+<para>Set the New Map object. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classBoard_1a17fd68e33891daf09d82eefba59dbf3c">deleteMap</link> ()</para>
+
+<para>Delete the current two dimensional array. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classBoard_1ab0678710e0cb026be902dbb6a8ad8c40">rows</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371">cols</link></para>
+</listitem>
+            <listitem><para>byte ** <link linkend="_classBoard_1a8d09b2bcc28001ba3998579760483683">gameMap</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Encapsulation of the game board. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classBoard_1aaf26049ef790a1707f7214516c317bad"/><section>
+    <title>Board()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Board</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>Board</secondary></indexterm>
+<para><computeroutput>Board::Board (int rows, int cols)</computeroutput></para><para>
+
+<para>Construct a new <link linkend="_classBoard">Board</link> object with the specified dimensions. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rows</entry><entry>
+<para>The number of rows in the board. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cols</entry><entry>
+<para>The number of columns in the board. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classBoard_1a6e7d1f85d3aef331ba4b68f2d45eaa5f"/><section>
+    <title>Board()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Board</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>Board</secondary></indexterm>
+<para><computeroutput>Board::Board (String array, int rows, int cols)</computeroutput></para><para>
+
+<para>Construct a new <link linkend="_classBoard">Board</link> object from a string representation of the board. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>array</entry><entry>
+<para>A string representation of the board, where each element is represented by a single character. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rows</entry><entry>
+<para>The number of rows in the board. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cols</entry><entry>
+<para>The number of columns in the board. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classBoard_1af73f45730119a1fd8f6670f53f959e68"/><section>
+    <title>~Board()</title>
+<indexterm><primary>~Board</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>~Board</secondary></indexterm>
+<para><computeroutput>Board::~Board ( )</computeroutput></para><para>
+
+<para>Destructor for the <link linkend="_classBoard">Board</link> class. </para>
+</para>
+
+<para>Destroys the two-dimensional array allocated in the constructor. </para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classBoard_1acf67e47586ce31a13558ae88da8eebd4"/><section>
+    <title>createMap()</title>
+<indexterm><primary>createMap</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>createMap</secondary></indexterm>
+<para><computeroutput>byte ** Board::createMap (int rows, int cols)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Create a Map object. </para>
+</para>
+
+<para>Two dimensional array which represent game board </para>
+
+<para>Create a new two dimensional array with specified size</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>rows</entry><entry>
+<para>Number of rows in new board </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cols</entry><entry>
+<para>Number of columns in new board </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>byte** pointer to new two dimensional array </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classBoard_1a17fd68e33891daf09d82eefba59dbf3c"/><section>
+    <title>deleteMap()</title>
+<indexterm><primary>deleteMap</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>deleteMap</secondary></indexterm>
+<para><computeroutput>void Board::deleteMap ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Delete the current two dimensional array. </para>
+</para>
+</section>
+<anchor xml:id="_classBoard_1abe6f2cdf451b87b990c352229dfca6b8"/><section>
+    <title>getCols()</title>
+<indexterm><primary>getCols</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>getCols</secondary></indexterm>
+<para><computeroutput>int Board::getCols ( )</computeroutput></para><para>
+
+<para>Get the number of columns in the board. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The number of columns in the board. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classBoard_1a0825958ae7b2524a6cf19aad03394916"/><section>
+    <title>getMap()</title>
+<indexterm><primary>getMap</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>getMap</secondary></indexterm>
+<para><computeroutput>byte ** Board::getMap ( )</computeroutput></para><para>
+
+<para>Get a pointer to the two-dimensional array representing the board. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>A pointer to the two-dimensional array representing the board. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classBoard_1aea5fab2da45ada7e6c878b5ed43d5ea1"/><section>
+    <title>getRows()</title>
+<indexterm><primary>getRows</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>getRows</secondary></indexterm>
+<para><computeroutput>int Board::getRows ( )</computeroutput></para><para>
+
+<para>Get the number of rows in the board. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>The number of rows in the board. </para>
+</formalpara>
+</para>
+</section>
+<anchor xml:id="_classBoard_1a9a687827f2edb98b2fb2e95b68d56e68"/><section>
+    <title>resize()</title>
+<indexterm><primary>resize</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>resize</secondary></indexterm>
+<para><computeroutput>void Board::resize ( )</computeroutput></para><para>
+
+<para>Resize the board to accommodate moves. </para>
+</para>
+
+<para>Resize the board if there are moves on the top, bottom, left, or right of the board. </para>
+</section>
+<anchor xml:id="_classBoard_1aa0396f479ad842cd2bfd386e8eb80162"/><section>
+    <title>resizeBottom()</title>
+<indexterm><primary>resizeBottom</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>resizeBottom</secondary></indexterm>
+<para><computeroutput>void Board::resizeBottom ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>resize array at bottom </para>
+</para>
+
+<para>Resize <link linkend="_classBoard">Board</link> if there are moves on the bottom of the board </para>
+</section>
+<anchor xml:id="_classBoard_1a83e7136178db7b1be8f4bfbde6e8590b"/><section>
+    <title>resizeLeft()</title>
+<indexterm><primary>resizeLeft</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>resizeLeft</secondary></indexterm>
+<para><computeroutput>void Board::resizeLeft ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>resize array at left </para>
+</para>
+
+<para>Resize <link linkend="_classBoard">Board</link> if there are moves on the left of the board </para>
+</section>
+<anchor xml:id="_classBoard_1ad58208598e6ac7d2706c12485509be69"/><section>
+    <title>resizeRight()</title>
+<indexterm><primary>resizeRight</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>resizeRight</secondary></indexterm>
+<para><computeroutput>void Board::resizeRight ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>resize array at left </para>
+</para>
+
+<para>Resize <link linkend="_classBoard">Board</link> if there are moves on the left of the board </para>
+</section>
+<anchor xml:id="_classBoard_1a76d88245ca9d3a3da82fd73d33984d34"/><section>
+    <title>resizeTop()</title>
+<indexterm><primary>resizeTop</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>resizeTop</secondary></indexterm>
+<para><computeroutput>void Board::resizeTop ( )<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>resize array at top </para>
+</para>
+
+<para>Resize <link linkend="_classBoard">Board</link> if there are moves on the top of the board </para>
+</section>
+<anchor xml:id="_classBoard_1a0b13b5ed321036fe830c1b9d030f851d"/><section>
+    <title>setNewMap()</title>
+<indexterm><primary>setNewMap</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>setNewMap</secondary></indexterm>
+<para><computeroutput>void Board::setNewMap (byte ** newMap, byte newRows, byte newCols)<computeroutput>[private]</computeroutput></computeroutput></para><para>
+
+<para>Set the New Map object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>newMap</entry><entry>
+<para>pointer to a new two dimensional array </para>
+</entry>
+                            </row>
+                            <row>
+<entry>newRows</entry><entry>
+<para>number of rows in new array </para>
+</entry>
+                            </row>
+                            <row>
+<entry>newCols</entry><entry>
+<para>number of columns in new array </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371"/><section>
+    <title>cols</title>
+<indexterm><primary>cols</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>cols</secondary></indexterm>
+<para><computeroutput>int Board::cols<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>Number of rows in board </para>
+</section>
+<anchor xml:id="_classBoard_1a8d09b2bcc28001ba3998579760483683"/><section>
+    <title>gameMap</title>
+<indexterm><primary>gameMap</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>gameMap</secondary></indexterm>
+<para><computeroutput>byte** Board::gameMap<computeroutput>[private]</computeroutput></computeroutput></para>
+<para>Number of columns in board </para>
+</section>
+<anchor xml:id="_classBoard_1ab0678710e0cb026be902dbb6a8ad8c40"/><section>
+    <title>rows</title>
+<indexterm><primary>rows</primary><secondary>Board</secondary></indexterm>
+<indexterm><primary>Board</primary><secondary>rows</secondary></indexterm>
+<para><computeroutput>int Board::rows<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/game/<link linkend="_Board_8h">Board.h</link></section>
+</section>

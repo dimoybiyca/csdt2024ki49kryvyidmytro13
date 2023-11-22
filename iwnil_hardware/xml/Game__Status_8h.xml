@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Game__Status_8h" kind="file" language="C++">
+    <compoundname>Game_Status.h</compoundname>
+    <includedby refid="GameProcessor_8h" local="yes">include/game/GameProcessor.h</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/enum/Game_Status.h</label>
+        <link refid="Game__Status_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/game/GameProcessor.h</label>
+        <link refid="GameProcessor_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Game__Status_8h_1a328d36ed1953db3945e8fa64922b74fc" prot="public" static="no">
+        <name>IN_PROGRES</name>
+        <initializer>&quot;IN_PROGRES&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/enum/Game_Status.h" line="3" column="9" bodyfile="include/enum/Game_Status.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Status_8h_1a8ca5042840eb8ded1984637a80a7144e" prot="public" static="no">
+        <name>PLAYER1_WIN</name>
+        <initializer>&quot;PLAYER1_WIN&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/enum/Game_Status.h" line="4" column="9" bodyfile="include/enum/Game_Status.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Status_8h_1a0dd471494ef940f9893aac9417226771" prot="public" static="no">
+        <name>PLAYER2_WIN</name>
+        <initializer>&quot;PLAYER2_WIN&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/enum/Game_Status.h" line="5" column="9" bodyfile="include/enum/Game_Status.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="Game__Status_8h_1a328d36ed1953db3945e8fa64922b74fc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IN_PROGRES<sp/>&quot;IN_PROGRES&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="Game__Status_8h_1a8ca5042840eb8ded1984637a80a7144e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYER1_WIN<sp/>&quot;PLAYER1_WIN&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="Game__Status_8h_1a0dd471494ef940f9893aac9417226771" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PLAYER2_WIN<sp/>&quot;PLAYER2_WIN&quot;</highlight></codeline>
+    </programlisting>
+    <location file="include/enum/Game_Status.h"/>
+  </compounddef>
+</doxygen>

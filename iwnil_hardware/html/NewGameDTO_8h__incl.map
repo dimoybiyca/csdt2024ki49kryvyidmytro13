@@ -1,0 +1,29 @@
+<map id="include/game/dto/NewGameDTO.h" name="include/game/dto/NewGameDTO.h">
+<area shape="rect" id="Node000001" title="Data Transfer Object (DTO) for creating a new game." alt="" coords="450,5,657,50"/>
+<area shape="rect" id="Node000002" href="$tinyxml2_8h.html" title=" " alt="" coords="255,98,346,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,53,356,95,355,90,485,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="563,249,646,277"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="561,50,601,234,596,235,556,51"/>
+<area shape="rect" id="Node000010" href="$Game_8h.html" title="Definition of the Game class." alt="" coords="606,98,720,126"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="584,48,635,86,631,90,581,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,70,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,128,85,175,84,170,253,123"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="94,174,160,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="270,129,172,170,170,165,268,124"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="183,174,244,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="286,128,242,166,239,162,283,124"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="268,174,332,201"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="303,126,303,158,298,158,298,126"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="357,174,422,201"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="318,124,364,162,360,166,314,128"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="446,174,517,201"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="334,124,436,165,434,170,332,129"/>
+<area shape="poly" id="edge10_Node000010_Node000009" title=" " alt="" coords="657,127,632,175,613,235,608,233,627,173,652,125"/>
+<area shape="rect" id="Node000011" href="$Board_8h.html" title="Game Board encapsulation." alt="" coords="642,174,713,201"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="668,126,675,158,669,159,663,127"/>
+<area shape="rect" id="Node000012" href="$Game__Object_8h.html" title=" " alt="" coords="692,249,813,277"/>
+<area shape="poly" id="edge15_Node000010_Node000012" title=" " alt="" coords="696,124,726,143,741,157,752,173,761,204,760,234,755,234,755,204,747,175,737,160,723,147,693,128"/>
+<area shape="poly" id="edge12_Node000011_Node000009" title=" " alt="" coords="666,204,630,240,626,236,663,200"/>
+<area shape="poly" id="edge13_Node000011_Node000011" title=" " alt="" coords="714,171,732,174,740,187,737,196,730,201,727,197,733,193,735,188,729,179,713,176"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="693,200,730,236,726,240,689,204"/>
+</map>

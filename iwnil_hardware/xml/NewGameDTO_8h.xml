@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="NewGameDTO_8h" kind="file" language="C++">
+    <compoundname>NewGameDTO.h</compoundname>
+    <includes refid="tinyxml2_8h" local="no">tinyxml2.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="Game_8h" local="yes">game/Game.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>game/Game.h</label>
+        <link refid="Game_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Game_Object.h</label>
+        <link refid="Game__Object_8h"/>
+      </node>
+      <node id="1">
+        <label>include/game/dto/NewGameDTO.h</label>
+        <link refid="NewGameDTO_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tinyxml2.h</label>
+        <link refid="tinyxml2_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>cctype</label>
+      </node>
+      <node id="4">
+        <label>climits</label>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="7">
+        <label>cstring</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classNewGameDTO" prot="public">NewGameDTO</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="NewGameDTO_8h_1aa4f7e326ff0950a6f5759421661be99a" prot="public" static="no">
+        <name>NEW_GAME_DTO_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/dto/NewGameDTO.h" line="14" column="9" bodyfile="include/game/dto/NewGameDTO.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data Transfer Object (DTO) for creating a new game. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NEW_GAME_DTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tinyxml2_8h" kindref="compound">tinyxml2.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Game_8h" kindref="compound">game/Game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="NewGameDTO_8h_1aa4f7e326ff0950a6f5759421661be99a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEW_GAME_DTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetinyxml2" kindref="compound">tinyxml2</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classNewGameDTO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classNewGameDTO" kindref="compound">NewGameDTO</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classNewGameDTO_1a9f9e6726b526f120002293e15b08fdf9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classNewGameDTO_1a9f9e6726b526f120002293e15b08fdf9" kindref="member">firstPlayer</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="classNewGameDTO_1a2af17b202d086a024b455b5e49b096b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classNewGameDTO_1a2af17b202d086a024b455b5e49b096b7" kindref="member">secondPlayer</ref>;<sp/></highlight></codeline>
+<codeline lineno="29" refid="classNewGameDTO_1ad973e86197dc3b4cb98541bcd147d83d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classNewGameDTO_1ad973e86197dc3b4cb98541bcd147d83d" kindref="member">aiType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38" refid="classNewGameDTO_1ad93cd37ce7d14cccb7a8b2b8adb58152" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classNewGameDTO" kindref="compound">NewGameDTO</ref><sp/>*<ref refid="classNewGameDTO_1ad93cd37ce7d14cccb7a8b2b8adb58152" kindref="member">parseXML</ref>(String<sp/>xml);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/game/dto/NewGameDTO.h"/>
+  </compounddef>
+</doxygen>

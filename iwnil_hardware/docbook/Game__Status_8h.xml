@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_Game__Status_8h" xml:lang="en-US">
+<title>include/enum/Game_Status.h File Reference</title>
+<indexterm><primary>include/enum/Game_Status.h</primary></indexterm>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="Game__Status_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_Game__Status_8h_1a328d36ed1953db3945e8fa64922b74fc">IN_PROGRES</link>&#160;&#160;&#160;&quot;IN_PROGRES&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_Game__Status_8h_1a8ca5042840eb8ded1984637a80a7144e">PLAYER1_WIN</link>&#160;&#160;&#160;&quot;PLAYER1_WIN&quot;</para>
+</listitem>
+            <listitem><para>#define <link linkend="_Game__Status_8h_1a0dd471494ef940f9893aac9417226771">PLAYER2_WIN</link>&#160;&#160;&#160;&quot;PLAYER2_WIN&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_Game__Status_8h_1a328d36ed1953db3945e8fa64922b74fc"/><section>
+    <title>IN_PROGRES</title>
+<indexterm><primary>IN_PROGRES</primary><secondary>Game_Status.h</secondary></indexterm>
+<indexterm><primary>Game_Status.h</primary><secondary>IN_PROGRES</secondary></indexterm>
+<para><computeroutput>#define IN_PROGRES&#160;&#160;&#160;&quot;IN_PROGRES&quot;</computeroutput></para></section>
+<anchor xml:id="_Game__Status_8h_1a8ca5042840eb8ded1984637a80a7144e"/><section>
+    <title>PLAYER1_WIN</title>
+<indexterm><primary>PLAYER1_WIN</primary><secondary>Game_Status.h</secondary></indexterm>
+<indexterm><primary>Game_Status.h</primary><secondary>PLAYER1_WIN</secondary></indexterm>
+<para><computeroutput>#define PLAYER1_WIN&#160;&#160;&#160;&quot;PLAYER1_WIN&quot;</computeroutput></para></section>
+<anchor xml:id="_Game__Status_8h_1a0dd471494ef940f9893aac9417226771"/><section>
+    <title>PLAYER2_WIN</title>
+<indexterm><primary>PLAYER2_WIN</primary><secondary>Game_Status.h</secondary></indexterm>
+<indexterm><primary>Game_Status.h</primary><secondary>PLAYER2_WIN</secondary></indexterm>
+<para><computeroutput>#define PLAYER2_WIN&#160;&#160;&#160;&quot;PLAYER2_WIN&quot;</computeroutput></para></section>
+</section>
+</section>

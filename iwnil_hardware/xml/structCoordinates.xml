@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structCoordinates" kind="struct" language="C++" prot="public">
+    <compoundname>Coordinates</compoundname>
+    <includes refid="Coordinates_8h" local="no">Coordinates.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coordinates::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Coordinates::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The x-coordinate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Coordinates.h" line="18" column="9" bodyfile="include/utils/Coordinates.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCoordinates_1aae83211da8e94ae2edd3b407c19bff07" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Coordinates::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Coordinates::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The y-coordinate. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Coordinates.h" line="19" column="9" bodyfile="include/utils/Coordinates.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Coordinates::Coordinates</definition>
+        <argsstring>(int _x, int _y)</argsstring>
+        <name>Coordinates</name>
+        <qualifiedname>Coordinates::Coordinates</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>_y</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="structCoordinates" kindref="compound">Coordinates</ref> struct. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The x-coordinate value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>_y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The y-coordinate value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Coordinates.h" line="26" column="5" bodyfile="include/utils/Coordinates.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A struct representing 2D coordinates with x and y values. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Coordinates</label>
+        <link refid="structCoordinates"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/utils/Coordinates.h" line="16" column="1" bodyfile="include/utils/Coordinates.h" bodystart="17" bodyend="27"/>
+    <listofallmembers>
+      <member refid="structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7" prot="public" virt="non-virtual"><scope>Coordinates</scope><name>Coordinates</name></member>
+      <member refid="structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1" prot="public" virt="non-virtual"><scope>Coordinates</scope><name>x</name></member>
+      <member refid="structCoordinates_1aae83211da8e94ae2edd3b407c19bff07" prot="public" virt="non-virtual"><scope>Coordinates</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

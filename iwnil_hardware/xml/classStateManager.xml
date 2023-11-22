@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classStateManager" kind="class" language="C++" prot="public">
+    <compoundname>StateManager</compoundname>
+    <includes refid="StateManager_8h" local="no">StateManager.h</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classStateManager_1aa99b9d4009f5d2a1ecb7768bb8cf1683" prot="private" static="yes" mutable="no">
+        <type><ref refid="classStateManager" kindref="compound">StateManager</ref> *</type>
+        <definition>StateManager* StateManager::_stateManager</definition>
+        <argsstring></argsstring>
+        <name>_stateManager</name>
+        <qualifiedname>StateManager::_stateManager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>static field to store himself for singleton </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="22" column="25" bodyfile="include/StateManager.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classStateManager_1a71e6c0905e5552da8118b08f51233857" prot="private" static="no" mutable="no">
+        <type><ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State StateManager::connectionState</definition>
+        <argsstring></argsstring>
+        <name>connectionState</name>
+        <qualifiedname>StateManager::connectionState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>state of connection to PC </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="23" column="11" bodyfile="include/StateManager.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classStateManager_1a3e2be96d935eb56813b096a885d58587" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>StateManager::StateManager</definition>
+        <argsstring>()</argsstring>
+        <name>StateManager</name>
+        <qualifiedname>StateManager::StateManager</qualifiedname>
+        <briefdescription>
+<para>Construct a new State Manager object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="29" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classStateManager_1ac4e8e1fb2f83d33319a8c951513219bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classStateManager" kindref="compound">StateManager</ref> *</type>
+        <definition>static StateManager * StateManager::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>StateManager::getInstance</qualifiedname>
+        <briefdescription>
+<para>Get the Instance object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Singleton pattern method to get instance of class <simplesect kind="return"><para>StateManager* single instance of class <ref refid="classStateManager" kindref="compound">StateManager</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="38" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classStateManager_1aaf687e03246cffc3d8f331c24d58166d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+        <definition>State StateManager::getConnectionState</definition>
+        <argsstring>()</argsstring>
+        <name>getConnectionState</name>
+        <qualifiedname>StateManager::getConnectionState</qualifiedname>
+        <briefdescription>
+<para>Get the Connection State object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>State current state of connection </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="45" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classStateManager_1ae214e2dc1224054cf0a56b1ed57a22cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void StateManager::setConnectionState</definition>
+        <argsstring>(State connectionState)</argsstring>
+        <name>setConnectionState</name>
+        <qualifiedname>StateManager::setConnectionState</qualifiedname>
+        <param>
+          <type><ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref></type>
+          <declname>connectionState</declname>
+        </param>
+        <briefdescription>
+<para>Set the Connection State object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>connectionState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>state of connection with PC </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="52" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Program state manager. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>StateManager</label>
+        <link refid="classStateManager"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-_stateManager</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/StateManager.h" line="19" column="1" bodyfile="include/StateManager.h" bodystart="20" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classStateManager_1aa99b9d4009f5d2a1ecb7768bb8cf1683" prot="private" virt="non-virtual"><scope>StateManager</scope><name>_stateManager</name></member>
+      <member refid="classStateManager_1a71e6c0905e5552da8118b08f51233857" prot="private" virt="non-virtual"><scope>StateManager</scope><name>connectionState</name></member>
+      <member refid="classStateManager_1aaf687e03246cffc3d8f331c24d58166d" prot="public" virt="non-virtual"><scope>StateManager</scope><name>getConnectionState</name></member>
+      <member refid="classStateManager_1ac4e8e1fb2f83d33319a8c951513219bd" prot="public" virt="non-virtual"><scope>StateManager</scope><name>getInstance</name></member>
+      <member refid="classStateManager_1ae214e2dc1224054cf0a56b1ed57a22cc" prot="public" virt="non-virtual"><scope>StateManager</scope><name>setConnectionState</name></member>
+      <member refid="classStateManager_1a3e2be96d935eb56813b096a885d58587" prot="private" virt="non-virtual"><scope>StateManager</scope><name>StateManager</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_821002d4f10779a80d4fb17bc32f21f1" xml:lang="en-US">
+<title>include/utils Directory Reference</title>
+<indexterm><primary>include/utils Directory Reference</primary></indexterm>
+Directory dependency graph for utils:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_821002d4f10779a80d4fb17bc32f21f1_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_Coordinates_8h">Coordinates.h</link></para>
+
+<para>Definition of the <link linkend="_structCoordinates">Coordinates</link> struct. </para>
+</listitem>
+            <listitem><para>file <link linkend="_FixedQueue_8h">FixedQueue.h</link></para>
+
+<para>Definition of the <link linkend="_classFixedQueue">FixedQueue</link> class. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

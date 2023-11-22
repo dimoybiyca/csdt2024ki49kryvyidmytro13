@@ -1,0 +1,1019 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>iwnil documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">iwnil documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  BoardComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/game/components/game/board/board.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>iwnil-board</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./board.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./board.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#$gameStatus" >$gameStatus</a>
+                            </li>
+                            <li>
+                                <a href="#$nextMove" >$nextMove</a>
+                            </li>
+                            <li>
+                                <a href="#isLoadingGame" >isLoadingGame</a>
+                            </li>
+                            <li>
+                                <a href="#myboard" >myboard</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getImage" >getImage</a>
+                            </li>
+                            <li>
+                                <a href="#initBoard" >initBoard</a>
+                            </li>
+                            <li>
+                                <a href="#initListeners" >initListeners</a>
+                            </li>
+                            <li>
+                                <a href="#initValues" >initValues</a>
+                            </li>
+                            <li>
+                                <a href="#isImage" >isImage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onCellClick" >onCellClick</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(store: Store)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/game/components/game/board/board.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>store</td>
+                                                  
+                                                        <td>
+                                                                    <code>Store</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImage"></a>
+                    <span class="name">
+                        <span ><b>getImage</b></span>
+                        <a href="#getImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImage(cellType)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="76"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>cellType</td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initBoard"></a>
+                    <span class="name">
+                        <span ><b>initBoard</b></span>
+                        <a href="#initBoard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initBoard()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="50"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initListeners"></a>
+                    <span class="name">
+                        <span ><b>initListeners</b></span>
+                        <a href="#initListeners"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initListeners()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="40"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initValues"></a>
+                    <span class="name">
+                        <span ><b>initValues</b></span>
+                        <a href="#initValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initValues()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="35"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isImage"></a>
+                    <span class="name">
+                        <span ><b>isImage</b></span>
+                        <a href="#isImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isImage(cellType)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="72"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:72</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>cellType</td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="29"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onCellClick"></a>
+                    <span class="name">
+                        <span ><b>onCellClick</b></span>
+                        <a href="#onCellClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onCellClick(row: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, column: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="66"
+                                    class="link-to-prism">src/app/game/components/game/board/board.component.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Parameters :</b>
+                                
+                                <table class="params">
+                                    <thead>
+                                        <tr>
+                                            <td>Name</td>
+                                                <td>Type</td>
+                                            <td>Optional</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                                <td>row</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                                <td>column</td>
+                                            <td>
+                                                            <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                            </td>
+
+                                            <td>
+                                                    No
+                                            </td>
+
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                            <div class="io-description">
+                                
+                            </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="$gameStatus"></a>
+                    <span class="name">
+                        <span ><b>$gameStatus</b></span>
+                        <a href="#$gameStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#GameStatus" target="_self" >Observable&lt;GameStatus | null&gt;</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/game/components/game/board/board.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="$nextMove"></a>
+                    <span class="name">
+                        <span ><b>$nextMove</b></span>
+                        <a href="#$nextMove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;number | null&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/game/components/game/board/board.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoadingGame"></a>
+                    <span class="name">
+                        <span ><b>isLoadingGame</b></span>
+                        <a href="#isLoadingGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/game/components/game/board/board.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="myboard"></a>
+                    <span class="name">
+                        <span ><b>myboard</b></span>
+                        <a href="#myboard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>number[][]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/game/components/game/board/board.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { Store, select } from &#x27;@ngrx/store&#x27;;
+import { Observable, take } from &#x27;rxjs&#x27;;
+import { moveAction } from &#x27;src/app/game/store/actions/move-action&#x27;;
+import {
+  boardSelector,
+  gameStatusSelector,
+  isGameInitializedSelector,
+  nextMoveSelector,
+} from &#x27;src/app/game/store/selectors&#x27;;
+import { newGameAction } from &#x27;src/app/menu/store/actions/menu.action&#x27;;
+import { isLoadingSelector } from &#x27;src/app/menu/store/selectors&#x27;;
+import { CellTypes } from &#x27;src/app/shared/data/cell-types.enum&#x27;;
+import { GameStatus } from &#x27;src/app/shared/data/game-status.enum&#x27;;
+
+@Component({
+  selector: &#x27;iwnil-board&#x27;,
+  templateUrl: &#x27;./board.component.html&#x27;,
+  styleUrls: [&#x27;./board.component.scss&#x27;],
+})
+export class BoardComponent implements OnInit {
+  $nextMove: Observable&lt;number | null&gt;;
+  $gameStatus: Observable&lt;GameStatus | null&gt;;
+  myboard: number[][];
+  isLoadingGame: boolean;
+
+  constructor(private store: Store) {}
+
+  ngOnInit(): void {
+    this.initValues();
+    this.initListeners();
+    this.initBoard();
+  }
+
+  initValues() {
+    this.$nextMove &#x3D; this.store.pipe(select(nextMoveSelector));
+    this.$gameStatus &#x3D; this.store.pipe(select(gameStatusSelector));
+  }
+
+  initListeners() {
+    this.store
+      .pipe(select(boardSelector))
+      .subscribe((board) &#x3D;&gt; (this.myboard &#x3D; board));
+
+    this.store
+      .pipe(select(isLoadingSelector))
+      .subscribe((isLoading) &#x3D;&gt; (this.isLoadingGame &#x3D; isLoading));
+  }
+
+  initBoard() {
+    this.store
+      .pipe(select(isGameInitializedSelector), take(1))
+      .subscribe((isGameInitialized) &#x3D;&gt; {
+        if (!isGameInitialized &amp;&amp; !this.isLoadingGame) {
+          this.store.dispatch(
+            newGameAction({
+              firstPlayer: &#x27;MAN&#x27;,
+              secondPlayer: &#x27;MAN&#x27;,
+              aiType: &#x27;RANDOM&#x27;,
+            })
+          );
+        }
+      });
+  }
+
+  onCellClick(row: number, column: number) {
+    this.store.dispatch(
+      moveAction({ row: row, column: column, board: this.myboard })
+    );
+  }
+
+  isImage(cellType): boolean {
+    return cellType !&#x3D;&#x3D; CellTypes.EMPTY;
+  }
+
+  getImage(cellType): string {
+    if (cellType &#x3D;&#x3D;&#x3D; CellTypes.TIC || cellType &#x3D;&#x3D;&#x3D; CellTypes.TOE1) {
+      return &#x27;assets/img/X.svg&#x27;;
+    } else if (cellType &#x3D;&#x3D;&#x3D; CellTypes.TAC || cellType &#x3D;&#x3D; CellTypes.TOE2) {
+      return &#x27;assets/img/O.svg&#x27;;
+    }
+
+    return &#x27;&#x27;;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;board&quot; #board *ngIf&#x3D;&quot;myboard&quot;&gt;
+  &lt;div class&#x3D;&quot;board-row&quot; *ngFor&#x3D;&quot;let row of myboard; let r &#x3D; index&quot;&gt;
+    &lt;div
+      class&#x3D;&quot;element&quot;
+      *ngFor&#x3D;&quot;let element of row; let c &#x3D; index&quot;
+      [ngClass]&#x3D;&quot;{
+        firstPlayer: ($nextMove | async) &#x3D;&#x3D;&#x3D; 1 &amp;&amp; element &#x3D;&#x3D;&#x3D; 0,
+        secondPlayer: ($nextMove | async) &#x3D;&#x3D;&#x3D; 2 &amp;&amp; element &#x3D;&#x3D;&#x3D; 0,
+        toeFirst: element &#x3D;&#x3D;&#x3D; 3,
+        toeSecond: element &#x3D;&#x3D;&#x3D; 5,
+        disabled: ($gameStatus | async).toLocaleString() !&#x3D;&#x3D; &#x27;IN_PROGRES&#x27;
+      }&quot;
+    &gt;
+      &lt;button
+        (click)&#x3D;&quot;onCellClick(r, c)&quot;
+        [disabled]&#x3D;&quot;
+          element !&#x3D;&#x3D; 0 ||
+          ($gameStatus | async).toLocaleString() !&#x3D;&#x3D; &#x27;IN_PROGRES&#x27;
+        &quot;
+      &gt;
+        &lt;img *ngIf&#x3D;&quot;isImage(element)&quot; [src]&#x3D;&quot;getImage(element)&quot; alt&#x3D;&quot;&quot; /&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./board.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.board {
+  padding: 20px;
+  height: calc(100vh - 100px - 60px - 200px);
+  overflow: scroll;
+  min-height: 300px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+
+  &amp;-row {
+    display: flex;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  cursor: default;
+}
+
+.element {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.firstPlayer {
+  &amp;:hover {
+    background-color: #f2481eaf;
+  }
+}
+
+.secondPlayer {
+  &amp;:hover {
+    background-color: #27aaffaf;
+  }
+}
+
+.element.toeFirst {
+  transition: all 1s;
+  background-color: #f2481eaf !important;
+  border: 1px solid #f2481eaf;
+}
+
+.element.toeSecond {
+  background-color: #27aaffaf !important;
+  border: 1px solid #27aaffaf;
+}
+
+.disabled {
+  background-color: transparent !important;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="board" #board *ngIf="myboard">  <div class="board-row" *ngFor="let row of myboard; let r = index">    <div      class="element"      *ngFor="let element of row; let c = index"      [ngClass]="{        firstPlayer: ($nextMove | async) === 1 && element === 0,        secondPlayer: ($nextMove | async) === 2 && element === 0,        toeFirst: element === 3,        toeSecond: element === 5,        disabled: ($gameStatus | async).toLocaleString() !== \'IN_PROGRES\'      }"    >      <button        (click)="onCellClick(r, c)"        [disabled]="          element !== 0 ||          ($gameStatus | async).toLocaleString() !== \'IN_PROGRES\'        "      >        <img *ngIf="isImage(element)" [src]="getImage(element)" alt="" />      </button>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'BoardComponent', 'selector': 'iwnil-board'},{'name': 'BoardElementComponent', 'selector': 'iwnil-board-element'},{'name': 'FooterComponent', 'selector': 'iwnil-footer'},{'name': 'GameComponent', 'selector': 'iwnil-game'},{'name': 'HeaderComponent', 'selector': 'iwnil-header'},{'name': 'HeaderNavComponent', 'selector': 'iwnil-header-nav'},{'name': 'IconComponent', 'selector': 'iwnil-icon'},{'name': 'ListComponent', 'selector': 'iwnil-list'},{'name': 'LogoComponent', 'selector': 'iwnil-logo'},{'name': 'MainComponent', 'selector': 'iwnil-main'},{'name': 'MenuComponent', 'selector': 'iwnil-menu'},{'name': 'MenuGameModeComponent', 'selector': 'iwnil-menu-game-mode'},{'name': 'MenuItemComponent', 'selector': 'iwnil-menu-item'},{'name': 'MenuSavesComponent', 'selector': 'iwnil-menu-saves'},{'name': 'MessagesComponent', 'selector': 'iwnil-messages'},{'name': 'SaveItemComponent', 'selector': 'iwnil-save-item'},{'name': 'ScoreComponent', 'selector': 'iwnil-score'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'BoardComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'BoardComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

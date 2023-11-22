@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classFixedQueue" kind="class" language="C++" prot="public">
+    <compoundname>FixedQueue</compoundname>
+    <includes refid="FixedQueue_8h" local="no">FixedQueue.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a" prot="private" static="no" mutable="no">
+        <type>std::deque&lt; <ref refid="structCoordinates" kindref="compound">Coordinates</ref> &gt;</type>
+        <definition>std::deque&lt;Coordinates&gt; FixedQueue::queue</definition>
+        <argsstring></argsstring>
+        <name>queue</name>
+        <qualifiedname>FixedQueue::queue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The underlying deque storing <ref refid="structCoordinates" kindref="compound">Coordinates</ref>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="19" column="16" bodyfile="include/utils/FixedQueue.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classFixedQueue_1a89fd13baddd654ad75a86a41dea15383" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FixedQueue::maxSize</definition>
+        <argsstring></argsstring>
+        <name>maxSize</name>
+        <qualifiedname>FixedQueue::maxSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum size of the queue. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="20" column="9" bodyfile="include/utils/FixedQueue.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classFixedQueue_1a6324edde12c3e1a010f9c196a7607d9f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FixedQueue::FixedQueue</definition>
+        <argsstring>(int size)</argsstring>
+        <name>FixedQueue</name>
+        <qualifiedname>FixedQueue::FixedQueue</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Constructor for the <ref refid="classFixedQueue" kindref="compound">FixedQueue</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum size of the queue. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="27" column="5" bodyfile="include/utils/FixedQueue.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedQueue_1a621e22132830bf19305bb387bb677d84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FixedQueue::add</definition>
+        <argsstring>(Coordinates element)</argsstring>
+        <name>add</name>
+        <qualifiedname>FixedQueue::add</qualifiedname>
+        <param>
+          <type><ref refid="structCoordinates" kindref="compound">Coordinates</ref></type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+<para>Adds a <ref refid="structCoordinates" kindref="compound">Coordinates</ref> element to the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove the last element from the queue if it is full</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="structCoordinates" kindref="compound">Coordinates</ref> element to add. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="36" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedQueue_1a9ef52780a7e0301bcfaa3c46f39d881c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structCoordinates" kindref="compound">Coordinates</ref></type>
+        <definition>Coordinates FixedQueue::poll</definition>
+        <argsstring>()</argsstring>
+        <name>poll</name>
+        <qualifiedname>FixedQueue::poll</qualifiedname>
+        <briefdescription>
+<para>Polls and removes the front element from the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The front <ref refid="structCoordinates" kindref="compound">Coordinates</ref> element of the queue. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="42" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classFixedQueue_1a25c0fde3fdf5205f3ea011d4eab00e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FixedQueue::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>FixedQueue::clear</qualifiedname>
+        <briefdescription>
+<para>Clears the contents of the queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/FixedQueue.h" line="47" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class representing a fixed-size queue of <ref refid="structCoordinates" kindref="compound">Coordinates</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>FixedQueue</label>
+        <link refid="classFixedQueue"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/utils/FixedQueue.h" line="16" column="1" bodyfile="include/utils/FixedQueue.h" bodystart="17" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classFixedQueue_1a621e22132830bf19305bb387bb677d84" prot="public" virt="non-virtual"><scope>FixedQueue</scope><name>add</name></member>
+      <member refid="classFixedQueue_1a25c0fde3fdf5205f3ea011d4eab00e59" prot="public" virt="non-virtual"><scope>FixedQueue</scope><name>clear</name></member>
+      <member refid="classFixedQueue_1a6324edde12c3e1a010f9c196a7607d9f" prot="public" virt="non-virtual"><scope>FixedQueue</scope><name>FixedQueue</name></member>
+      <member refid="classFixedQueue_1a89fd13baddd654ad75a86a41dea15383" prot="private" virt="non-virtual"><scope>FixedQueue</scope><name>maxSize</name></member>
+      <member refid="classFixedQueue_1a9ef52780a7e0301bcfaa3c46f39d881c" prot="public" virt="non-virtual"><scope>FixedQueue</scope><name>poll</name></member>
+      <member refid="classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a" prot="private" virt="non-virtual"><scope>FixedQueue</scope><name>queue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Game__Object_8h" kind="file" language="C++">
+    <compoundname>Game_Object.h</compoundname>
+    <includedby refid="Board_8h" local="yes">include/game/Board.h</includedby>
+    <includedby refid="Game_8h" local="yes">include/game/Game.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/game/Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/game/Game.h</label>
+        <link refid="Game_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/game/GameProcessor.h</label>
+        <link refid="GameProcessor_8h"/>
+      </node>
+      <node id="1">
+        <label>include/game/Game_Object.h</label>
+        <link refid="Game__Object_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>include/game/dto/GameDTO.h</label>
+        <link refid="GameDTO_8h"/>
+      </node>
+      <node id="6">
+        <label>include/game/dto/NewGameDTO.h</label>
+        <link refid="NewGameDTO_8h"/>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Game__Object_8h_1a5432531fa160d0b2a4db3d9fa0de0947" prot="public" static="no">
+        <name>EMPTY_CELL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="3" column="9" bodyfile="include/game/Game_Object.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1a043fba147e9f9707cc6f201bedc9012b" prot="public" static="no">
+        <name>TIC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="4" column="9" bodyfile="include/game/Game_Object.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1a53da40127df229b3f06c14999f31da13" prot="public" static="no">
+        <name>TAC</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="5" column="9" bodyfile="include/game/Game_Object.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1a97a3a5e5715684d10581836edca783e1" prot="public" static="no">
+        <name>TOE1</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="6" column="9" bodyfile="include/game/Game_Object.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1a29cbb86a59d6ac7ca4b2dc7d3693e17c" prot="public" static="no">
+        <name>TOE2</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="7" column="9" bodyfile="include/game/Game_Object.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1ab59ba5e7ed3e326ac6ff9400841adaf3" prot="public" static="no">
+        <name>NEW_MOVE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="8" column="9" bodyfile="include/game/Game_Object.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="Game__Object_8h_1ab3f4b99ea3f9dd36e017907df801bc68" prot="public" static="no">
+        <name>OUT_OF_BOUND</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game_Object.h" line="9" column="9" bodyfile="include/game/Game_Object.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="Game__Object_8h_1a5432531fa160d0b2a4db3d9fa0de0947" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EMPTY_CELL<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="Game__Object_8h_1a043fba147e9f9707cc6f201bedc9012b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="Game__Object_8h_1a53da40127df229b3f06c14999f31da13" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TAC<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="Game__Object_8h_1a97a3a5e5715684d10581836edca783e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOE1<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="Game__Object_8h_1a29cbb86a59d6ac7ca4b2dc7d3693e17c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOE2<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="Game__Object_8h_1ab59ba5e7ed3e326ac6ff9400841adaf3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NEW_MOVE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="Game__Object_8h_1ab3f4b99ea3f9dd36e017907df801bc68" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_OF_BOUND<sp/>100</highlight></codeline>
+    </programlisting>
+    <location file="include/game/Game_Object.h"/>
+  </compounddef>
+</doxygen>

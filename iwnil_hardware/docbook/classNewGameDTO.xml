@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classNewGameDTO" xml:lang="en-US">
+<title>NewGameDTO Class Reference</title>
+<indexterm><primary>NewGameDTO</primary></indexterm>
+<para>
+
+<para>Data Transfer Object for creating a new game. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;NewGameDTO.h&gt;</computeroutput>
+</para>
+Collaboration diagram for NewGameDTO:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classNewGameDTO__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static <link linkend="_classNewGameDTO">NewGameDTO</link> * <link linkend="_classNewGameDTO_1ad93cd37ce7d14cccb7a8b2b8adb58152">parseXML</link> (String xml)</para>
+
+<para>Parses a <link linkend="_classNewGameDTO">NewGameDTO</link> object from an XML string. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>String <link linkend="_classNewGameDTO_1a9f9e6726b526f120002293e15b08fdf9">firstPlayer</link></para>
+</listitem>
+            <listitem><para>String <link linkend="_classNewGameDTO_1a2af17b202d086a024b455b5e49b096b7">secondPlayer</link></para>
+</listitem>
+            <listitem><para>String <link linkend="_classNewGameDTO_1ad973e86197dc3b4cb98541bcd147d83d">aiType</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Data Transfer Object for creating a new game. </para>
+
+
+
+<para>Used for serial communication to parse XML requests for new game creation. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classNewGameDTO_1ad93cd37ce7d14cccb7a8b2b8adb58152"/><section>
+    <title>parseXML()</title>
+<indexterm><primary>parseXML</primary><secondary>NewGameDTO</secondary></indexterm>
+<indexterm><primary>NewGameDTO</primary><secondary>parseXML</secondary></indexterm>
+<para><computeroutput>static <link linkend="_classNewGameDTO">NewGameDTO</link> * NewGameDTO::parseXML (String xml)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Parses a <link linkend="_classNewGameDTO">NewGameDTO</link> object from an XML string. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>xml</entry><entry>
+<para>The XML string to parse.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>A pointer to a <link linkend="_classNewGameDTO">NewGameDTO</link> object. </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classNewGameDTO_1ad973e86197dc3b4cb98541bcd147d83d"/><section>
+    <title>aiType</title>
+<indexterm><primary>aiType</primary><secondary>NewGameDTO</secondary></indexterm>
+<indexterm><primary>NewGameDTO</primary><secondary>aiType</secondary></indexterm>
+<para><computeroutput>String NewGameDTO::aiType</computeroutput></para>
+<para>AI type RANDOM/BEST_MOVE </para>
+</section>
+<anchor xml:id="_classNewGameDTO_1a9f9e6726b526f120002293e15b08fdf9"/><section>
+    <title>firstPlayer</title>
+<indexterm><primary>firstPlayer</primary><secondary>NewGameDTO</secondary></indexterm>
+<indexterm><primary>NewGameDTO</primary><secondary>firstPlayer</secondary></indexterm>
+<para><computeroutput>String NewGameDTO::firstPlayer</computeroutput></para>
+<para>First player type AI/MAN </para>
+</section>
+<anchor xml:id="_classNewGameDTO_1a2af17b202d086a024b455b5e49b096b7"/><section>
+    <title>secondPlayer</title>
+<indexterm><primary>secondPlayer</primary><secondary>NewGameDTO</secondary></indexterm>
+<indexterm><primary>NewGameDTO</primary><secondary>secondPlayer</secondary></indexterm>
+<para><computeroutput>String NewGameDTO::secondPlayer</computeroutput></para>
+<para>Second player type AI/MAN </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/game/dto/<link linkend="_NewGameDTO_8h">NewGameDTO.h</link></section>
+</section>

@@ -1,0 +1,500 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtinyxml2_1_1XMLConstHandle" kind="class" language="C++" prot="public">
+    <compoundname>tinyxml2::XMLConstHandle</compoundname>
+    <includes refid="tinyxml2_8h" local="no">tinyxml2.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLConstHandle_1ad4d8db839660ef730adfa2439945c4da" prot="private" static="no" mutable="no">
+        <type>const <ref refid="classtinyxml2_1_1XMLNode" kindref="compound">XMLNode</ref> *</type>
+        <definition>const XMLNode* tinyxml2::XMLConstHandle::_node</definition>
+        <argsstring></argsstring>
+        <name>_node</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::_node</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2398" column="23" bodyfile="include/tinyxml2.h" bodystart="2398" bodyend="-1"/>
+        <referencedby refid="classtinyxml2_1_1XMLConstHandle_1a20dc2bff68ba553081d4bd551dd251b4" compoundref="tinyxml2_8h" startline="2337" endline="2341">operator=</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a098bda71fa11d7c74ccddab59d5dd534" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tinyxml2::XMLConstHandle::XMLConstHandle</definition>
+        <argsstring>(const XMLNode *node)</argsstring>
+        <name>XMLConstHandle</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::XMLConstHandle</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLNode" kindref="compound">XMLNode</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2327" column="18" bodyfile="include/tinyxml2.h" bodystart="2327" bodyend="2329"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a8420a0c4720637e0529e78c2e22f2b0b" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tinyxml2::XMLConstHandle::XMLConstHandle</definition>
+        <argsstring>(const XMLNode &amp;node)</argsstring>
+        <name>XMLConstHandle</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::XMLConstHandle</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLNode" kindref="compound">XMLNode</ref> &amp;</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2330" column="18" bodyfile="include/tinyxml2.h" bodystart="2330" bodyend="2332"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a639317ad315ff24f4ef0dc69312d7303" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tinyxml2::XMLConstHandle::XMLConstHandle</definition>
+        <argsstring>(const XMLConstHandle &amp;ref)</argsstring>
+        <name>XMLConstHandle</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::XMLConstHandle</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2333" column="9" bodyfile="include/tinyxml2.h" bodystart="2333" bodyend="2335"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a20dc2bff68ba553081d4bd551dd251b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref> &amp;</type>
+        <definition>XMLConstHandle &amp; tinyxml2::XMLConstHandle::operator=</definition>
+        <argsstring>(const XMLConstHandle &amp;ref)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref> &amp;</type>
+          <declname>ref</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2337" column="24" bodyfile="include/tinyxml2.h" bodystart="2337" bodyend="2341"/>
+        <references refid="classtinyxml2_1_1XMLConstHandle_1ad4d8db839660ef730adfa2439945c4da" compoundref="tinyxml2_8h" startline="2398">_node</references>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1aef06bd16cb308652a32b864b0a743136" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::FirstChild</definition>
+        <argsstring>() const</argsstring>
+        <name>FirstChild</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::FirstChild</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2343" column="30" bodyfile="include/tinyxml2.h" bodystart="2343" bodyend="2346"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1ac747db472ffc55c5af2e82ffec813640" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::FirstChildElement</definition>
+        <argsstring>(const char *name=0) const</argsstring>
+        <name>FirstChildElement</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::FirstChildElement</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2347" column="30" bodyfile="include/tinyxml2.h" bodystart="2347" bodyend="2350"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a908436124990f3d7b35cb7df20d31d9e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::LastChild</definition>
+        <argsstring>() const</argsstring>
+        <name>LastChild</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::LastChild</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2351" column="30" bodyfile="include/tinyxml2.h" bodystart="2351" bodyend="2354"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a9de0475ec42bd50c0e64624a250ba5b2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::LastChildElement</definition>
+        <argsstring>(const char *name=0) const</argsstring>
+        <name>LastChildElement</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::LastChildElement</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2355" column="30" bodyfile="include/tinyxml2.h" bodystart="2355" bodyend="2358"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1acf68cc7930e4ac883e0c7e16ef2fbb66" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::PreviousSibling</definition>
+        <argsstring>() const</argsstring>
+        <name>PreviousSibling</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::PreviousSibling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2359" column="30" bodyfile="include/tinyxml2.h" bodystart="2359" bodyend="2362"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1aef99308659f2617299ac29980769a91e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::PreviousSiblingElement</definition>
+        <argsstring>(const char *name=0) const</argsstring>
+        <name>PreviousSiblingElement</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::PreviousSiblingElement</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2363" column="30" bodyfile="include/tinyxml2.h" bodystart="2363" bodyend="2366"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1aec3710e455f41014026ef17fbbb0efb3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::NextSibling</definition>
+        <argsstring>() const</argsstring>
+        <name>NextSibling</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::NextSibling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2367" column="30" bodyfile="include/tinyxml2.h" bodystart="2367" bodyend="2370"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a3c9e6b48b02d3d5232e1e8780753d8a5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLConstHandle" kindref="compound">XMLConstHandle</ref></type>
+        <definition>const XMLConstHandle tinyxml2::XMLConstHandle::NextSiblingElement</definition>
+        <argsstring>(const char *name=0) const</argsstring>
+        <name>NextSiblingElement</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::NextSiblingElement</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2371" column="30" bodyfile="include/tinyxml2.h" bodystart="2371" bodyend="2374"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1acf5e56303beb69f7c31ecf8d8f93ddf8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLNode" kindref="compound">XMLNode</ref> *</type>
+        <definition>const XMLNode * tinyxml2::XMLConstHandle::ToNode</definition>
+        <argsstring>() const</argsstring>
+        <name>ToNode</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::ToNode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2376" column="23" bodyfile="include/tinyxml2.h" bodystart="2376" bodyend="2379"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a3e714a5153200f0d6ab5339395cb261f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLElement" kindref="compound">XMLElement</ref> *</type>
+        <definition>const XMLElement * tinyxml2::XMLConstHandle::ToElement</definition>
+        <argsstring>() const</argsstring>
+        <name>ToElement</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::ToElement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2380" column="26" bodyfile="include/tinyxml2.h" bodystart="2380" bodyend="2383"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a0cc762ed67b245ed82fe035628264266" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLText" kindref="compound">XMLText</ref> *</type>
+        <definition>const XMLText * tinyxml2::XMLConstHandle::ToText</definition>
+        <argsstring>() const</argsstring>
+        <name>ToText</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::ToText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2384" column="23" bodyfile="include/tinyxml2.h" bodystart="2384" bodyend="2387"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a64bca7dc37dadcd1da8584c97a20397e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLUnknown" kindref="compound">XMLUnknown</ref> *</type>
+        <definition>const XMLUnknown * tinyxml2::XMLConstHandle::ToUnknown</definition>
+        <argsstring>() const</argsstring>
+        <name>ToUnknown</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::ToUnknown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2388" column="26" bodyfile="include/tinyxml2.h" bodystart="2388" bodyend="2391"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLConstHandle_1a729c41ba82a7a143a749786a265fb6ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLDeclaration" kindref="compound">XMLDeclaration</ref> *</type>
+        <definition>const XMLDeclaration * tinyxml2::XMLConstHandle::ToDeclaration</definition>
+        <argsstring>() const</argsstring>
+        <name>ToDeclaration</name>
+        <qualifiedname>tinyxml2::XMLConstHandle::ToDeclaration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="2392" column="30" bodyfile="include/tinyxml2.h" bodystart="2392" bodyend="2395"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>A variant of the <ref refid="classtinyxml2_1_1XMLHandle" kindref="compound">XMLHandle</ref> class for working with const XMLNodes and Documents. It is the same in all regards, except for the &apos;const&apos; qualifiers. See <ref refid="classtinyxml2_1_1XMLHandle" kindref="compound">XMLHandle</ref> for API. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>tinyxml2::DynArray&lt; tinyxml2::MemPoolT::Block *, 10 &gt;</label>
+        <link refid="classtinyxml2_1_1DynArray"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>-_mem</edgelabel>
+          <edgelabel>-_pool</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; tinyxml2::MemPoolT::Block *, 10 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>tinyxml2::DynArray&lt; tinyxml2::XMLNode *, 10 &gt;</label>
+        <link refid="classtinyxml2_1_1DynArray"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_mem</edgelabel>
+          <edgelabel>-_pool</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="template-instance">
+          <edgelabel>&lt; tinyxml2::XMLNode *, 10 &gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>tinyxml2::MemPoolT&lt; sizeof(tinyxml2::XMLAttribute)&gt;</label>
+        <link refid="classtinyxml2_1_1MemPoolT"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-_blockPtrs</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_root</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="template-instance">
+          <edgelabel>&lt; sizeof(tinyxml2::XMLAttribute)&gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>tinyxml2::MemPoolT&lt; sizeof(tinyxml2::XMLComment)&gt;</label>
+        <link refid="classtinyxml2_1_1MemPoolT"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-_blockPtrs</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_root</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="template-instance">
+          <edgelabel>&lt; sizeof(tinyxml2::XMLComment)&gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>tinyxml2::MemPoolT&lt; sizeof(tinyxml2::XMLElement)&gt;</label>
+        <link refid="classtinyxml2_1_1MemPoolT"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-_blockPtrs</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_root</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="template-instance">
+          <edgelabel>&lt; sizeof(tinyxml2::XMLElement)&gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="14">
+        <label>tinyxml2::MemPoolT&lt; sizeof(tinyxml2::XMLText)&gt;</label>
+        <link refid="classtinyxml2_1_1MemPoolT"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-_blockPtrs</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_root</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="template-instance">
+          <edgelabel>&lt; sizeof(tinyxml2::XMLText)&gt;</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>tinyxml2::DynArray&lt; T, INITIAL_SIZE &gt;</label>
+        <link refid="classtinyxml2_1_1DynArray"/>
+      </node>
+      <node id="8">
+        <label>tinyxml2::MemPool</label>
+        <link refid="classtinyxml2_1_1MemPool"/>
+      </node>
+      <node id="12">
+        <label>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</label>
+        <link refid="classtinyxml2_1_1MemPoolT"/>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>-_blockPtrs</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>-_root</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Block</label>
+        <link refid="structtinyxml2_1_1MemPoolT_1_1Block"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+items</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</label>
+        <link refid="uniontinyxml2_1_1MemPoolT_1_1Item"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>tinyxml2::StrPair</label>
+        <link refid="classtinyxml2_1_1StrPair"/>
+      </node>
+      <node id="1">
+        <label>tinyxml2::XMLConstHandle</label>
+        <link refid="classtinyxml2_1_1XMLConstHandle"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_node</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>tinyxml2::XMLDocument</label>
+        <link refid="classtinyxml2_1_1XMLDocument"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>-_errorStr</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>-_unlinked</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>-_elementPool</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>-_attributePool</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>-_textPool</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>-_commentPool</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tinyxml2::XMLNode</label>
+        <link refid="classtinyxml2_1_1XMLNode"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>#_document</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>#_firstChild</edgelabel>
+          <edgelabel>#_lastChild</edgelabel>
+          <edgelabel>#_next</edgelabel>
+          <edgelabel>#_parent</edgelabel>
+          <edgelabel>#_prev</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>#_value</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>-_memPool</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tinyxml2.h" line="2324" column="5" bodyfile="include/tinyxml2.h" bodystart="2325" bodyend="2399"/>
+    <listofallmembers>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1ad4d8db839660ef730adfa2439945c4da" prot="private" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>_node</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1aef06bd16cb308652a32b864b0a743136" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>FirstChild</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1ac747db472ffc55c5af2e82ffec813640" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>FirstChildElement</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a908436124990f3d7b35cb7df20d31d9e" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>LastChild</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a9de0475ec42bd50c0e64624a250ba5b2" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>LastChildElement</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1aec3710e455f41014026ef17fbbb0efb3" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>NextSibling</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a3c9e6b48b02d3d5232e1e8780753d8a5" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>NextSiblingElement</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a20dc2bff68ba553081d4bd551dd251b4" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>operator=</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1acf68cc7930e4ac883e0c7e16ef2fbb66" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>PreviousSibling</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1aef99308659f2617299ac29980769a91e" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>PreviousSiblingElement</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a729c41ba82a7a143a749786a265fb6ff" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>ToDeclaration</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a3e714a5153200f0d6ab5339395cb261f" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>ToElement</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1acf5e56303beb69f7c31ecf8d8f93ddf8" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>ToNode</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a0cc762ed67b245ed82fe035628264266" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>ToText</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a64bca7dc37dadcd1da8584c97a20397e" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>ToUnknown</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a098bda71fa11d7c74ccddab59d5dd534" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>XMLConstHandle</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a8420a0c4720637e0529e78c2e22f2b0b" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>XMLConstHandle</name></member>
+      <member refid="classtinyxml2_1_1XMLConstHandle_1a639317ad315ff24f4ef0dc69312d7303" prot="public" virt="non-virtual"><scope>tinyxml2::XMLConstHandle</scope><name>XMLConstHandle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

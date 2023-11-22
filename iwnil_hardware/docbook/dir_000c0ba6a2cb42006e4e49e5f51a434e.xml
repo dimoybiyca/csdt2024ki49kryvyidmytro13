@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_000c0ba6a2cb42006e4e49e5f51a434e" xml:lang="en-US">
+<title>include/game/dto Directory Reference</title>
+<indexterm><primary>include/game/dto Directory Reference</primary></indexterm>
+Directory dependency graph for dto:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_000c0ba6a2cb42006e4e49e5f51a434e_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_GameDTO_8h">GameDTO.h</link></para>
+
+<para>Data Transfer Object (DTO) for serial communication. </para>
+</listitem>
+            <listitem><para>file <link linkend="_NewGameDTO_8h">NewGameDTO.h</link></para>
+
+<para>Data Transfer Object (DTO) for creating a new game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
