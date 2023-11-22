@@ -1,5 +1,0 @@
-<map id="Game" name="Game">
-<area shape="rect" id="Node000001" title="A class representing a game with players, status, and a game board." alt="" coords="5,460,160,849"/>
-<area shape="rect" id="Node000002" href="$classBoard.html" title="Encapsulation of the game board." alt="" coords="21,5,144,395"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,394,85,442,80,442,80,394"/>
-</map>

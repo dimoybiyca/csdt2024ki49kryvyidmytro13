@@ -1,9 +1,0 @@
-<map id="include/game/Game.h" name="include/game/Game.h">
-<area shape="rect" id="Node000001" title="Definition of the Game class." alt="" coords="282,5,446,33"/>
-<area shape="rect" id="Node000002" href="$GameProcessor_8h.html" title="Definition of the GameProcessor class." alt="" coords="5,90,232,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="311,41,159,91,157,86,309,36"/>
-<area shape="rect" id="Node000003" href="$GameDTO_8h.html" title="Data Transfer Object (DTO) for serial communication." alt="" coords="255,90,473,117"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="367,49,367,89,361,89,361,49"/>
-<area shape="rect" id="Node000004" href="$NewGameDTO_8h.html" title="Data Transfer Object (DTO) for creating a new game." alt="" coords="497,81,703,126"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,36,538,78,536,83,415,41"/>
-</map>

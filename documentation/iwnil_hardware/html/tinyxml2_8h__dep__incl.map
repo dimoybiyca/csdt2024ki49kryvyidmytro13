@@ -1,7 +1,0 @@
-<map id="include/tinyxml2.h" name="include/tinyxml2.h">
-<area shape="rect" id="Node000001" title=" " alt="" coords="160,5,303,33"/>
-<area shape="rect" id="Node000002" href="$GameDTO_8h.html" title="Data Transfer Object (DTO) for serial communication." alt="" coords="5,90,223,117"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,44,134,91,131,87,199,40"/>
-<area shape="rect" id="Node000003" href="$NewGameDTO_8h.html" title="Data Transfer Object (DTO) for creating a new game." alt="" coords="247,81,453,126"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="264,40,320,78,317,83,261,44"/>
-</map>

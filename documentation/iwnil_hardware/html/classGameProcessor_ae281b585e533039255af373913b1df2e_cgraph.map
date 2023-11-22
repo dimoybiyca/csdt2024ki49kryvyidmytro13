@@ -1,9 +1,0 @@
-<map id="GameProcessor::isAIMove" name="GameProcessor::isAIMove">
-<area shape="rect" id="Node000001" title="Checks if it&#39;s the turn of an AI player." alt="" coords="5,57,197,85"/>
-<area shape="rect" id="Node000002" href="$classGame.html#abb18cb83bdb5b1e24001901add328e16" title="Gets the type of the first player." alt="" coords="254,5,413,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,54,252,34,254,40,167,59"/>
-<area shape="rect" id="Node000003" href="$classGame.html#a5a273ef95d4bbf74a45c8334b04c5748" title="Gets the identifier of the player whose turn is next." alt="" coords="255,57,412,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="197,69,240,69,240,74,197,74"/>
-<area shape="rect" id="Node000004" href="$classGame.html#a9cf29e6a05f4d49fb8ae25cee7411556" title="Gets the type of the second player." alt="" coords="245,109,422,137"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="167,83,254,103,252,108,166,88"/>
-</map>
