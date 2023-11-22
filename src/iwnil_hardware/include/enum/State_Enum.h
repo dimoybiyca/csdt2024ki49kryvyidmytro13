@@ -1,12 +1,15 @@
+/**
+ * @file
+ * @brief Enum of program states.
+ */
+
 #pragma once
 
 /**
- * @file
- * @brief Enum of program states
- *
+ * @brief Enumeration representing program states.
  */
 enum class State
 {
-    CONNECTED,    /**<arduino is connected to PC*/
-    DISCONNECTED, /**<arduino isn't connected to PC*/
+    CONNECTED,    /**<PICO is connected to PC*/
+    DISCONNECTED, /**<PICO isn't connected to PC*/
 };
