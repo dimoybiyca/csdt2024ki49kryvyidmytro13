@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_NewGameDTO_8h" xml:lang="en-US">
+<title>include/game/dto/NewGameDTO.h File Reference</title>
+<indexterm><primary>include/game/dto/NewGameDTO.h</primary></indexterm>
+<para>
+
+<para>Data Transfer Object (DTO) for creating a new game. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;tinyxml2.h&gt;<?linebreak?>#include &quot;Arduino.h&quot;<?linebreak?>#include &quot;game/Game.h&quot;<?linebreak?></programlisting>Include dependency graph for NewGameDTO.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="NewGameDTO_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classNewGameDTO">NewGameDTO</link></para>
+
+<para>Data Transfer Object for creating a new game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_NewGameDTO_8h_1aa4f7e326ff0950a6f5759421661be99a">NEW_GAME_DTO_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Data Transfer Object (DTO) for creating a new game. </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_NewGameDTO_8h_1aa4f7e326ff0950a6f5759421661be99a"/><section>
+    <title>NEW_GAME_DTO_H</title>
+<indexterm><primary>NEW_GAME_DTO_H</primary><secondary>NewGameDTO.h</secondary></indexterm>
+<indexterm><primary>NewGameDTO.h</primary><secondary>NEW_GAME_DTO_H</secondary></indexterm>
+<para><computeroutput>#define NEW_GAME_DTO_H</computeroutput></para></section>
+</section>
+</section>

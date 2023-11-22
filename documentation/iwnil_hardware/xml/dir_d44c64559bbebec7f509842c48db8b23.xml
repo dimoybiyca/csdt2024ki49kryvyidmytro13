@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_a84aef8b0cbddfcfe22691f1781902d7">include/enum</innerdir>
+    <innerdir refid="dir_f307a46daed1218fee22380d1eacedba">include/game</innerdir>
+    <innerdir refid="dir_821002d4f10779a80d4fb17bc32f21f1">include/utils</innerdir>
+    <innerfile refid="StateManager_8h">StateManager.h</innerfile>
+    <innerfile refid="tinyxml2_8h">tinyxml2.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/"/>
+  </compounddef>
+</doxygen>

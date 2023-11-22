@@ -1,0 +1,12 @@
+<map id="include/game/Game.h" name="include/game/Game.h">
+<area shape="rect" id="Node000001" title="Definition of the Game class." alt="" coords="17,5,181,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,157,89,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="87,35,68,56,53,82,47,112,47,141,41,141,42,111,49,80,64,53,83,32"/>
+<area shape="rect" id="Node000003" href="$Board_8h.html" title="Game Board encapsulation." alt="" coords="63,81,135,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="102,34,102,65,96,65,96,34"/>
+<area shape="rect" id="Node000004" href="$Game__Object_8h.html" title=" " alt="" coords="124,157,245,184"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="124,31,150,52,173,80,184,111,188,141,182,142,179,112,169,82,147,56,120,36"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="92,111,67,146,63,142,88,108"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="136,78,153,82,161,95,159,103,152,109,148,104,154,100,156,95,150,86,135,83"/>
+<area shape="poly" id="edge5_Node000003_Node000004" title=" " alt="" coords="116,107,159,144,156,148,113,111"/>
+</map>

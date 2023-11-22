@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtinyxml2_1_1StrPair" xml:lang="en-US">
+<title>tinyxml2::StrPair Class Reference</title>
+<indexterm><primary>tinyxml2::StrPair</primary></indexterm>
+<para>
+<computeroutput>#include &lt;tinyxml2.h&gt;</computeroutput>
+</para>
+Collaboration diagram for tinyxml2::StrPair:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1StrPair__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54">Mode</link> { <?linebreak?><link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a4f1e01a55f8efe4ca72c32d454060237">NEEDS_ENTITY_PROCESSING</link> = 0x01
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a8f2045d56e70745d718672c0da91d0e0">NEEDS_NEWLINE_NORMALIZATION</link> = 0x02
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a13996e9d4ed18fd2d6af59bbab291b63">NEEDS_WHITESPACE_COLLAPSING</link> = 0x04
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54aae519eb5a639858591763aa5fc6cc953">TEXT_ELEMENT</link> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION
+, <?linebreak?><link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a96be48cf899bfeea0aa227f984f1fa63">TEXT_ELEMENT_LEAVE_ENTITIES</link> = NEEDS_NEWLINE_NORMALIZATION
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54aaab1cbefaa977e6f772b4e2575417aeb">ATTRIBUTE_NAME</link> = 0
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a6d72f9ce15f50e8bcd680edf66235dfd">ATTRIBUTE_VALUE</link> = NEEDS_ENTITY_PROCESSING | NEEDS_NEWLINE_NORMALIZATION
+, <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a2decbd2513ac14f8befa987938326399">ATTRIBUTE_VALUE_LEAVE_ENTITIES</link> = NEEDS_NEWLINE_NORMALIZATION
+, <?linebreak?><link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a067a6ec90c8beea1cf5992930d93bffa">COMMENT</link> = NEEDS_NEWLINE_NORMALIZATION
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair_1a69153963f7052de9f767d3d8c1623a70">StrPair</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair_1a60bed84d2503296e1c2a73fcef1431f9">~StrPair</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1a4f05549373394266a1eecba26813c166">Set</link> (char *start, char *end, int flags)</para>
+</listitem>
+            <listitem><para>const char * <link linkend="_classtinyxml2_1_1StrPair_1ad87e3d11330f5e689ba1e7e54c023b57">GetStr</link> ()</para>
+</listitem>
+            <listitem><para>bool <link linkend="_classtinyxml2_1_1StrPair_1aca963a7eaa900bfddbea7312f040b39c">Empty</link> () const</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1a2baf6230e18333e02ab65d0897ee3941">SetInternedStr</link> (const char *str)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1a1f82ec6b5bee35ee7466d8565e43b1de">SetStr</link> (const char *str, int flags=0)</para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1StrPair_1a68e6999b7677fa711287ececb9ba317e">ParseText</link> (char *in, const char *endTag, int strFlags, int *curLineNumPtr)</para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1StrPair_1aa6d8998efceba41d87ec2300c70a6085">ParseName</link> (char *in)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1a35f795b1557fe5fdcbd93d3cc5d6b939">TransferTo</link> (<link linkend="_classtinyxml2_1_1StrPair">StrPair</link> *other)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1a80c1b3bd99bf62ae85c94a29ce537125">Reset</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Types    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_classtinyxml2_1_1StrPair_1a0301ef962e15dd94574431f1c61266c5a2d8841daedc3955ed20ec9f760318434">NEEDS_FLUSH</link> = 0x100
+, <link linkend="_classtinyxml2_1_1StrPair_1a0301ef962e15dd94574431f1c61266c5ab9a3152ce5df9e7f4bbf3774fe862c75">NEEDS_DELETE</link> = 0x200
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1ade1469025e6b4cac74397a82a7429337">CollapseWhitespace</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair_1ac43c1f4a5730c5582f9cff724376d106">StrPair</link> (const <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> &amp;other)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1StrPair_1abeca3b715def403efed9f725d0fb0060">operator=</link> (const <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> &amp;other)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1StrPair_1ae6fabc08e7b24b0d41fa5f2fadbda4ed">_flags</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1StrPair_1acfd8687916a02833cc55c279460d2f4a">_start</link></para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1StrPair_1a855c81f785458d8f84313221f2d4a1eb">_end</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a0301ef962e15dd94574431f1c61266c5"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum<computeroutput>[private]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>NEEDS_FLUSH</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>NEEDS_FLUSH</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a0301ef962e15dd94574431f1c61266c5a2d8841daedc3955ed20ec9f760318434"/>NEEDS_FLUSH</entry><entry></entry></row><row><entry><indexterm><primary>NEEDS_DELETE</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>NEEDS_DELETE</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a0301ef962e15dd94574431f1c61266c5ab9a3152ce5df9e7f4bbf3774fe862c75"/>NEEDS_DELETE</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54"/><section>
+    <title>Mode</title>
+<indexterm><primary>Mode</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>Mode</secondary></indexterm>
+<para><computeroutput>enum <link linkend="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54">tinyxml2::StrPair::Mode</link></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>NEEDS_ENTITY_PROCESSING</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>NEEDS_ENTITY_PROCESSING</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a4f1e01a55f8efe4ca72c32d454060237"/>NEEDS_ENTITY_PROCESSING</entry><entry></entry></row><row><entry><indexterm><primary>NEEDS_NEWLINE_NORMALIZATION</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>NEEDS_NEWLINE_NORMALIZATION</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a8f2045d56e70745d718672c0da91d0e0"/>NEEDS_NEWLINE_NORMALIZATION</entry><entry></entry></row><row><entry><indexterm><primary>NEEDS_WHITESPACE_COLLAPSING</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>NEEDS_WHITESPACE_COLLAPSING</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a13996e9d4ed18fd2d6af59bbab291b63"/>NEEDS_WHITESPACE_COLLAPSING</entry><entry></entry></row><row><entry><indexterm><primary>TEXT_ELEMENT</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>TEXT_ELEMENT</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54aae519eb5a639858591763aa5fc6cc953"/>TEXT_ELEMENT</entry><entry></entry></row><row><entry><indexterm><primary>TEXT_ELEMENT_LEAVE_ENTITIES</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>TEXT_ELEMENT_LEAVE_ENTITIES</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a96be48cf899bfeea0aa227f984f1fa63"/>TEXT_ELEMENT_LEAVE_ENTITIES</entry><entry></entry></row><row><entry><indexterm><primary>ATTRIBUTE_NAME</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>ATTRIBUTE_NAME</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54aaab1cbefaa977e6f772b4e2575417aeb"/>ATTRIBUTE_NAME</entry><entry></entry></row><row><entry><indexterm><primary>ATTRIBUTE_VALUE</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>ATTRIBUTE_VALUE</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a6d72f9ce15f50e8bcd680edf66235dfd"/>ATTRIBUTE_VALUE</entry><entry></entry></row><row><entry><indexterm><primary>ATTRIBUTE_VALUE_LEAVE_ENTITIES</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>ATTRIBUTE_VALUE_LEAVE_ENTITIES</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a2decbd2513ac14f8befa987938326399"/>ATTRIBUTE_VALUE_LEAVE_ENTITIES</entry><entry></entry></row><row><entry><indexterm><primary>COMMENT</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>COMMENT</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac1a95416b9fef0fa61e08a329d05bd54a067a6ec90c8beea1cf5992930d93bffa"/>COMMENT</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a69153963f7052de9f767d3d8c1623a70"/><section>
+    <title>StrPair()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>StrPair</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>StrPair</secondary></indexterm>
+<para><computeroutput>tinyxml2::StrPair::StrPair ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a60bed84d2503296e1c2a73fcef1431f9"/><section>
+    <title>~StrPair()</title>
+<indexterm><primary>~StrPair</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>~StrPair</secondary></indexterm>
+<para><computeroutput>tinyxml2::StrPair::~StrPair ( )</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ac43c1f4a5730c5582f9cff724376d106"/><section>
+    <title>StrPair()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>StrPair</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>StrPair</secondary></indexterm>
+<para><computeroutput>tinyxml2::StrPair::StrPair (const <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> &amp; other)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ade1469025e6b4cac74397a82a7429337"/><section>
+    <title>CollapseWhitespace()</title>
+<indexterm><primary>CollapseWhitespace</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>CollapseWhitespace</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::CollapseWhitespace ( )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1aca963a7eaa900bfddbea7312f040b39c"/><section>
+    <title>Empty()</title>
+<indexterm><primary>Empty</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>Empty</secondary></indexterm>
+<para><computeroutput>bool tinyxml2::StrPair::Empty ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ad87e3d11330f5e689ba1e7e54c023b57"/><section>
+    <title>GetStr()</title>
+<indexterm><primary>GetStr</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>GetStr</secondary></indexterm>
+<para><computeroutput>const char * tinyxml2::StrPair::GetStr ( )</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1abeca3b715def403efed9f725d0fb0060"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::operator= (const <link linkend="_classtinyxml2_1_1StrPair">StrPair</link> &amp; other)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1aa6d8998efceba41d87ec2300c70a6085"/><section>
+    <title>ParseName()</title>
+<indexterm><primary>ParseName</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>ParseName</secondary></indexterm>
+<para><computeroutput>char * tinyxml2::StrPair::ParseName (char * in)</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a68e6999b7677fa711287ececb9ba317e"/><section>
+    <title>ParseText()</title>
+<indexterm><primary>ParseText</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>ParseText</secondary></indexterm>
+<para><computeroutput>char * tinyxml2::StrPair::ParseText (char * in, const char * endTag, int strFlags, int * curLineNumPtr)</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a80c1b3bd99bf62ae85c94a29ce537125"/><section>
+    <title>Reset()</title>
+<indexterm><primary>Reset</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>Reset</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::Reset ( )</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a4f05549373394266a1eecba26813c166"/><section>
+    <title>Set()</title>
+<indexterm><primary>Set</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>Set</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::Set (char * start, char * end, int flags)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a2baf6230e18333e02ab65d0897ee3941"/><section>
+    <title>SetInternedStr()</title>
+<indexterm><primary>SetInternedStr</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>SetInternedStr</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::SetInternedStr (const char * str)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a1f82ec6b5bee35ee7466d8565e43b1de"/><section>
+    <title>SetStr()</title>
+<indexterm><primary>SetStr</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>SetStr</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::SetStr (const char * str, int flags = <computeroutput>0</computeroutput>
+)</computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a35f795b1557fe5fdcbd93d3cc5d6b939"/><section>
+    <title>TransferTo()</title>
+<indexterm><primary>TransferTo</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>TransferTo</secondary></indexterm>
+<para><computeroutput>void tinyxml2::StrPair::TransferTo (<link linkend="_classtinyxml2_1_1StrPair">StrPair</link> * other)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1a855c81f785458d8f84313221f2d4a1eb"/><section>
+    <title>_end</title>
+<indexterm><primary>_end</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>_end</secondary></indexterm>
+<para><computeroutput>char* tinyxml2::StrPair::_end<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1ae6fabc08e7b24b0d41fa5f2fadbda4ed"/><section>
+    <title>_flags</title>
+<indexterm><primary>_flags</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>_flags</secondary></indexterm>
+<para><computeroutput>int tinyxml2::StrPair::_flags<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1StrPair_1acfd8687916a02833cc55c279460d2f4a"/><section>
+    <title>_start</title>
+<indexterm><primary>_start</primary><secondary>tinyxml2::StrPair</secondary></indexterm>
+<indexterm><primary>tinyxml2::StrPair</primary><secondary>_start</secondary></indexterm>
+<para><computeroutput>char* tinyxml2::StrPair::_start<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

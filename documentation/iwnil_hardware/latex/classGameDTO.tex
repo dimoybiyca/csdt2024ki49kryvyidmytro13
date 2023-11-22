@@ -1,0 +1,222 @@
+\doxysection{Game\+DTO Class Reference}
+\hypertarget{classGameDTO}{}\label{classGameDTO}\index{GameDTO@{GameDTO}}
+
+
+Data Transfer Object for serial communication.  
+
+
+
+
+{\ttfamily \#include $<$Game\+DTO.\+h$>$}
+
+
+
+Collaboration diagram for Game\+DTO\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classGameDTO__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classGameDTO_a425b31fd9b508c72146e696564981cb0}{to\+Xml}} ()
+\begin{DoxyCompactList}\small\item\em Convert object to XML. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameDTO_a4765e4c750beaf4ec0c7197cfa91fc55}{to\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Convert DTO to Object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameDTO_ac8f00c516483d6461a91e2a9ae32dd80}{Game\+DTO}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classGameDTO}{Game\+DTO} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameDTO_a2384d5f0b489557f33e058cc902c4cdd}{Game\+DTO}} (\mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Construct a new \doxylink{classGame}{Game} DTO object from \doxylink{classGame}{Game}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGameDTO_a97cfc31903a83b6455ac025850e1f77d}{Game\+DTO}} (String \mbox{\hyperlink{classGameDTO_a5bcc1db75dc129db7c0963ac6a44a22d}{ai\+Type}}, String \mbox{\hyperlink{classGameDTO_ab3fcd69611a7f1dc821cc1cd62b2e2d8}{board}}, String \mbox{\hyperlink{classGameDTO_a86c136a5d757b5f1667e7af1c7ceb3f3}{first\+Player}}, String \mbox{\hyperlink{classGameDTO_a6d642cdffa73d88c9a3da2bad48e7e1d}{game\+Status}}, int \mbox{\hyperlink{classGameDTO_af40b076bbc577e8c273216546747e064}{next\+Move}}, String \mbox{\hyperlink{classGameDTO_ad6bb7384815352f1f263c6e59f065fb2}{second\+Player}}, int \mbox{\hyperlink{classGameDTO_a5f62e34d7591aa30b678c911d72dae78}{rows}}, int \mbox{\hyperlink{classGameDTO_a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd}{cols}})
+\begin{DoxyCompactList}\small\item\em Constructs a new \doxylink{classGameDTO}{Game\+DTO} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGameDTO}{Game\+DTO}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGameDTO_a846729dc4c69d0d684cc640a9773f6ca}{parse\+XML}} (String xml)
+\begin{DoxyCompactList}\small\item\em Create object from xml. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classGameDTO_a5bcc1db75dc129db7c0963ac6a44a22d}{ai\+Type}}
+\item 
+String \mbox{\hyperlink{classGameDTO_ab3fcd69611a7f1dc821cc1cd62b2e2d8}{board}}
+\item 
+String \mbox{\hyperlink{classGameDTO_a86c136a5d757b5f1667e7af1c7ceb3f3}{first\+Player}}
+\item 
+String \mbox{\hyperlink{classGameDTO_ad6bb7384815352f1f263c6e59f065fb2}{second\+Player}}
+\item 
+String \mbox{\hyperlink{classGameDTO_a6d642cdffa73d88c9a3da2bad48e7e1d}{game\+Status}}
+\item 
+int \mbox{\hyperlink{classGameDTO_af40b076bbc577e8c273216546747e064}{next\+Move}}
+\item 
+int \mbox{\hyperlink{classGameDTO_a5f62e34d7591aa30b678c911d72dae78}{rows}}
+\item 
+int \mbox{\hyperlink{classGameDTO_a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd}{cols}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Data Transfer Object for serial communication. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGameDTO_ac8f00c516483d6461a91e2a9ae32dd80}\label{classGameDTO_ac8f00c516483d6461a91e2a9ae32dd80} 
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{GameDTO()}{GameDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Game\+DTO\+::\+Game\+DTO (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classGameDTO}{Game\+DTO} object. 
+
+\Hypertarget{classGameDTO_a2384d5f0b489557f33e058cc902c4cdd}\label{classGameDTO_a2384d5f0b489557f33e058cc902c4cdd} 
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{GameDTO()}{GameDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Game\+DTO\+::\+Game\+DTO (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*}}]{game }\end{DoxyParamCaption})}
+
+
+
+Construct a new \doxylink{classGame}{Game} DTO object from \doxylink{classGame}{Game}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & pointer to a game object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameDTO_a97cfc31903a83b6455ac025850e1f77d}\label{classGameDTO_a97cfc31903a83b6455ac025850e1f77d} 
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\index{GameDTO@{GameDTO}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{GameDTO()}{GameDTO()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Game\+DTO\+::\+Game\+DTO (\begin{DoxyParamCaption}\item[{String}]{ai\+Type,  }\item[{String}]{board,  }\item[{String}]{first\+Player,  }\item[{String}]{game\+Status,  }\item[{int}]{next\+Move,  }\item[{String}]{second\+Player,  }\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Constructs a new \doxylink{classGameDTO}{Game\+DTO} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ai\+Type} & The type of AI used in the game. \\
+\hline
+{\em board} & The current state of the game board. \\
+\hline
+{\em first\+Player} & The name of the first player. \\
+\hline
+{\em game\+Status} & The current status of the game. \\
+\hline
+{\em next\+Move} & The player who is next to move. \\
+\hline
+{\em second\+Player} & The name of the second player. \\
+\hline
+{\em rows} & The number of rows on the game board. \\
+\hline
+{\em cols} & The number of columns on the game board. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGameDTO_a846729dc4c69d0d684cc640a9773f6ca}\label{classGameDTO_a846729dc4c69d0d684cc640a9773f6ca} 
+\index{GameDTO@{GameDTO}!parseXML@{parseXML}}
+\index{parseXML@{parseXML}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{parseXML()}{parseXML()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classGameDTO}{Game\+DTO}} \texorpdfstring{$\ast$}{*} Game\+DTO\+::parse\+XML (\begin{DoxyParamCaption}\item[{String}]{xml }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create object from xml. 
+
+Static fabric method to parse XML string to object of \doxylink{classGameDTO}{Game\+DTO} class
+
+
+\begin{DoxyParams}{Parameters}
+{\em xml} & string that contain \doxylink{classGame}{Game} as XML object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game\+DTO\texorpdfstring{$\ast$}{*} The pointer to a created Object 
+\end{DoxyReturn}
+\Hypertarget{classGameDTO_a4765e4c750beaf4ec0c7197cfa91fc55}\label{classGameDTO_a4765e4c750beaf4ec0c7197cfa91fc55} 
+\index{GameDTO@{GameDTO}!toObject@{toObject}}
+\index{toObject@{toObject}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{toObject()}{toObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} Game\+DTO\+::to\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convert DTO to Object. 
+
+\begin{DoxyReturn}{Returns}
+Game\texorpdfstring{$\ast$}{*} pointer to created \doxylink{classGame}{Game} object 
+\end{DoxyReturn}
+\Hypertarget{classGameDTO_a425b31fd9b508c72146e696564981cb0}\label{classGameDTO_a425b31fd9b508c72146e696564981cb0} 
+\index{GameDTO@{GameDTO}!toXml@{toXml}}
+\index{toXml@{toXml}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{toXml()}{toXml()}}
+{\footnotesize\ttfamily String Game\+DTO\+::to\+Xml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Convert object to XML. 
+
+\begin{DoxyReturn}{Returns}
+String Object as a XML 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classGameDTO_a5bcc1db75dc129db7c0963ac6a44a22d}\label{classGameDTO_a5bcc1db75dc129db7c0963ac6a44a22d} 
+\index{GameDTO@{GameDTO}!aiType@{aiType}}
+\index{aiType@{aiType}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{aiType}{aiType}}
+{\footnotesize\ttfamily String Game\+DTO\+::ai\+Type}
+
+Type of ai RANDOM/\+BEST\+\_\+\+MOVE \Hypertarget{classGameDTO_ab3fcd69611a7f1dc821cc1cd62b2e2d8}\label{classGameDTO_ab3fcd69611a7f1dc821cc1cd62b2e2d8} 
+\index{GameDTO@{GameDTO}!board@{board}}
+\index{board@{board}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily String Game\+DTO\+::board}
+
+\doxylink{classBoard}{Board} DTO as an array \Hypertarget{classGameDTO_a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd}\label{classGameDTO_a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd} 
+\index{GameDTO@{GameDTO}!cols@{cols}}
+\index{cols@{cols}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Game\+DTO\+::cols}
+
+Number of columns in the board \Hypertarget{classGameDTO_a86c136a5d757b5f1667e7af1c7ceb3f3}\label{classGameDTO_a86c136a5d757b5f1667e7af1c7ceb3f3} 
+\index{GameDTO@{GameDTO}!firstPlayer@{firstPlayer}}
+\index{firstPlayer@{firstPlayer}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{firstPlayer}{firstPlayer}}
+{\footnotesize\ttfamily String Game\+DTO\+::first\+Player}
+
+First player of the game AI / MAN \Hypertarget{classGameDTO_a6d642cdffa73d88c9a3da2bad48e7e1d}\label{classGameDTO_a6d642cdffa73d88c9a3da2bad48e7e1d} 
+\index{GameDTO@{GameDTO}!gameStatus@{gameStatus}}
+\index{gameStatus@{gameStatus}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{gameStatus}{gameStatus}}
+{\footnotesize\ttfamily String Game\+DTO\+::game\+Status}
+
+Current game status \Hypertarget{classGameDTO_af40b076bbc577e8c273216546747e064}\label{classGameDTO_af40b076bbc577e8c273216546747e064} 
+\index{GameDTO@{GameDTO}!nextMove@{nextMove}}
+\index{nextMove@{nextMove}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{nextMove}{nextMove}}
+{\footnotesize\ttfamily int Game\+DTO\+::next\+Move}
+
+Who is moving now \Hypertarget{classGameDTO_a5f62e34d7591aa30b678c911d72dae78}\label{classGameDTO_a5f62e34d7591aa30b678c911d72dae78} 
+\index{GameDTO@{GameDTO}!rows@{rows}}
+\index{rows@{rows}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int Game\+DTO\+::rows}
+
+Number of rows in the board \Hypertarget{classGameDTO_ad6bb7384815352f1f263c6e59f065fb2}\label{classGameDTO_ad6bb7384815352f1f263c6e59f065fb2} 
+\index{GameDTO@{GameDTO}!secondPlayer@{secondPlayer}}
+\index{secondPlayer@{secondPlayer}!GameDTO@{GameDTO}}
+\doxysubsubsection{\texorpdfstring{secondPlayer}{secondPlayer}}
+{\footnotesize\ttfamily String Game\+DTO\+::second\+Player}
+
+Second player of the game AI / MAN 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game/dto/\mbox{\hyperlink{GameDTO_8h}{Game\+DTO.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_FixedQueue_8h_source" xml:lang="en-US">
+<title>FixedQueue.h</title>
+<indexterm><primary>include/utils/FixedQueue.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#ifndef&#32;FIXEDQUEUE_H</emphasis>
+7 <emphasis role="preprocessor">#define&#32;FIXEDQUEUE_H</emphasis>
+8 
+9 <emphasis role="preprocessor">#include&#32;&lt;deque&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Coordinates_8h">Coordinates.h</link>&quot;</emphasis>
+11 
+16 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classFixedQueue">FixedQueue</link>
+17 {
+18 <emphasis role="keyword">private</emphasis>:
+19 &#32;&#32;&#32;&#32;std::deque&lt;Coordinates&gt;&#32;<link linkend="_classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a">queue</link>;&#32;
+20 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classFixedQueue_1a89fd13baddd654ad75a86a41dea15383">maxSize</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+22 <emphasis role="keyword">public</emphasis>:
+27 &#32;&#32;&#32;&#32;<link linkend="_classFixedQueue_1a6324edde12c3e1a010f9c196a7607d9f">FixedQueue</link>(<emphasis role="keywordtype">int</emphasis>&#32;size)&#32;:&#32;<link linkend="_classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a">queue</link>(),&#32;<link linkend="_classFixedQueue_1a89fd13baddd654ad75a86a41dea15383">maxSize</link>(size){};
+28 
+36 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classFixedQueue_1a621e22132830bf19305bb387bb677d84">add</link>(<link linkend="_structCoordinates">Coordinates</link>&#32;element);
+37 
+42 &#32;&#32;&#32;&#32;<link linkend="_structCoordinates">Coordinates</link>&#32;<link linkend="_classFixedQueue_1a9ef52780a7e0301bcfaa3c46f39d881c">poll</link>();
+43 
+47 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classFixedQueue_1a25c0fde3fdf5205f3ea011d4eab00e59">clear</link>();
+48 };
+49 
+50 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

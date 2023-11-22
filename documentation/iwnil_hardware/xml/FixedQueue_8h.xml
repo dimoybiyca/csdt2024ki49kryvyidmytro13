@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="FixedQueue_8h" kind="file" language="C++">
+    <compoundname>FixedQueue.h</compoundname>
+    <includes local="no">deque</includes>
+    <includes refid="Coordinates_8h" local="yes">Coordinates.h</includes>
+    <includedby refid="GameProcessor_8h" local="yes">include/game/GameProcessor.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Coordinates.h</label>
+        <link refid="Coordinates_8h"/>
+      </node>
+      <node id="1">
+        <label>include/utils/FixedQueue.h</label>
+        <link refid="FixedQueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>deque</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/game/GameProcessor.h</label>
+        <link refid="GameProcessor_8h"/>
+      </node>
+      <node id="1">
+        <label>include/utils/FixedQueue.h</label>
+        <link refid="FixedQueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFixedQueue" prot="public">FixedQueue</innerclass>
+    <briefdescription>
+<para>Definition of the <ref refid="classFixedQueue" kindref="compound">FixedQueue</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FIXEDQUEUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIXEDQUEUE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Coordinates_8h" kindref="compound">Coordinates.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="classFixedQueue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFixedQueue" kindref="compound">FixedQueue</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::deque&lt;Coordinates&gt;<sp/><ref refid="classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a" kindref="member">queue</ref>;<sp/></highlight></codeline>
+<codeline lineno="20" refid="classFixedQueue_1a89fd13baddd654ad75a86a41dea15383" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classFixedQueue_1a89fd13baddd654ad75a86a41dea15383" kindref="member">maxSize</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27" refid="classFixedQueue_1a6324edde12c3e1a010f9c196a7607d9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classFixedQueue_1a6324edde12c3e1a010f9c196a7607d9f" kindref="member">FixedQueue</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size)<sp/>:<sp/><ref refid="classFixedQueue_1a6b3655d7b0b90382f5a787f3e49f9b7a" kindref="member">queue</ref>(),<sp/><ref refid="classFixedQueue_1a89fd13baddd654ad75a86a41dea15383" kindref="member">maxSize</ref>(size){};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classFixedQueue_1a621e22132830bf19305bb387bb677d84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFixedQueue_1a621e22132830bf19305bb387bb677d84" kindref="member">add</ref>(<ref refid="structCoordinates" kindref="compound">Coordinates</ref><sp/>element);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="classFixedQueue_1a9ef52780a7e0301bcfaa3c46f39d881c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCoordinates" kindref="compound">Coordinates</ref><sp/><ref refid="classFixedQueue_1a9ef52780a7e0301bcfaa3c46f39d881c" kindref="member">poll</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classFixedQueue_1a25c0fde3fdf5205f3ea011d4eab00e59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFixedQueue_1a25c0fde3fdf5205f3ea011d4eab00e59" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/utils/FixedQueue.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,570 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtinyxml2_1_1XMLAttribute" xml:lang="en-US">
+<title>tinyxml2::XMLAttribute Class Reference</title>
+<indexterm><primary>tinyxml2::XMLAttribute</primary></indexterm>
+<para>
+<computeroutput>#include &lt;tinyxml2.h&gt;</computeroutput>
+</para>
+Collaboration diagram for tinyxml2::XMLAttribute:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>const char * <link linkend="_classtinyxml2_1_1XMLAttribute_1a5a5c135d24cce7abda6f17301c6274d8">Name</link> () const</para>
+
+<para>The name of the attribute. </para>
+</listitem>
+            <listitem><para>const char * <link linkend="_classtinyxml2_1_1XMLAttribute_1ab1c5cd993f836a771818ca408994b14e">Value</link> () const</para>
+
+<para>The value of the attribute. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1XMLAttribute_1a02d5ea924586e35f9c13857d1671b765">GetLineNum</link> () const</para>
+
+<para>Gets the line number the attribute is in, if the document was parsed from a file. </para>
+</listitem>
+            <listitem><para>const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> * <link linkend="_classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e">Next</link> () const</para>
+
+<para>The next attribute in the list. </para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue</link> () const</para>
+</listitem>
+            <listitem><para>int64_t <link linkend="_classtinyxml2_1_1XMLAttribute_1a8762ed54f147c5744ada55c3d04d27f2">Int64Value</link> () const</para>
+</listitem>
+            <listitem><para>uint64_t <link linkend="_classtinyxml2_1_1XMLAttribute_1ab25d1eb942c7b76c03a73e7710aadd38">Unsigned64Value</link> () const</para>
+</listitem>
+            <listitem><para>unsigned <link linkend="_classtinyxml2_1_1XMLAttribute_1a0be5343b08a957c42c02c5d32c35d338">UnsignedValue</link> () const</para>
+
+<para>Query as an unsigned integer. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classtinyxml2_1_1XMLAttribute_1a98ce5207344ad33a265b0422addae1ff">BoolValue</link> () const</para>
+
+<para>Query as a boolean. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</listitem>
+            <listitem><para>double <link linkend="_classtinyxml2_1_1XMLAttribute_1a4aa73513f54ff0087d3e804f0f54e30f">DoubleValue</link> () const</para>
+
+<para>Query as a double. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</listitem>
+            <listitem><para>float <link linkend="_classtinyxml2_1_1XMLAttribute_1a27797b45d21c981257720db94f5f8801">FloatValue</link> () const</para>
+
+<para>Query as a float. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993">QueryIntValue</link> (int *value) const</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a48a7f3496f1415832e451bd8d09c9cb9">QueryUnsignedValue</link> (unsigned int *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a4e25344d6e4159026be34dbddf1dcac2">QueryInt64Value</link> (int64_t *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1af793c695e7ee65cf20b8010d38b1d157">QueryUnsigned64Value</link> (uint64_t *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a5f32e038954256f61c21ff20fd13a09c">QueryBoolValue</link> (bool *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a2aa6e55e8ea03af0609cf6690bff79b9">QueryDoubleValue</link> (double *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a049dea6449a6259b6cfed44a9427b607">QueryFloatValue</link> (float *value) const</para>
+
+<para>See QueryIntValue. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a406d2c4a13c7af99a65edb59dd9f7581">SetAttribute</link> (const char *value)</para>
+
+<para>Set the attribute to a string value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1ad86d7d7058d76761c3a80662566a57e5">SetAttribute</link> (int value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1ae70468c0f6df2748ba3529c716999fae">SetAttribute</link> (unsigned value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a7c1240f479722b9aa29b6c030aa116c2">SetAttribute</link> (int64_t value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a10964060a5c0d92486ecf8705bdf37da">SetAttribute</link> (uint64_t value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1ab3516def4fe058fe328f2b89fc2d77da">SetAttribute</link> (bool value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a9a65ab3147abe8ccbbd373ce8791e818">SetAttribute</link> (double value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1ae95e843313aaf5d56c32530b6456df02">SetAttribute</link> (float value)</para>
+
+<para>Set the attribute to value. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Types    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5ea5c77cc230dc9e6f9011ba6baa5cf6aaa">BUF_SIZE</link> = 200
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLAttribute_1ae001da9e4e0f727c44f2aadbfb325a7a">XMLAttribute</link> ()</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1XMLAttribute_1a09f3de63524b73b846af8d8656b90d6c">~XMLAttribute</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLAttribute_1a423410d8fb1b94f4514e34abf5432457">XMLAttribute</link> (const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> &amp;)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a38e1d174a975bab27a70b4032e39a257">operator=</link> (const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> &amp;)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1XMLAttribute_1a469c2363600007f49e62a8048a362d57">SetName</link> (const char *name)</para>
+</listitem>
+            <listitem><para>char * <link linkend="_classtinyxml2_1_1XMLAttribute_1a4952364c1f0260c737ac3fcac756f5a5">ParseDeep</link> (char *p, bool processEntities, int *curLineNumPtr)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair">StrPair</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1a80850208963b536e9254a7fa1d4abe67">_name</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1StrPair">StrPair</link> <link linkend="_classtinyxml2_1_1XMLAttribute_1abcf5c9b7f040ed71ed2a66557584b5b0">_value</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1XMLAttribute_1a3ccce78440ebad696e6958cb51aead9e">_parseLineNum</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> * <link linkend="_classtinyxml2_1_1XMLAttribute_1a3bbf00f77131a8e83d648d32d090c564">_next</link></para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1MemPool">MemPool</link> * <link linkend="_classtinyxml2_1_1XMLAttribute_1ac0a1130568dd9e985dd7753ae44fcdbf">_memPool</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classtinyxml2_1_1XMLAttribute_1ac2fba9b6e452829dd892f7392c24e0eb">XMLElement</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>An attribute is a name-value pair. Elements have an arbitrary number of attributes, each with a unique name.</para>
+
+<para><note><title>Note</title>
+
+<para>The attributes are not XMLNodes. You may only query the <link linkend="_classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e">Next()</link> attribute in a list. </para>
+</note>
+</para>
+</section>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5e"/><section>
+    <title>anonymous enum</title>
+<para><computeroutput>anonymous enum<computeroutput>[private]</computeroutput></computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>BUF_SIZE</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>BUF_SIZE</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5ea5c77cc230dc9e6f9011ba6baa5cf6aaa"/>BUF_SIZE</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ae001da9e4e0f727c44f2aadbfb325a7a"/><section>
+    <title>XMLAttribute()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>XMLAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>XMLAttribute</secondary></indexterm>
+<para><computeroutput>tinyxml2::XMLAttribute::XMLAttribute ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a423410d8fb1b94f4514e34abf5432457"/><section>
+    <title>XMLAttribute()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>XMLAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>XMLAttribute</secondary></indexterm>
+<para><computeroutput>tinyxml2::XMLAttribute::XMLAttribute (const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a98ce5207344ad33a265b0422addae1ff"/><section>
+    <title>BoolValue()</title>
+<indexterm><primary>BoolValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>BoolValue</secondary></indexterm>
+<para><computeroutput>bool tinyxml2::XMLAttribute::BoolValue ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Query as a boolean. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a4aa73513f54ff0087d3e804f0f54e30f"/><section>
+    <title>DoubleValue()</title>
+<indexterm><primary>DoubleValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>DoubleValue</secondary></indexterm>
+<para><computeroutput>double tinyxml2::XMLAttribute::DoubleValue ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Query as a double. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a27797b45d21c981257720db94f5f8801"/><section>
+    <title>FloatValue()</title>
+<indexterm><primary>FloatValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>FloatValue</secondary></indexterm>
+<para><computeroutput>float tinyxml2::XMLAttribute::FloatValue ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Query as a float. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a02d5ea924586e35f9c13857d1671b765"/><section>
+    <title>GetLineNum()</title>
+<indexterm><primary>GetLineNum</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>GetLineNum</secondary></indexterm>
+<para><computeroutput>int tinyxml2::XMLAttribute::GetLineNum ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Gets the line number the attribute is in, if the document was parsed from a file. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a8762ed54f147c5744ada55c3d04d27f2"/><section>
+    <title>Int64Value()</title>
+<indexterm><primary>Int64Value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>Int64Value</secondary></indexterm>
+<para><computeroutput>int64_t tinyxml2::XMLAttribute::Int64Value ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80"/><section>
+    <title>IntValue()</title>
+<indexterm><primary>IntValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>IntValue</secondary></indexterm>
+<para><computeroutput>int tinyxml2::XMLAttribute::IntValue ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para>
+<para>IntValue interprets the attribute as an integer, and returns the value. If the value isn&apos;t an integer, 0 will be returned. There is no error checking; use <link linkend="_classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993">QueryIntValue()</link> if you need error checking. </para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a5a5c135d24cce7abda6f17301c6274d8"/><section>
+    <title>Name()</title>
+<indexterm><primary>Name</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>Name</secondary></indexterm>
+<para><computeroutput>const char * tinyxml2::XMLAttribute::Name ( ) const</computeroutput></para><para>
+
+<para>The name of the attribute. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e"/><section>
+    <title>Next()</title>
+<indexterm><primary>Next</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>Next</secondary></indexterm>
+<para><computeroutput>const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> * tinyxml2::XMLAttribute::Next ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>The next attribute in the list. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a38e1d174a975bab27a70b4032e39a257"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::operator= (const <link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link> &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a4952364c1f0260c737ac3fcac756f5a5"/><section>
+    <title>ParseDeep()</title>
+<indexterm><primary>ParseDeep</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>ParseDeep</secondary></indexterm>
+<para><computeroutput>char * tinyxml2::XMLAttribute::ParseDeep (char * p, bool processEntities, int * curLineNumPtr)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a5f32e038954256f61c21ff20fd13a09c"/><section>
+    <title>QueryBoolValue()</title>
+<indexterm><primary>QueryBoolValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryBoolValue</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryBoolValue (bool * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a5f32e038954256f61c21ff20fd13a09c_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a2aa6e55e8ea03af0609cf6690bff79b9"/><section>
+    <title>QueryDoubleValue()</title>
+<indexterm><primary>QueryDoubleValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryDoubleValue</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryDoubleValue (double * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a2aa6e55e8ea03af0609cf6690bff79b9_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a049dea6449a6259b6cfed44a9427b607"/><section>
+    <title>QueryFloatValue()</title>
+<indexterm><primary>QueryFloatValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryFloatValue</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryFloatValue (float * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a049dea6449a6259b6cfed44a9427b607_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a4e25344d6e4159026be34dbddf1dcac2"/><section>
+    <title>QueryInt64Value()</title>
+<indexterm><primary>QueryInt64Value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryInt64Value</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryInt64Value (int64_t * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a4e25344d6e4159026be34dbddf1dcac2_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993"/><section>
+    <title>QueryIntValue()</title>
+<indexterm><primary>QueryIntValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryIntValue</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryIntValue (int * value) const</computeroutput></para>
+<para>QueryIntValue interprets the attribute as an integer, and returns the value in the provided parameter. The function will return XML_SUCCESS on success, and XML_WRONG_ATTRIBUTE_TYPE if the conversion is not successful. </para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a6d5176260db00ea301c01af8457cd993_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1af793c695e7ee65cf20b8010d38b1d157"/><section>
+    <title>QueryUnsigned64Value()</title>
+<indexterm><primary>QueryUnsigned64Value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryUnsigned64Value</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryUnsigned64Value (uint64_t * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_af793c695e7ee65cf20b8010d38b1d157_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a48a7f3496f1415832e451bd8d09c9cb9"/><section>
+    <title>QueryUnsignedValue()</title>
+<indexterm><primary>QueryUnsignedValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>QueryUnsignedValue</secondary></indexterm>
+<para><computeroutput><link linkend="_namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08">XMLError</link> tinyxml2::XMLAttribute::QueryUnsignedValue (unsigned int * value) const</computeroutput></para><para>
+
+<para>See QueryIntValue. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a48a7f3496f1415832e451bd8d09c9cb9_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ab3516def4fe058fe328f2b89fc2d77da"/><section>
+    <title>SetAttribute()<computeroutput>[1/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (bool value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a406d2c4a13c7af99a65edb59dd9f7581"/><section>
+    <title>SetAttribute()<computeroutput>[2/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (const char * value)</computeroutput></para><para>
+
+<para>Set the attribute to a string value. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_a406d2c4a13c7af99a65edb59dd9f7581_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a9a65ab3147abe8ccbbd373ce8791e818"/><section>
+    <title>SetAttribute()<computeroutput>[3/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (double value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ae95e843313aaf5d56c32530b6456df02"/><section>
+    <title>SetAttribute()<computeroutput>[4/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (float value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ad86d7d7058d76761c3a80662566a57e5"/><section>
+    <title>SetAttribute()<computeroutput>[5/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (int value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a7c1240f479722b9aa29b6c030aa116c2"/><section>
+    <title>SetAttribute()<computeroutput>[6/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (int64_t value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a10964060a5c0d92486ecf8705bdf37da"/><section>
+    <title>SetAttribute()<computeroutput>[7/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (uint64_t value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ae70468c0f6df2748ba3529c716999fae"/><section>
+    <title>SetAttribute()<computeroutput>[8/8]</computeroutput></title>
+<indexterm><primary>SetAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetAttribute</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetAttribute (unsigned value)</computeroutput></para><para>
+
+<para>Set the attribute to value. </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a469c2363600007f49e62a8048a362d57"/><section>
+    <title>SetName()</title>
+<indexterm><primary>SetName</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>SetName</secondary></indexterm>
+<para><computeroutput>void tinyxml2::XMLAttribute::SetName (const char * name)<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ab25d1eb942c7b76c03a73e7710aadd38"/><section>
+    <title>Unsigned64Value()</title>
+<indexterm><primary>Unsigned64Value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>Unsigned64Value</secondary></indexterm>
+<para><computeroutput>uint64_t tinyxml2::XMLAttribute::Unsigned64Value ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a0be5343b08a957c42c02c5d32c35d338"/><section>
+    <title>UnsignedValue()</title>
+<indexterm><primary>UnsignedValue</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>UnsignedValue</secondary></indexterm>
+<para><computeroutput>unsigned tinyxml2::XMLAttribute::UnsignedValue ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Query as an unsigned integer. See <link linkend="_classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80">IntValue()</link> </para>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ab1c5cd993f836a771818ca408994b14e"/><section>
+    <title>Value()</title>
+<indexterm><primary>Value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>Value</secondary></indexterm>
+<para><computeroutput>const char * tinyxml2::XMLAttribute::Value ( ) const</computeroutput></para><para>
+
+<para>The value of the attribute. </para>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLAttribute_ab1c5cd993f836a771818ca408994b14e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a09f3de63524b73b846af8d8656b90d6c"/><section>
+    <title>~XMLAttribute()</title>
+<indexterm><primary>~XMLAttribute</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>~XMLAttribute</secondary></indexterm>
+<para><computeroutput>virtual tinyxml2::XMLAttribute::~XMLAttribute ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[private]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Friends And Related Symbol Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ac2fba9b6e452829dd892f7392c24e0eb"/><section>
+    <title>XMLElement</title>
+<indexterm><primary>XMLElement</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>XMLElement</secondary></indexterm>
+<para><computeroutput>friend class <link linkend="_classtinyxml2_1_1XMLElement">XMLElement</link><computeroutput>[friend]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1ac0a1130568dd9e985dd7753ae44fcdbf"/><section>
+    <title>_memPool</title>
+<indexterm><primary>_memPool</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>_memPool</secondary></indexterm>
+<para><computeroutput><link linkend="_classtinyxml2_1_1MemPool">MemPool</link>* tinyxml2::XMLAttribute::_memPool<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a80850208963b536e9254a7fa1d4abe67"/><section>
+    <title>_name</title>
+<indexterm><primary>_name</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>_name</secondary></indexterm>
+<para><computeroutput><link linkend="_classtinyxml2_1_1StrPair">StrPair</link> tinyxml2::XMLAttribute::_name<computeroutput>[mutable]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a3bbf00f77131a8e83d648d32d090c564"/><section>
+    <title>_next</title>
+<indexterm><primary>_next</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>_next</secondary></indexterm>
+<para><computeroutput><link linkend="_classtinyxml2_1_1XMLAttribute">XMLAttribute</link>* tinyxml2::XMLAttribute::_next<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1a3ccce78440ebad696e6958cb51aead9e"/><section>
+    <title>_parseLineNum</title>
+<indexterm><primary>_parseLineNum</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>_parseLineNum</secondary></indexterm>
+<para><computeroutput>int tinyxml2::XMLAttribute::_parseLineNum<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLAttribute_1abcf5c9b7f040ed71ed2a66557584b5b0"/><section>
+    <title>_value</title>
+<indexterm><primary>_value</primary><secondary>tinyxml2::XMLAttribute</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLAttribute</primary><secondary>_value</secondary></indexterm>
+<para><computeroutput><link linkend="_classtinyxml2_1_1StrPair">StrPair</link> tinyxml2::XMLAttribute::_value<computeroutput>[mutable]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

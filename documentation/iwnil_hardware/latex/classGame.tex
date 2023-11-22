@@ -1,0 +1,328 @@
+\doxysection{Game Class Reference}
+\hypertarget{classGame}{}\label{classGame}\index{Game@{Game}}
+
+
+A class representing a game with players, status, and a game board.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+
+
+Collaboration diagram for Game\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classGame__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGame_acb85e6adbb0fe80811507f18a5d029ec}{Game}} (String \mbox{\hyperlink{classGame_acd2b096faadc418700fc67ce839eaa5e}{game\+Status}}, String \mbox{\hyperlink{classGame_afbb87c0f34b073fd8fe9deba3fdffc83}{first\+Player}}, String \mbox{\hyperlink{classGame_a6d1e144f691962294b084d7605356630}{second\+Player}}, byte \mbox{\hyperlink{classGame_add991eb9652696444b437dd48eea51d9}{next\+Move}}, String \mbox{\hyperlink{classGame_a089cd41684bef602a97c15f0981a256f}{ai\+Type}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classGame}{Game} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_a5b906f060f2100223f6961ad842a86f9}{Game}} (String \mbox{\hyperlink{classGame_acd2b096faadc418700fc67ce839eaa5e}{game\+Status}}, String \mbox{\hyperlink{classGame_afbb87c0f34b073fd8fe9deba3fdffc83}{first\+Player}}, String \mbox{\hyperlink{classGame_a6d1e144f691962294b084d7605356630}{second\+Player}}, byte \mbox{\hyperlink{classGame_add991eb9652696444b437dd48eea51d9}{next\+Move}}, String \mbox{\hyperlink{classGame_a089cd41684bef602a97c15f0981a256f}{ai\+Type}}, \mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classGame_ae38e501e177586af48d2e2300b6be4ba}{board}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classGame}{Game} class with an existing game board. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_ad0fe77703efd5a6322081b2c74407a69}{change\+Next\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Changes the player whose turn is next. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classGame_a7b3f0f0b004dda8d7907c52e0184d718}{get\+Game\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current game status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGame_af730540262edbb927ad39e2eb51d25ab}{set\+Game\+Status}} (String \mbox{\hyperlink{classGame_acd2b096faadc418700fc67ce839eaa5e}{game\+Status}})
+\begin{DoxyCompactList}\small\item\em Sets the game status. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classGame_ab07d047e6bb3c9c3e06c0e45ef873668}{get\+AIType}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of AI player, if applicable. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classGame_abb18cb83bdb5b1e24001901add328e16}{get\+First\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the first player. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classGame_a9cf29e6a05f4d49fb8ae25cee7411556}{get\+Second\+Player}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the second player. \end{DoxyCompactList}\item 
+byte \mbox{\hyperlink{classGame_a5a273ef95d4bbf74a45c8334b04c5748}{get\+Next\+Move}} ()
+\begin{DoxyCompactList}\small\item\em Gets the identifier of the player whose turn is next. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_aac82d38c4540fcfaef89059865d1ce31}{get\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Gets a pointer to the game board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{\texorpdfstring{$\sim$}{\string~}\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classGame}{Game} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_af05ac5bb1ca046db7a9cc3d7d264c89c}{new\+Game}} (String \mbox{\hyperlink{classGame_afbb87c0f34b073fd8fe9deba3fdffc83}{first\+Player}}, String \mbox{\hyperlink{classGame_a6d1e144f691962294b084d7605356630}{second\+Player}}, String \mbox{\hyperlink{classGame_a089cd41684bef602a97c15f0981a256f}{ai\+Type}})
+\begin{DoxyCompactList}\small\item\em Factory method to create a new \doxylink{classGame}{Game} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classGame_acd2b096faadc418700fc67ce839eaa5e}{game\+Status}}
+\item 
+String \mbox{\hyperlink{classGame_afbb87c0f34b073fd8fe9deba3fdffc83}{first\+Player}}
+\item 
+String \mbox{\hyperlink{classGame_a6d1e144f691962294b084d7605356630}{second\+Player}}
+\item 
+byte \mbox{\hyperlink{classGame_add991eb9652696444b437dd48eea51d9}{next\+Move}}
+\item 
+String \mbox{\hyperlink{classGame_a089cd41684bef602a97c15f0981a256f}{ai\+Type}}
+\item 
+\mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGame_ae38e501e177586af48d2e2300b6be4ba}{board}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class representing a game with players, status, and a game board. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGame_acb85e6adbb0fe80811507f18a5d029ec}\label{classGame_acb85e6adbb0fe80811507f18a5d029ec} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{String}]{game\+Status,  }\item[{String}]{first\+Player,  }\item[{String}]{second\+Player,  }\item[{byte}]{next\+Move,  }\item[{String}]{ai\+Type }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classGame}{Game} class. 
+
+Create a game with standart \doxylink{classBoard}{Board}
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Status} & The initial status of the game. \\
+\hline
+{\em first\+Player} & The type of the first player. \\
+\hline
+{\em second\+Player} & The type of the second player. \\
+\hline
+{\em next\+Move} & The identifier of the player whose turn is next (1 or 2). \\
+\hline
+{\em ai\+Type} & The type of AI player, if applicable. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGame_a5b906f060f2100223f6961ad842a86f9}\label{classGame_a5b906f060f2100223f6961ad842a86f9} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{Game()}{Game()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}\item[{String}]{game\+Status,  }\item[{String}]{first\+Player,  }\item[{String}]{second\+Player,  }\item[{byte}]{next\+Move,  }\item[{String}]{ai\+Type,  }\item[{\mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*}}]{board }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classGame}{Game} class with an existing game board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Status} & The initial status of the game. \\
+\hline
+{\em first\+Player} & The type of the first player. \\
+\hline
+{\em second\+Player} & The type of the second player. \\
+\hline
+{\em next\+Move} & The identifier of the player whose turn is next (1 or 2). \\
+\hline
+{\em ai\+Type} & The type of AI player, if applicable. \\
+\hline
+{\em board} & Pointer to an existing game board. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}\label{classGame_ae3d112ca6e0e55150d2fdbc704474530} 
+\index{Game@{Game}!````~Game@{\texorpdfstring{$\sim$}{\string~}Game}}
+\index{````~Game@{\texorpdfstring{$\sim$}{\string~}Game}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Game()}{\string~Game()}}
+{\footnotesize\ttfamily Game\+::\texorpdfstring{$\sim$}{\string~}\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{classGame}{Game} class. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGame_ad0fe77703efd5a6322081b2c74407a69}\label{classGame_ad0fe77703efd5a6322081b2c74407a69} 
+\index{Game@{Game}!changeNextPlayer@{changeNextPlayer}}
+\index{changeNextPlayer@{changeNextPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{changeNextPlayer()}{changeNextPlayer()}}
+{\footnotesize\ttfamily void Game\+::change\+Next\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changes the player whose turn is next. 
+
+\Hypertarget{classGame_ab07d047e6bb3c9c3e06c0e45ef873668}\label{classGame_ab07d047e6bb3c9c3e06c0e45ef873668} 
+\index{Game@{Game}!getAIType@{getAIType}}
+\index{getAIType@{getAIType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getAIType()}{getAIType()}}
+{\footnotesize\ttfamily String Game\+::get\+AIType (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the type of AI player, if applicable. 
+
+\begin{DoxyReturn}{Returns}
+The type of AI player. 
+\end{DoxyReturn}
+\Hypertarget{classGame_aac82d38c4540fcfaef89059865d1ce31}\label{classGame_aac82d38c4540fcfaef89059865d1ce31} 
+\index{Game@{Game}!getBoard@{getBoard}}
+\index{getBoard@{getBoard}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getBoard()}{getBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoard}{Board}} \texorpdfstring{$\ast$}{*} Game\+::get\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a pointer to the game board. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the game board. 
+\end{DoxyReturn}
+\Hypertarget{classGame_abb18cb83bdb5b1e24001901add328e16}\label{classGame_abb18cb83bdb5b1e24001901add328e16} 
+\index{Game@{Game}!getFirstPlayer@{getFirstPlayer}}
+\index{getFirstPlayer@{getFirstPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getFirstPlayer()}{getFirstPlayer()}}
+{\footnotesize\ttfamily String Game\+::get\+First\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the type of the first player. 
+
+\begin{DoxyReturn}{Returns}
+The type of the first player. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_abb18cb83bdb5b1e24001901add328e16_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a7b3f0f0b004dda8d7907c52e0184d718}\label{classGame_a7b3f0f0b004dda8d7907c52e0184d718} 
+\index{Game@{Game}!getGameStatus@{getGameStatus}}
+\index{getGameStatus@{getGameStatus}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getGameStatus()}{getGameStatus()}}
+{\footnotesize\ttfamily String Game\+::get\+Game\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the current game status. 
+
+\begin{DoxyReturn}{Returns}
+The current game status. 
+\end{DoxyReturn}
+\Hypertarget{classGame_a5a273ef95d4bbf74a45c8334b04c5748}\label{classGame_a5a273ef95d4bbf74a45c8334b04c5748} 
+\index{Game@{Game}!getNextMove@{getNextMove}}
+\index{getNextMove@{getNextMove}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getNextMove()}{getNextMove()}}
+{\footnotesize\ttfamily byte Game\+::get\+Next\+Move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the identifier of the player whose turn is next. 
+
+\begin{DoxyReturn}{Returns}
+The identifier of the player whose turn is next (1 or 2). 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a5a273ef95d4bbf74a45c8334b04c5748_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_a9cf29e6a05f4d49fb8ae25cee7411556}\label{classGame_a9cf29e6a05f4d49fb8ae25cee7411556} 
+\index{Game@{Game}!getSecondPlayer@{getSecondPlayer}}
+\index{getSecondPlayer@{getSecondPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{getSecondPlayer()}{getSecondPlayer()}}
+{\footnotesize\ttfamily String Game\+::get\+Second\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the type of the second player. 
+
+\begin{DoxyReturn}{Returns}
+The type of the second player. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classGame_a9cf29e6a05f4d49fb8ae25cee7411556_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classGame_af05ac5bb1ca046db7a9cc3d7d264c89c}\label{classGame_af05ac5bb1ca046db7a9cc3d7d264c89c} 
+\index{Game@{Game}!newGame@{newGame}}
+\index{newGame@{newGame}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{newGame()}{newGame()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classGame}{Game}} \texorpdfstring{$\ast$}{*} Game\+::new\+Game (\begin{DoxyParamCaption}\item[{String}]{first\+Player,  }\item[{String}]{second\+Player,  }\item[{String}]{ai\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Factory method to create a new \doxylink{classGame}{Game} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Player} & The name of the first player. \\
+\hline
+{\em second\+Player} & The name of the second player. \\
+\hline
+{\em ai\+Type} & The type of AI player, if applicable.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the new \doxylink{classGame}{Game} instance. 
+\end{DoxyReturn}
+\Hypertarget{classGame_af730540262edbb927ad39e2eb51d25ab}\label{classGame_af730540262edbb927ad39e2eb51d25ab} 
+\index{Game@{Game}!setGameStatus@{setGameStatus}}
+\index{setGameStatus@{setGameStatus}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{setGameStatus()}{setGameStatus()}}
+{\footnotesize\ttfamily void Game\+::set\+Game\+Status (\begin{DoxyParamCaption}\item[{String}]{game\+Status }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the game status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Status} & The new game status. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classGame_a089cd41684bef602a97c15f0981a256f}\label{classGame_a089cd41684bef602a97c15f0981a256f} 
+\index{Game@{Game}!aiType@{aiType}}
+\index{aiType@{aiType}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{aiType}{aiType}}
+{\footnotesize\ttfamily String Game\+::ai\+Type\hspace{0.3cm}{\ttfamily [private]}}
+
+The type of AI player, if applicable. \Hypertarget{classGame_ae38e501e177586af48d2e2300b6be4ba}\label{classGame_ae38e501e177586af48d2e2300b6be4ba} 
+\index{Game@{Game}!board@{board}}
+\index{board@{board}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{board}{board}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBoard}{Board}}\texorpdfstring{$\ast$}{*} Game\+::board\hspace{0.3cm}{\ttfamily [private]}}
+
+Pointer to the game board. \Hypertarget{classGame_afbb87c0f34b073fd8fe9deba3fdffc83}\label{classGame_afbb87c0f34b073fd8fe9deba3fdffc83} 
+\index{Game@{Game}!firstPlayer@{firstPlayer}}
+\index{firstPlayer@{firstPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{firstPlayer}{firstPlayer}}
+{\footnotesize\ttfamily String Game\+::first\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+The type of the first player. \Hypertarget{classGame_acd2b096faadc418700fc67ce839eaa5e}\label{classGame_acd2b096faadc418700fc67ce839eaa5e} 
+\index{Game@{Game}!gameStatus@{gameStatus}}
+\index{gameStatus@{gameStatus}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{gameStatus}{gameStatus}}
+{\footnotesize\ttfamily String Game\+::game\+Status\hspace{0.3cm}{\ttfamily [private]}}
+
+The status of the game (e.\+g., "{}\+IN\+\_\+\+PROGRES"{}, "{}\+PLAYER1\+\_\+\+WIN"{}). \Hypertarget{classGame_add991eb9652696444b437dd48eea51d9}\label{classGame_add991eb9652696444b437dd48eea51d9} 
+\index{Game@{Game}!nextMove@{nextMove}}
+\index{nextMove@{nextMove}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{nextMove}{nextMove}}
+{\footnotesize\ttfamily byte Game\+::next\+Move\hspace{0.3cm}{\ttfamily [private]}}
+
+The identifier of the player whose turn is next (1 or 2). \Hypertarget{classGame_a6d1e144f691962294b084d7605356630}\label{classGame_a6d1e144f691962294b084d7605356630} 
+\index{Game@{Game}!secondPlayer@{secondPlayer}}
+\index{secondPlayer@{secondPlayer}!Game@{Game}}
+\doxysubsubsection{\texorpdfstring{secondPlayer}{secondPlayer}}
+{\footnotesize\ttfamily String Game\+::second\+Player\hspace{0.3cm}{\ttfamily [private]}}
+
+The type of the second player. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/game/\mbox{\hyperlink{Game_8h}{Game.\+h}}\end{DoxyCompactItemize}

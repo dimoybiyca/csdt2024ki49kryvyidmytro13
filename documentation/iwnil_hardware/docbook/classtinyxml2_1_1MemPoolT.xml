@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtinyxml2_1_1MemPoolT" xml:lang="en-US">
+<title>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt; Class Template Reference</title>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary></indexterm>
+<para>
+<computeroutput>#include &lt;tinyxml2.h&gt;</computeroutput>
+</para>
+Inheritance diagram for tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structtinyxml2_1_1MemPoolT_1_1Block">Block</link></para>
+</listitem>
+            <listitem><para>union <link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">Item</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Types    </title>
+        <itemizedlist>
+            <listitem><para>enum { <link linkend="_classtinyxml2_1_1MemPoolT_1a402f4b0dd74e3a5260da18bc6275cb29ab72c1e16d6626854c41feb19e60c54d1">ITEMS_PER_BLOCK</link> = (4 * 1024) / ITEM_SIZE
+ }</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1MemPoolT_1ac8fa6dbb403f009cf9c8a33c6f2803b3">MemPoolT</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_classtinyxml2_1_1MemPoolT_1a5fa4fee934a3df2b9e74282244d78390">~MemPoolT</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1MemPoolT_1a22d595caa0e9d23aa080f49ca6475fdd">Clear</link> ()</para>
+</listitem>
+            <listitem><para>virtual int <link linkend="_classtinyxml2_1_1MemPoolT_1a54e4d9b343459ef1731314a99877ff35">ItemSize</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1a445a6c80151ba6268b24ec62a7c84d74">CurrentAllocs</link> () const</para>
+</listitem>
+            <listitem><para>virtual void * <link linkend="_classtinyxml2_1_1MemPoolT_1a334b67f5bd878b2b3c1746ebd240590a">Alloc</link> ()</para>
+</listitem>
+            <listitem><para>virtual void <link linkend="_classtinyxml2_1_1MemPoolT_1a408ce0918e9d3d5e5e1cc4896944875f">Free</link> (void *mem)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1MemPoolT_1a47eefbd934ef70d973ea41d41ab5f239">Trace</link> (const char *name)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1MemPoolT_1aee3c611215ae08cce41a940bf2763027">SetTracked</link> ()</para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1a3bcdc302ae15d2810e11192321a8f5f1">Untracked</link> () const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_classtinyxml2_1_1MemPool">tinyxml2::MemPool</link>        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1MemPool_1a9101a0083d7370c85bd5aaaba7157f84">MemPool</link> ()</para>
+</listitem>
+            <listitem><para>virtual <link linkend="_classtinyxml2_1_1MemPool_1ae55ad9e3faeca702e6ccbb38fdbcad72">~MemPool</link> ()</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Private Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1MemPoolT_1afa8770a0645d28bd849e7e5aefb326ed">MemPoolT</link> (const <link linkend="_classtinyxml2_1_1MemPoolT">MemPoolT</link> &amp;)</para>
+</listitem>
+            <listitem><para>void <link linkend="_classtinyxml2_1_1MemPoolT_1a12ba6478e385244beb2ca3947879fd24">operator=</link> (const <link linkend="_classtinyxml2_1_1MemPoolT">MemPoolT</link> &amp;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classtinyxml2_1_1DynArray">DynArray</link>&lt; <link linkend="_structtinyxml2_1_1MemPoolT_1_1Block">Block</link> *, 10 &gt; <link linkend="_classtinyxml2_1_1MemPoolT_1a621ef787e528405abb390269b1d2743e">_blockPtrs</link></para>
+</listitem>
+            <listitem><para><link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">Item</link> * <link linkend="_classtinyxml2_1_1MemPoolT_1aff60ad785be00814e442e53fb4462688">_root</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1afa908fd62011c6e633d7af196d667e9d">_currentAllocs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1acd5867e06ad91a655f3c9f95ca163e9b">_nAllocs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1aaf3960c9e30197aeb1c0af271c297db9">_maxAllocs</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_classtinyxml2_1_1MemPoolT_1a5048ad99f7350f7224b13cf85fbff151">_nUntracked</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Enumeration Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a402f4b0dd74e3a5260da18bc6275cb29"/><section>
+    <title>anonymous enum</title>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>anonymous enum</computeroutput></para><informaltable frame="all">
+<title>Enumerator</title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+      <colspec colname='c1'/>
+      <colspec colname='c2'/>
+<tbody>
+<row><entry><indexterm><primary>ITEMS_PER_BLOCK</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>ITEMS_PER_BLOCK</secondary></indexterm>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a402f4b0dd74e3a5260da18bc6275cb29ab72c1e16d6626854c41feb19e60c54d1"/>ITEMS_PER_BLOCK</entry><entry></entry></row>    </tbody>
+    </tgroup>
+</informaltable>
+</section>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1ac8fa6dbb403f009cf9c8a33c6f2803b3"/><section>
+    <title>MemPoolT()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>MemPoolT</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>MemPoolT</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::MemPoolT ( )<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a5fa4fee934a3df2b9e74282244d78390"/><section>
+    <title>~MemPoolT()</title>
+<indexterm><primary>~MemPoolT</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>~MemPoolT</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::~<link linkend="_classtinyxml2_1_1MemPoolT">MemPoolT</link> ( )<computeroutput>[inline]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT_a5fa4fee934a3df2b9e74282244d78390_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1afa8770a0645d28bd849e7e5aefb326ed"/><section>
+    <title>MemPoolT()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>MemPoolT</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>MemPoolT</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::MemPoolT (const <link linkend="_classtinyxml2_1_1MemPoolT">MemPoolT</link>&lt; ITEM_SIZE &gt; &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a334b67f5bd878b2b3c1746ebd240590a"/><section>
+    <title>Alloc()</title>
+<indexterm><primary>Alloc</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>Alloc</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>virtual void * <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Alloc ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_classtinyxml2_1_1MemPool_1a38227917fac8d37181e2fa83c65d9b1e">tinyxml2::MemPool</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT_a334b67f5bd878b2b3c1746ebd240590a_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a22d595caa0e9d23aa080f49ca6475fdd"/><section>
+    <title>Clear()</title>
+<indexterm><primary>Clear</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>Clear</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>void <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Clear ( )<computeroutput>[inline]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT_a22d595caa0e9d23aa080f49ca6475fdd_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a445a6c80151ba6268b24ec62a7c84d74"/><section>
+    <title>CurrentAllocs()</title>
+<indexterm><primary>CurrentAllocs</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>CurrentAllocs</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::CurrentAllocs ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a408ce0918e9d3d5e5e1cc4896944875f"/><section>
+    <title>Free()</title>
+<indexterm><primary>Free</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>Free</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>virtual void <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Free (void * mem)<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_classtinyxml2_1_1MemPool_1a49e3bfac2cba2ebd6776b31e571f64f7">tinyxml2::MemPool</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a54e4d9b343459ef1731314a99877ff35"/><section>
+    <title>ItemSize()</title>
+<indexterm><primary>ItemSize</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>ItemSize</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>virtual int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::ItemSize ( ) const<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_classtinyxml2_1_1MemPool_1a0c518d49e3a94bde566f61e13b7240bb">tinyxml2::MemPool</link>.</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1MemPoolT_a54e4d9b343459ef1731314a99877ff35_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a12ba6478e385244beb2ca3947879fd24"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>operator=</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>void <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::operator= (const <link linkend="_classtinyxml2_1_1MemPoolT">MemPoolT</link>&lt; ITEM_SIZE &gt; &amp; )<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1aee3c611215ae08cce41a940bf2763027"/><section>
+    <title>SetTracked()</title>
+<indexterm><primary>SetTracked</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>SetTracked</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>void <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::SetTracked ( )<computeroutput>[inline]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_classtinyxml2_1_1MemPool_1ac5804dd1387b2e4de5eef710076a0db1">tinyxml2::MemPool</link>.</para>
+</section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a47eefbd934ef70d973ea41d41ab5f239"/><section>
+    <title>Trace()</title>
+<indexterm><primary>Trace</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>Trace</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>void <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Trace (const char * name)<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a3bcdc302ae15d2810e11192321a8f5f1"/><section>
+    <title>Untracked()</title>
+<indexterm><primary>Untracked</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>Untracked</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Untracked ( ) const<computeroutput>[inline]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a621ef787e528405abb390269b1d2743e"/><section>
+    <title>_blockPtrs</title>
+<indexterm><primary>_blockPtrs</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_blockPtrs</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_classtinyxml2_1_1DynArray">DynArray</link>&lt;<link linkend="_structtinyxml2_1_1MemPoolT_1_1Block">Block</link> *, 10&gt; <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_blockPtrs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1afa908fd62011c6e633d7af196d667e9d"/><section>
+    <title>_currentAllocs</title>
+<indexterm><primary>_currentAllocs</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_currentAllocs</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_currentAllocs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1aaf3960c9e30197aeb1c0af271c297db9"/><section>
+    <title>_maxAllocs</title>
+<indexterm><primary>_maxAllocs</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_maxAllocs</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_maxAllocs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1acd5867e06ad91a655f3c9f95ca163e9b"/><section>
+    <title>_nAllocs</title>
+<indexterm><primary>_nAllocs</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_nAllocs</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_nAllocs<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1a5048ad99f7350f7224b13cf85fbff151"/><section>
+    <title>_nUntracked</title>
+<indexterm><primary>_nUntracked</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_nUntracked</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>int <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_nUntracked<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1MemPoolT_1aff60ad785be00814e442e53fb4462688"/><section>
+    <title>_root</title>
+<indexterm><primary>_root</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;</primary><secondary>_root</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">Item</link>* <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::_root<computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

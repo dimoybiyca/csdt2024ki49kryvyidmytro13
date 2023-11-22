@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structCoordinates" xml:lang="en-US">
+<title>Coordinates Struct Reference</title>
+<indexterm><primary>Coordinates</primary></indexterm>
+<para>
+
+<para>A struct representing 2D coordinates with x and y values. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Coordinates.h&gt;</computeroutput>
+</para>
+Collaboration diagram for Coordinates:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="structCoordinates__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7">Coordinates</link> (int _x, int _y)</para>
+
+<para>Constructor for the <link linkend="_structCoordinates">Coordinates</link> struct. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1">x</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structCoordinates_1aae83211da8e94ae2edd3b407c19bff07">y</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>A struct representing 2D coordinates with x and y values. </para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7"/><section>
+    <title>Coordinates()</title>
+<indexterm><primary>Coordinates</primary><secondary>Coordinates</secondary></indexterm>
+<indexterm><primary>Coordinates</primary><secondary>Coordinates</secondary></indexterm>
+<para><computeroutput>Coordinates::Coordinates (int _x, int _y)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+
+<para>Constructor for the <link linkend="_structCoordinates">Coordinates</link> struct. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>_x</entry><entry>
+<para>The x-coordinate value. </para>
+</entry>
+                            </row>
+                            <row>
+<entry>_y</entry><entry>
+<para>The y-coordinate value. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1"/><section>
+    <title>x</title>
+<indexterm><primary>x</primary><secondary>Coordinates</secondary></indexterm>
+<indexterm><primary>Coordinates</primary><secondary>x</secondary></indexterm>
+<para><computeroutput>int Coordinates::x</computeroutput></para>
+<para>The x-coordinate. </para>
+</section>
+<anchor xml:id="_structCoordinates_1aae83211da8e94ae2edd3b407c19bff07"/><section>
+    <title>y</title>
+<indexterm><primary>y</primary><secondary>Coordinates</secondary></indexterm>
+<indexterm><primary>Coordinates</primary><secondary>y</secondary></indexterm>
+<para><computeroutput>int Coordinates::y</computeroutput></para>
+<para>The y-coordinate. </para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+include/utils/<link linkend="_Coordinates_8h">Coordinates.h</link></section>
+</section>

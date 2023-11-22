@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="dir_a84aef8b0cbddfcfe22691f1781902d7" kind="dir">
+    <compoundname>include/enum</compoundname>
+    <innerfile refid="Game__Status_8h">Game_Status.h</innerfile>
+    <innerfile refid="State__Enum_8h">State_Enum.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/enum/"/>
+  </compounddef>
+</doxygen>

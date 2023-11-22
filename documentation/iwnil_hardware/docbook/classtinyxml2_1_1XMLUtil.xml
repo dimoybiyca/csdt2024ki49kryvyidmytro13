@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classtinyxml2_1_1XMLUtil" xml:lang="en-US">
+<title>tinyxml2::XMLUtil Class Reference</title>
+<indexterm><primary>tinyxml2::XMLUtil</primary></indexterm>
+<para>
+<computeroutput>#include &lt;tinyxml2.h&gt;</computeroutput>
+</para>
+Collaboration diagram for tinyxml2::XMLUtil:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classtinyxml2_1_1XMLUtil__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static const char * <link linkend="_classtinyxml2_1_1XMLUtil_1ac9946290e942fbf226a6520bb6a4988f">SkipWhiteSpace</link> (const char *p, int *curLineNumPtr)</para>
+</listitem>
+            <listitem><para>static char * <link linkend="_classtinyxml2_1_1XMLUtil_1aeac9e3b7ab41cc4551467a4b81de28d7">SkipWhiteSpace</link> (char *const p, int *curLineNumPtr)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a357ec3af8fc433d19023a815f45e8e33">IsWhiteSpace</link> (char p)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1abe106a69ac4d942a4381a4d9dfd0e0bd">IsNameStartChar</link> (unsigned char ch)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a04b17341538fa11752f24b4301d19485">IsNameChar</link> (unsigned char ch)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a28c5a73c3d557ae0090191ef31d2f59a">IsPrefixHex</link> (const char *p)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1acfcd287cacfd2533e1bc9ea4dfb56602">StringEqual</link> (const char *p, const char *q, int nChar=INT_MAX)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a9780b5926e30fe6222e10f0e6cf5a04a">IsUTF8Continuation</link> (const char p)</para>
+</listitem>
+            <listitem><para>static const char * <link linkend="_classtinyxml2_1_1XMLUtil_1ad62150de2eba02edf10cffb9e39114ef">ReadBOM</link> (const char *p, bool *hasBOM)</para>
+</listitem>
+            <listitem><para>static const char * <link linkend="_classtinyxml2_1_1XMLUtil_1a06833d372c8668ed6e3f38756f6d7cc6">GetCharacterRef</link> (const char *p, char *value, int *length)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1aad2d5b0f7e4327bff0bf558148f01a82">ConvertUTF32ToUTF8</link> (unsigned long input, char *output, int *length)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1a5819187d33b5b4d626399118eb622016">ToStr</link> (int v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1a096ca738f14b06866d99489e1c315402">ToStr</link> (unsigned v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1ad77298cc6025249b28da58c7289190d1">ToStr</link> (bool v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1a6aef5d230e3972fbedda75b0ba5bbcdb">ToStr</link> (float v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1a5ddef1a1d33db500b74b45110df48b6c">ToStr</link> (double v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1abce55b1eb11af278acdd59fd1db12e34">ToStr</link> (int64_t v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1aff2cf3b9474538d497f672735ce87fd1">ToStr</link> (uint64_t v, char *buffer, int bufferSize)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1ac7fa220dd1c428ed6a77850d56a6e4bf">ToInt</link> (const char *str, int *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a46f7e9542929001e726853ed8b571c07">ToUnsigned</link> (const char *str, unsigned *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1ae1692c644a807da2cd9e1e45f79a102f">ToBool</link> (const char *str, bool *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1ac13b56b82e7f1d2d3954666b76c67d22">ToFloat</link> (const char *str, float *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a7e37ab30ba19c2b02042ab093172e9b8">ToDouble</link> (const char *str, double *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a8114c7289f19ee58129b2439584953e6">ToInt64</link> (const char *str, int64_t *value)</para>
+</listitem>
+            <listitem><para>static bool <link linkend="_classtinyxml2_1_1XMLUtil_1a9a0e74ba8b2f8ecc0656bb18f1e4f8ad">ToUnsigned64</link> (const char *str, uint64_t *value)</para>
+</listitem>
+            <listitem><para>static void <link linkend="_classtinyxml2_1_1XMLUtil_1aa2c657802d96f8bc21af6ed33179d381">SetBoolSerialization</link> (const char *writeTrue, const char *writeFalse)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Private Attributes    </title>
+        <itemizedlist>
+            <listitem><para>static const char * <link linkend="_classtinyxml2_1_1XMLUtil_1a5d173d121ea58f69d875f75cb108ef83">writeBoolTrue</link></para>
+</listitem>
+            <listitem><para>static const char * <link linkend="_classtinyxml2_1_1XMLUtil_1ab642d65697daba2f49a1f0d83411ffa5">writeBoolFalse</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1aad2d5b0f7e4327bff0bf558148f01a82"/><section>
+    <title>ConvertUTF32ToUTF8()</title>
+<indexterm><primary>ConvertUTF32ToUTF8</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ConvertUTF32ToUTF8</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ConvertUTF32ToUTF8 (unsigned long input, char * output, int * length)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a06833d372c8668ed6e3f38756f6d7cc6"/><section>
+    <title>GetCharacterRef()</title>
+<indexterm><primary>GetCharacterRef</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>GetCharacterRef</secondary></indexterm>
+<para><computeroutput>static const char * tinyxml2::XMLUtil::GetCharacterRef (const char * p, char * value, int * length)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a04b17341538fa11752f24b4301d19485"/><section>
+    <title>IsNameChar()</title>
+<indexterm><primary>IsNameChar</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>IsNameChar</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::IsNameChar (unsigned char ch)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1abe106a69ac4d942a4381a4d9dfd0e0bd"/><section>
+    <title>IsNameStartChar()</title>
+<indexterm><primary>IsNameStartChar</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>IsNameStartChar</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::IsNameStartChar (unsigned char ch)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a28c5a73c3d557ae0090191ef31d2f59a"/><section>
+    <title>IsPrefixHex()</title>
+<indexterm><primary>IsPrefixHex</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>IsPrefixHex</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::IsPrefixHex (const char * p)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a9780b5926e30fe6222e10f0e6cf5a04a"/><section>
+    <title>IsUTF8Continuation()</title>
+<indexterm><primary>IsUTF8Continuation</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>IsUTF8Continuation</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::IsUTF8Continuation (const char p)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a357ec3af8fc433d19023a815f45e8e33"/><section>
+    <title>IsWhiteSpace()</title>
+<indexterm><primary>IsWhiteSpace</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>IsWhiteSpace</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::IsWhiteSpace (char p)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ad62150de2eba02edf10cffb9e39114ef"/><section>
+    <title>ReadBOM()</title>
+<indexterm><primary>ReadBOM</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ReadBOM</secondary></indexterm>
+<para><computeroutput>static const char * tinyxml2::XMLUtil::ReadBOM (const char * p, bool * hasBOM)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1aa2c657802d96f8bc21af6ed33179d381"/><section>
+    <title>SetBoolSerialization()</title>
+<indexterm><primary>SetBoolSerialization</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>SetBoolSerialization</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::SetBoolSerialization (const char * writeTrue, const char * writeFalse)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1aeac9e3b7ab41cc4551467a4b81de28d7"/><section>
+    <title>SkipWhiteSpace()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>SkipWhiteSpace</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>SkipWhiteSpace</secondary></indexterm>
+<para><computeroutput>static char * tinyxml2::XMLUtil::SkipWhiteSpace (char *const p, int * curLineNumPtr)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ac9946290e942fbf226a6520bb6a4988f"/><section>
+    <title>SkipWhiteSpace()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>SkipWhiteSpace</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>SkipWhiteSpace</secondary></indexterm>
+<para><computeroutput>static const char * tinyxml2::XMLUtil::SkipWhiteSpace (const char * p, int * curLineNumPtr)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1acfcd287cacfd2533e1bc9ea4dfb56602"/><section>
+    <title>StringEqual()</title>
+<indexterm><primary>StringEqual</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>StringEqual</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::StringEqual (const char * p, const char * q, int nChar = <computeroutput>INT_MAX</computeroutput>
+)<computeroutput>[inline]</computeroutput>, <computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ae1692c644a807da2cd9e1e45f79a102f"/><section>
+    <title>ToBool()</title>
+<indexterm><primary>ToBool</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToBool</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToBool (const char * str, bool * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a7e37ab30ba19c2b02042ab093172e9b8"/><section>
+    <title>ToDouble()</title>
+<indexterm><primary>ToDouble</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToDouble</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToDouble (const char * str, double * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ac13b56b82e7f1d2d3954666b76c67d22"/><section>
+    <title>ToFloat()</title>
+<indexterm><primary>ToFloat</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToFloat</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToFloat (const char * str, float * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ac7fa220dd1c428ed6a77850d56a6e4bf"/><section>
+    <title>ToInt()</title>
+<indexterm><primary>ToInt</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToInt</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToInt (const char * str, int * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a8114c7289f19ee58129b2439584953e6"/><section>
+    <title>ToInt64()</title>
+<indexterm><primary>ToInt64</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToInt64</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToInt64 (const char * str, int64_t * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ad77298cc6025249b28da58c7289190d1"/><section>
+    <title>ToStr()<computeroutput>[1/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (bool v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a5ddef1a1d33db500b74b45110df48b6c"/><section>
+    <title>ToStr()<computeroutput>[2/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (double v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a6aef5d230e3972fbedda75b0ba5bbcdb"/><section>
+    <title>ToStr()<computeroutput>[3/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (float v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a5819187d33b5b4d626399118eb622016"/><section>
+    <title>ToStr()<computeroutput>[4/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (int v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1abce55b1eb11af278acdd59fd1db12e34"/><section>
+    <title>ToStr()<computeroutput>[5/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (int64_t v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1aff2cf3b9474538d497f672735ce87fd1"/><section>
+    <title>ToStr()<computeroutput>[6/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (uint64_t v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a096ca738f14b06866d99489e1c315402"/><section>
+    <title>ToStr()<computeroutput>[7/7]</computeroutput></title>
+<indexterm><primary>ToStr</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToStr</secondary></indexterm>
+<para><computeroutput>static void tinyxml2::XMLUtil::ToStr (unsigned v, char * buffer, int bufferSize)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a46f7e9542929001e726853ed8b571c07"/><section>
+    <title>ToUnsigned()</title>
+<indexterm><primary>ToUnsigned</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToUnsigned</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToUnsigned (const char * str, unsigned * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a9a0e74ba8b2f8ecc0656bb18f1e4f8ad"/><section>
+    <title>ToUnsigned64()</title>
+<indexterm><primary>ToUnsigned64</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>ToUnsigned64</secondary></indexterm>
+<para><computeroutput>static bool tinyxml2::XMLUtil::ToUnsigned64 (const char * str, uint64_t * value)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1ab642d65697daba2f49a1f0d83411ffa5"/><section>
+    <title>writeBoolFalse</title>
+<indexterm><primary>writeBoolFalse</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>writeBoolFalse</secondary></indexterm>
+<para><computeroutput>const char* tinyxml2::XMLUtil::writeBoolFalse<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classtinyxml2_1_1XMLUtil_1a5d173d121ea58f69d875f75cb108ef83"/><section>
+    <title>writeBoolTrue</title>
+<indexterm><primary>writeBoolTrue</primary><secondary>tinyxml2::XMLUtil</secondary></indexterm>
+<indexterm><primary>tinyxml2::XMLUtil</primary><secondary>writeBoolTrue</secondary></indexterm>
+<para><computeroutput>const char* tinyxml2::XMLUtil::writeBoolTrue<computeroutput>[static]</computeroutput>, <computeroutput>[private]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

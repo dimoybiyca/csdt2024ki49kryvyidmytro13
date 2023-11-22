@@ -1,0 +1,768 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classtinyxml2_1_1XMLAttribute" kind="class" language="C++" prot="public">
+    <compoundname>tinyxml2::XMLAttribute</compoundname>
+    <includes refid="tinyxml2_8h" local="no">tinyxml2.h</includes>
+    <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5e" prot="private" static="no" strong="no">
+        <type></type>
+        <name></name>
+        <qualifiedname>tinyxml2::XMLAttribute</qualifiedname>
+        <enumvalue id="classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5ea5c77cc230dc9e6f9011ba6baa5cf6aaa" prot="private">
+          <name>BUF_SIZE</name>
+          <initializer>= 200</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1358" column="9" bodyfile="include/tinyxml2.h" bodystart="1359" bodyend="1361"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classtinyxml2_1_1XMLAttribute_1ac2fba9b6e452829dd892f7392c24e0eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class XMLElement</definition>
+        <argsstring></argsstring>
+        <name>XMLElement</name>
+        <qualifiedname>tinyxml2::XMLAttribute::XMLElement</qualifiedname>
+        <param>
+          <type><ref refid="classtinyxml2_1_1XMLElement" kindref="compound">XMLElement</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1250" column="22" bodyfile="include/tinyxml2.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLAttribute_1a80850208963b536e9254a7fa1d4abe67" prot="private" static="no" mutable="yes">
+        <type><ref refid="classtinyxml2_1_1StrPair" kindref="compound">StrPair</ref></type>
+        <definition>StrPair tinyxml2::XMLAttribute::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>tinyxml2::XMLAttribute::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1372" column="25" bodyfile="include/tinyxml2.h" bodystart="1372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLAttribute_1abcf5c9b7f040ed71ed2a66557584b5b0" prot="private" static="no" mutable="yes">
+        <type><ref refid="classtinyxml2_1_1StrPair" kindref="compound">StrPair</ref></type>
+        <definition>StrPair tinyxml2::XMLAttribute::_value</definition>
+        <argsstring></argsstring>
+        <name>_value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1373" column="25" bodyfile="include/tinyxml2.h" bodystart="1373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLAttribute_1a3ccce78440ebad696e6958cb51aead9e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int tinyxml2::XMLAttribute::_parseLineNum</definition>
+        <argsstring></argsstring>
+        <name>_parseLineNum</name>
+        <qualifiedname>tinyxml2::XMLAttribute::_parseLineNum</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1374" column="13" bodyfile="include/tinyxml2.h" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLAttribute_1a3bbf00f77131a8e83d648d32d090c564" prot="private" static="no" mutable="no">
+        <type><ref refid="classtinyxml2_1_1XMLAttribute" kindref="compound">XMLAttribute</ref> *</type>
+        <definition>XMLAttribute* tinyxml2::XMLAttribute::_next</definition>
+        <argsstring></argsstring>
+        <name>_next</name>
+        <qualifiedname>tinyxml2::XMLAttribute::_next</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1375" column="22" bodyfile="include/tinyxml2.h" bodystart="1375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classtinyxml2_1_1XMLAttribute_1ac0a1130568dd9e985dd7753ae44fcdbf" prot="private" static="no" mutable="no">
+        <type><ref refid="classtinyxml2_1_1MemPool" kindref="compound">MemPool</ref> *</type>
+        <definition>MemPool* tinyxml2::XMLAttribute::_memPool</definition>
+        <argsstring></argsstring>
+        <name>_memPool</name>
+        <qualifiedname>tinyxml2::XMLAttribute::_memPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1376" column="17" bodyfile="include/tinyxml2.h" bodystart="1376" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a5a5c135d24cce7abda6f17301c6274d8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyxml2::XMLAttribute::Name</definition>
+        <argsstring>() const</argsstring>
+        <name>Name</name>
+        <qualifiedname>tinyxml2::XMLAttribute::Name</qualifiedname>
+        <briefdescription>
+<para>The name of the attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1254" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ab1c5cd993f836a771818ca408994b14e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * tinyxml2::XMLAttribute::Value</definition>
+        <argsstring>() const</argsstring>
+        <name>Value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::Value</qualifiedname>
+        <briefdescription>
+<para>The value of the attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1257" column="20"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1adb8ae765f98d0c5037faec48deea78bc" compoundref="tinyxml2_8h" startline="1542" endline="1551">tinyxml2::XMLElement::QueryStringAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a02d5ea924586e35f9c13857d1671b765" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int tinyxml2::XMLAttribute::GetLineNum</definition>
+        <argsstring>() const</argsstring>
+        <name>GetLineNum</name>
+        <qualifiedname>tinyxml2::XMLAttribute::GetLineNum</qualifiedname>
+        <briefdescription>
+<para>Gets the line number the attribute is in, if the document was parsed from a file. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1260" column="13" bodyfile="include/tinyxml2.h" bodystart="1260" bodyend="1260"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classtinyxml2_1_1XMLAttribute" kindref="compound">XMLAttribute</ref> *</type>
+        <definition>const XMLAttribute * tinyxml2::XMLAttribute::Next</definition>
+        <argsstring>() const</argsstring>
+        <name>Next</name>
+        <qualifiedname>tinyxml2::XMLAttribute::Next</qualifiedname>
+        <briefdescription>
+<para>The next attribute in the list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1263" column="28" bodyfile="include/tinyxml2.h" bodystart="1263" bodyend="1266"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int tinyxml2::XMLAttribute::IntValue</definition>
+        <argsstring>() const</argsstring>
+        <name>IntValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::IntValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IntValue interprets the attribute as an integer, and returns the value. If the value isn&apos;t an integer, 0 will be returned. There is no error checking; use <ref refid="classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993" kindref="member">QueryIntValue()</ref> if you need error checking. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1272" column="13" bodyfile="include/tinyxml2.h" bodystart="1272" bodyend="1277"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a8762ed54f147c5744ada55c3d04d27f2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int64_t</type>
+        <definition>int64_t tinyxml2::XMLAttribute::Int64Value</definition>
+        <argsstring>() const</argsstring>
+        <name>Int64Value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::Int64Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1279" column="17" bodyfile="include/tinyxml2.h" bodystart="1279" bodyend="1284"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ab25d1eb942c7b76c03a73e7710aadd38" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t tinyxml2::XMLAttribute::Unsigned64Value</definition>
+        <argsstring>() const</argsstring>
+        <name>Unsigned64Value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::Unsigned64Value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1286" column="18" bodyfile="include/tinyxml2.h" bodystart="1286" bodyend="1291"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a0be5343b08a957c42c02c5d32c35d338" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned tinyxml2::XMLAttribute::UnsignedValue</definition>
+        <argsstring>() const</argsstring>
+        <name>UnsignedValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::UnsignedValue</qualifiedname>
+        <briefdescription>
+<para>Query as an unsigned integer. See <ref refid="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" kindref="member">IntValue()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1294" column="18" bodyfile="include/tinyxml2.h" bodystart="1294" bodyend="1299"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a98ce5207344ad33a265b0422addae1ff" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool tinyxml2::XMLAttribute::BoolValue</definition>
+        <argsstring>() const</argsstring>
+        <name>BoolValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::BoolValue</qualifiedname>
+        <briefdescription>
+<para>Query as a boolean. See <ref refid="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" kindref="member">IntValue()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1301" column="14" bodyfile="include/tinyxml2.h" bodystart="1301" bodyend="1306"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a4aa73513f54ff0087d3e804f0f54e30f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double tinyxml2::XMLAttribute::DoubleValue</definition>
+        <argsstring>() const</argsstring>
+        <name>DoubleValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::DoubleValue</qualifiedname>
+        <briefdescription>
+<para>Query as a double. See <ref refid="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" kindref="member">IntValue()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1308" column="16" bodyfile="include/tinyxml2.h" bodystart="1308" bodyend="1313"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a27797b45d21c981257720db94f5f8801" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float tinyxml2::XMLAttribute::FloatValue</definition>
+        <argsstring>() const</argsstring>
+        <name>FloatValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::FloatValue</qualifiedname>
+        <briefdescription>
+<para>Query as a float. See <ref refid="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" kindref="member">IntValue()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1315" column="15" bodyfile="include/tinyxml2.h" bodystart="1315" bodyend="1320"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryIntValue</definition>
+        <argsstring>(int *value) const</argsstring>
+        <name>QueryIntValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryIntValue</qualifiedname>
+        <param>
+          <type>int *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>QueryIntValue interprets the attribute as an integer, and returns the value in the provided parameter. The function will return XML_SUCCESS on success, and XML_WRONG_ATTRIBUTE_TYPE if the conversion is not successful. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1326" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a8a78bc1187c1c45ad89f2690eab567b1" compoundref="tinyxml2_8h" startline="1467" endline="1475">tinyxml2::XMLElement::QueryIntAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a48a7f3496f1415832e451bd8d09c9cb9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryUnsignedValue</definition>
+        <argsstring>(unsigned int *value) const</argsstring>
+        <name>QueryUnsignedValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryUnsignedValue</qualifiedname>
+        <param>
+          <type>unsigned int *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1328" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a26fc84cbfba6769dafcfbf256c05e22f" compoundref="tinyxml2_8h" startline="1478" endline="1486">tinyxml2::XMLElement::QueryUnsignedAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a4e25344d6e4159026be34dbddf1dcac2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryInt64Value</definition>
+        <argsstring>(int64_t *value) const</argsstring>
+        <name>QueryInt64Value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryInt64Value</qualifiedname>
+        <param>
+          <type>int64_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1330" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a7c0955d80b6f8d196744eacb0f6e90a8" compoundref="tinyxml2_8h" startline="1489" endline="1497">tinyxml2::XMLElement::QueryInt64Attribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1af793c695e7ee65cf20b8010d38b1d157" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryUnsigned64Value</definition>
+        <argsstring>(uint64_t *value) const</argsstring>
+        <name>QueryUnsigned64Value</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryUnsigned64Value</qualifiedname>
+        <param>
+          <type>uint64_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1332" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a13dd590b5d3958ce2ed79844aacd9405" compoundref="tinyxml2_8h" startline="1500" endline="1508">tinyxml2::XMLElement::QueryUnsigned64Attribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a5f32e038954256f61c21ff20fd13a09c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryBoolValue</definition>
+        <argsstring>(bool *value) const</argsstring>
+        <name>QueryBoolValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryBoolValue</qualifiedname>
+        <param>
+          <type>bool *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1334" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a14c1bb77c39689838be01838d86ca872" compoundref="tinyxml2_8h" startline="1511" endline="1519">tinyxml2::XMLElement::QueryBoolAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a2aa6e55e8ea03af0609cf6690bff79b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryDoubleValue</definition>
+        <argsstring>(double *value) const</argsstring>
+        <name>QueryDoubleValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryDoubleValue</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1336" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a5f0964e2dbd8e2ee7fce9beab689443c" compoundref="tinyxml2_8h" startline="1521" endline="1529">tinyxml2::XMLElement::QueryDoubleAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a049dea6449a6259b6cfed44a9427b607" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacetinyxml2_1a1fbf88509c3ac88c09117b1947414e08" kindref="member">XMLError</ref></type>
+        <definition>XMLError tinyxml2::XMLAttribute::QueryFloatValue</definition>
+        <argsstring>(float *value) const</argsstring>
+        <name>QueryFloatValue</name>
+        <qualifiedname>tinyxml2::XMLAttribute::QueryFloatValue</qualifiedname>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>See QueryIntValue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1338" column="18"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1acd5eeddf6002ef90806af794b9d9a5a5" compoundref="tinyxml2_8h" startline="1531" endline="1539">tinyxml2::XMLElement::QueryFloatAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a406d2c4a13c7af99a65edb59dd9f7581" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(const char *value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to a string value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1341" column="14"/>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1aa848b696e6a75e4e545c6da9893b11e1" compoundref="tinyxml2_8h" startline="1644" endline="1648">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a11943abf2d0831548c3790dd5d9f119c" compoundref="tinyxml2_8h" startline="1611" endline="1615">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a233397ee81e70eb5d4b814c5f8698533" compoundref="tinyxml2_8h" startline="1650" endline="1654">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1a554b70d882e65b28fc084b23df9b9759" compoundref="tinyxml2_8h" startline="1656" endline="1660">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1aae6568c64c7f1cc88be8461ba41a79cf" compoundref="tinyxml2_8h" startline="1617" endline="1621">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1aaeefdf9171fec91b13a776b42299b0dd" compoundref="tinyxml2_8h" startline="1630" endline="1634">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1ad598868c0599ddc4695dab18552c308d" compoundref="tinyxml2_8h" startline="1637" endline="1641">tinyxml2::XMLElement::SetAttribute</referencedby>
+        <referencedby refid="classtinyxml2_1_1XMLElement_1ae143997e90064ba82326b29a9930ea8f" compoundref="tinyxml2_8h" startline="1623" endline="1627">tinyxml2::XMLElement::SetAttribute</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ad86d7d7058d76761c3a80662566a57e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(int value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1343" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ae70468c0f6df2748ba3529c716999fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(unsigned value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>unsigned</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1345" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a7c1240f479722b9aa29b6c030aa116c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(int64_t value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>int64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1347" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a10964060a5c0d92486ecf8705bdf37da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(uint64_t value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>uint64_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1349" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ab3516def4fe058fe328f2b89fc2d77da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(bool value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1351" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a9a65ab3147abe8ccbbd373ce8791e818" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(double value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1353" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ae95e843313aaf5d56c32530b6456df02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetAttribute</definition>
+        <argsstring>(float value)</argsstring>
+        <name>SetAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetAttribute</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the attribute to value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1355" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1ae001da9e4e0f727c44f2aadbfb325a7a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>tinyxml2::XMLAttribute::XMLAttribute</definition>
+        <argsstring>()</argsstring>
+        <name>XMLAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::XMLAttribute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1363" column="9" bodyfile="include/tinyxml2.h" bodystart="1363" bodyend="1363"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a09f3de63524b73b846af8d8656b90d6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual tinyxml2::XMLAttribute::~XMLAttribute</definition>
+        <argsstring>()</argsstring>
+        <name>~XMLAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::~XMLAttribute</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1364" column="17" bodyfile="include/tinyxml2.h" bodystart="1364" bodyend="1364"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a423410d8fb1b94f4514e34abf5432457" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>tinyxml2::XMLAttribute::XMLAttribute</definition>
+        <argsstring>(const XMLAttribute &amp;)</argsstring>
+        <name>XMLAttribute</name>
+        <qualifiedname>tinyxml2::XMLAttribute::XMLAttribute</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLAttribute" kindref="compound">XMLAttribute</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1366" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a38e1d174a975bab27a70b4032e39a257" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::operator=</definition>
+        <argsstring>(const XMLAttribute &amp;)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>tinyxml2::XMLAttribute::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classtinyxml2_1_1XMLAttribute" kindref="compound">XMLAttribute</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1367" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a469c2363600007f49e62a8048a362d57" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void tinyxml2::XMLAttribute::SetName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>SetName</name>
+        <qualifiedname>tinyxml2::XMLAttribute::SetName</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1368" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classtinyxml2_1_1XMLAttribute_1a4952364c1f0260c737ac3fcac756f5a5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * tinyxml2::XMLAttribute::ParseDeep</definition>
+        <argsstring>(char *p, bool processEntities, int *curLineNumPtr)</argsstring>
+        <name>ParseDeep</name>
+        <qualifiedname>tinyxml2::XMLAttribute::ParseDeep</qualifiedname>
+        <param>
+          <type>char *</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>processEntities</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>curLineNumPtr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/tinyxml2.h" line="1370" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An attribute is a name-value pair. Elements have an arbitrary number of attributes, each with a unique name.</para>
+<para><simplesect kind="note"><para>The attributes are not XMLNodes. You may only query the <ref refid="classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e" kindref="member">Next()</ref> attribute in a list. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>tinyxml2::MemPool</label>
+        <link refid="classtinyxml2_1_1MemPool"/>
+      </node>
+      <node id="2">
+        <label>tinyxml2::StrPair</label>
+        <link refid="classtinyxml2_1_1StrPair"/>
+      </node>
+      <node id="1">
+        <label>tinyxml2::XMLAttribute</label>
+        <link refid="classtinyxml2_1_1XMLAttribute"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-_name</edgelabel>
+          <edgelabel>-_value</edgelabel>
+        </childnode>
+        <childnode refid="1" relation="usage">
+          <edgelabel>-_next</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>-_memPool</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="include/tinyxml2.h" line="1248" column="5" bodyfile="include/tinyxml2.h" bodystart="1249" bodyend="1377"/>
+    <listofallmembers>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ac0a1130568dd9e985dd7753ae44fcdbf" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>_memPool</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a80850208963b536e9254a7fa1d4abe67" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>_name</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a3bbf00f77131a8e83d648d32d090c564" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>_next</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a3ccce78440ebad696e6958cb51aead9e" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>_parseLineNum</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1abcf5c9b7f040ed71ed2a66557584b5b0" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>_value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a98ce5207344ad33a265b0422addae1ff" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>BoolValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ab574276fd35eff47903e86a25a007d5ea5c77cc230dc9e6f9011ba6baa5cf6aaa" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>BUF_SIZE</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a4aa73513f54ff0087d3e804f0f54e30f" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>DoubleValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a27797b45d21c981257720db94f5f8801" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>FloatValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a02d5ea924586e35f9c13857d1671b765" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>GetLineNum</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a8762ed54f147c5744ada55c3d04d27f2" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>Int64Value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1adfa2433f0fdafd5c3880936de9affa80" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>IntValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a5a5c135d24cce7abda6f17301c6274d8" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>Name</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1aa8c7cf4c94a636ae75046658e551614e" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>Next</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a38e1d174a975bab27a70b4032e39a257" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>operator=</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a4952364c1f0260c737ac3fcac756f5a5" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>ParseDeep</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a5f32e038954256f61c21ff20fd13a09c" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryBoolValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a2aa6e55e8ea03af0609cf6690bff79b9" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryDoubleValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a049dea6449a6259b6cfed44a9427b607" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryFloatValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a4e25344d6e4159026be34dbddf1dcac2" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryInt64Value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a6d5176260db00ea301c01af8457cd993" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryIntValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1af793c695e7ee65cf20b8010d38b1d157" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryUnsigned64Value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a48a7f3496f1415832e451bd8d09c9cb9" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>QueryUnsignedValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a406d2c4a13c7af99a65edb59dd9f7581" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ad86d7d7058d76761c3a80662566a57e5" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ae70468c0f6df2748ba3529c716999fae" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a7c1240f479722b9aa29b6c030aa116c2" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a10964060a5c0d92486ecf8705bdf37da" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ab3516def4fe058fe328f2b89fc2d77da" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a9a65ab3147abe8ccbbd373ce8791e818" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ae95e843313aaf5d56c32530b6456df02" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a469c2363600007f49e62a8048a362d57" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>SetName</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ab25d1eb942c7b76c03a73e7710aadd38" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>Unsigned64Value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a0be5343b08a957c42c02c5d32c35d338" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>UnsignedValue</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ab1c5cd993f836a771818ca408994b14e" prot="public" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>Value</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ae001da9e4e0f727c44f2aadbfb325a7a" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>XMLAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a423410d8fb1b94f4514e34abf5432457" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>XMLAttribute</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1ac2fba9b6e452829dd892f7392c24e0eb" prot="private" virt="non-virtual"><scope>tinyxml2::XMLAttribute</scope><name>XMLElement</name></member>
+      <member refid="classtinyxml2_1_1XMLAttribute_1a09f3de63524b73b846af8d8656b90d6c" prot="private" virt="virtual"><scope>tinyxml2::XMLAttribute</scope><name>~XMLAttribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

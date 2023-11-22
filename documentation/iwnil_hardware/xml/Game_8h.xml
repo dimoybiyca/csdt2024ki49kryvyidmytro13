@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Game_8h" kind="file" language="C++">
+    <compoundname>Game.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="Board_8h" local="yes">Board.h</includes>
+    <includes refid="Game__Object_8h" local="yes">Game_Object.h</includes>
+    <includedby refid="GameProcessor_8h" local="yes">include/game/GameProcessor.h</includedby>
+    <includedby refid="GameDTO_8h" local="yes">include/game/dto/GameDTO.h</includedby>
+    <includedby refid="NewGameDTO_8h" local="yes">include/game/dto/NewGameDTO.h</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/game/Game.h</label>
+        <link refid="Game_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Game_Object.h</label>
+        <link refid="Game__Object_8h"/>
+      </node>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/game/Game.h</label>
+        <link refid="Game_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/game/GameProcessor.h</label>
+        <link refid="GameProcessor_8h"/>
+      </node>
+      <node id="3">
+        <label>include/game/dto/GameDTO.h</label>
+        <link refid="GameDTO_8h"/>
+      </node>
+      <node id="4">
+        <label>include/game/dto/NewGameDTO.h</label>
+        <link refid="NewGameDTO_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGame" prot="public">Game</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Game_8h_1a57ea2f3b1bafe4de806492ca9ce85116" prot="public" static="no">
+        <name>GAME_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Game.h" line="14" column="9" bodyfile="include/game/Game.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Definition of the <ref refid="classGame" kindref="compound">Game</ref> class. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Board_8h" kindref="compound">Board.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Game__Object_8h" kindref="compound">Game_Object.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="Game_8h_1a57ea2f3b1bafe4de806492ca9ce85116" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classGame" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGame" kindref="compound">Game</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" kindref="member">firstPlayer</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="classGame_1a6d1e144f691962294b084d7605356630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a6d1e144f691962294b084d7605356630" kindref="member">secondPlayer</ref>;<sp/></highlight></codeline>
+<codeline lineno="27" refid="classGame_1add991eb9652696444b437dd48eea51d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/><ref refid="classGame_1add991eb9652696444b437dd48eea51d9" kindref="member">nextMove</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="classGame_1a089cd41684bef602a97c15f0981a256f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a089cd41684bef602a97c15f0981a256f" kindref="member">aiType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="classGame_1ae38e501e177586af48d2e2300b6be4ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref><sp/>*<ref refid="classGame_1ae38e501e177586af48d2e2300b6be4ba" kindref="member">board</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41" refid="classGame_1af05ac5bb1ca046db7a9cc3d7d264c89c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classGame" kindref="compound">Game</ref><sp/>*<ref refid="classGame_1af05ac5bb1ca046db7a9cc3d7d264c89c" kindref="member">newGame</ref>(String<sp/><ref refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" kindref="member">firstPlayer</ref>,<sp/>String<sp/><ref refid="classGame_1a6d1e144f691962294b084d7605356630" kindref="member">secondPlayer</ref>,<sp/>String<sp/><ref refid="classGame_1a089cd41684bef602a97c15f0981a256f" kindref="member">aiType</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="classGame_1acb85e6adbb0fe80811507f18a5d029ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGame_1acb85e6adbb0fe80811507f18a5d029ec" kindref="member">Game</ref>(String<sp/><ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" kindref="member">firstPlayer</ref>,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a6d1e144f691962294b084d7605356630" kindref="member">secondPlayer</ref>,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/><ref refid="classGame_1add991eb9652696444b437dd48eea51d9" kindref="member">nextMove</ref>,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a089cd41684bef602a97c15f0981a256f" kindref="member">aiType</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="classGame_1a5b906f060f2100223f6961ad842a86f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGame_1a5b906f060f2100223f6961ad842a86f9" kindref="member">Game</ref>(String<sp/><ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" kindref="member">firstPlayer</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a6d1e144f691962294b084d7605356630" kindref="member">secondPlayer</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/><ref refid="classGame_1add991eb9652696444b437dd48eea51d9" kindref="member">nextMove</ref>,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a089cd41684bef602a97c15f0981a256f" kindref="member">aiType</ref>,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref><sp/>*<ref refid="classGame_1ae38e501e177586af48d2e2300b6be4ba" kindref="member">board</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classGame_1ad0fe77703efd5a6322081b2c74407a69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGame_1ad0fe77703efd5a6322081b2c74407a69" kindref="member">changeNextPlayer</ref>()<sp/>{<sp/>this-&gt;nextMove<sp/>=<sp/>this-&gt;nextMove<sp/>==<sp/>1<sp/>?<sp/>2<sp/>:<sp/>1;<sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="classGame_1a7b3f0f0b004dda8d7907c52e0184d718" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a7b3f0f0b004dda8d7907c52e0184d718" kindref="member">getGameStatus</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="classGame_1af730540262edbb927ad39e2eb51d25ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGame_1af730540262edbb927ad39e2eb51d25ab" kindref="member">setGameStatus</ref>(String<sp/><ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>)<sp/>{<sp/>this-&gt;gameStatus<sp/>=<sp/><ref refid="classGame_1acd2b096faadc418700fc67ce839eaa5e" kindref="member">gameStatus</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="classGame_1ab07d047e6bb3c9c3e06c0e45ef873668" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1ab07d047e6bb3c9c3e06c0e45ef873668" kindref="member">getAIType</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1a089cd41684bef602a97c15f0981a256f" kindref="member">aiType</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="classGame_1abb18cb83bdb5b1e24001901add328e16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1abb18cb83bdb5b1e24001901add328e16" kindref="member">getFirstPlayer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1afbb87c0f34b073fd8fe9deba3fdffc83" kindref="member">firstPlayer</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="classGame_1a9cf29e6a05f4d49fb8ae25cee7411556" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGame_1a9cf29e6a05f4d49fb8ae25cee7411556" kindref="member">getSecondPlayer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1a6d1e144f691962294b084d7605356630" kindref="member">secondPlayer</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="classGame_1a5a273ef95d4bbf74a45c8334b04c5748" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">byte</highlight><highlight class="normal"><sp/><ref refid="classGame_1a5a273ef95d4bbf74a45c8334b04c5748" kindref="member">getNextMove</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1add991eb9652696444b437dd48eea51d9" kindref="member">nextMove</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="classGame_1aac82d38c4540fcfaef89059865d1ce31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classBoard" kindref="compound">Board</ref><sp/>*<ref refid="classGame_1aac82d38c4540fcfaef89059865d1ce31" kindref="member">getBoard</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classGame_1ae38e501e177586af48d2e2300b6be4ba" kindref="member">board</ref>;<sp/>};</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="classGame_1ae3d112ca6e0e55150d2fdbc704474530" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGame_1ae3d112ca6e0e55150d2fdbc704474530" kindref="member">~Game</ref>();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/game/Game.h"/>
+  </compounddef>
+</doxygen>

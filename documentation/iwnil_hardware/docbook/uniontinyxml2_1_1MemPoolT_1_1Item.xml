@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_uniontinyxml2_1_1MemPoolT_1_1Item" xml:lang="en-US">
+<title>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item Union Reference</title>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</primary></indexterm>
+Collaboration diagram for tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="uniontinyxml2_1_1MemPoolT_1_1Item__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">Item</link> * <link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item_1a5620107f518c60d6619e8662d4c9d643">next</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item_1aff63ccc8d7b05035820b83e1f0fa8037">itemData</link> [ITEM_SIZE]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_uniontinyxml2_1_1MemPoolT_1_1Item_1aff63ccc8d7b05035820b83e1f0fa8037"/><section>
+    <title>itemData</title>
+<indexterm><primary>itemData</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</primary><secondary>itemData</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput>char <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Item::itemData[ITEM_SIZE]</computeroutput></para></section>
+<anchor xml:id="_uniontinyxml2_1_1MemPoolT_1_1Item_1a5620107f518c60d6619e8662d4c9d643"/><section>
+    <title>next</title>
+<indexterm><primary>next</primary><secondary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</secondary></indexterm>
+<indexterm><primary>tinyxml2::MemPoolT&lt; ITEM_SIZE &gt;::Item</primary><secondary>next</secondary></indexterm>
+<computeroutput>template&lt;int ITEM_SIZE&gt; </computeroutput><para><computeroutput><link linkend="_uniontinyxml2_1_1MemPoolT_1_1Item">Item</link>* <link linkend="_classtinyxml2_1_1MemPoolT">tinyxml2::MemPoolT</link>&lt; ITEM_SIZE &gt;::Item::next</computeroutput></para></section>
+<para>
+The documentation for this union was generated from the following file:</para>
+include/<link linkend="_tinyxml2_8h">tinyxml2.h</link></section>
+</section>

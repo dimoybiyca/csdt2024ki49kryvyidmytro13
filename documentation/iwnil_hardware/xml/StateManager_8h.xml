@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="StateManager_8h" kind="file" language="C++">
+    <compoundname>StateManager.h</compoundname>
+    <includes refid="State__Enum_8h" local="yes">enum/State_Enum.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>include/StateManager.h</label>
+        <link refid="StateManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>enum/State_Enum.h</label>
+        <link refid="State__Enum_8h"/>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classStateManager" prot="public">StateManager</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="StateManager_8h_1a371c2554ac25ad65a2fc6f2c026b83a5" prot="public" static="no">
+        <name>STATE_MANAGER_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/StateManager.h" line="13" column="9" bodyfile="include/StateManager.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Program state manager. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Global class to manage the state of the program. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>STATE_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="State__Enum_8h" kindref="compound">enum/State_Enum.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="StateManager_8h_1a371c2554ac25ad65a2fc6f2c026b83a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATE_MANAGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classStateManager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classStateManager" kindref="compound">StateManager</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22" refid="classStateManager_1aa99b9d4009f5d2a1ecb7768bb8cf1683" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classStateManager" kindref="compound">StateManager</ref><sp/>*<ref refid="classStateManager_1aa99b9d4009f5d2a1ecb7768bb8cf1683" kindref="member">_stateManager</ref>;<sp/></highlight></codeline>
+<codeline lineno="23" refid="classStateManager_1a71e6c0905e5552da8118b08f51233857" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classStateManager_1a71e6c0905e5552da8118b08f51233857" kindref="member">connectionState</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="classStateManager_1a3e2be96d935eb56813b096a885d58587" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classStateManager_1a3e2be96d935eb56813b096a885d58587" kindref="member">StateManager</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38" refid="classStateManager_1ac4e8e1fb2f83d33319a8c951513219bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classStateManager" kindref="compound">StateManager</ref><sp/>*<ref refid="classStateManager_1ac4e8e1fb2f83d33319a8c951513219bd" kindref="member">getInstance</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classStateManager_1aaf687e03246cffc3d8f331c24d58166d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classStateManager_1aaf687e03246cffc3d8f331c24d58166d" kindref="member">getConnectionState</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="classStateManager_1ae214e2dc1224054cf0a56b1ed57a22cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classStateManager_1ae214e2dc1224054cf0a56b1ed57a22cc" kindref="member">setConnectionState</ref>(<ref refid="State__Enum_8h_1a5d74787dedbc4e11c1ab15bf487e61f8" kindref="member">State</ref><sp/><ref refid="classStateManager_1a71e6c0905e5552da8118b08f51233857" kindref="member">connectionState</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/StateManager.h"/>
+  </compounddef>
+</doxygen>

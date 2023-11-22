@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_Board_8h" xml:lang="en-US">
+<title>include/game/Board.h File Reference</title>
+<indexterm><primary>include/game/Board.h</primary></indexterm>
+<para>
+
+<para><link linkend="_classGame">Game</link> <link linkend="_classBoard">Board</link> encapsulation. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &lt;Arduino.h&gt;<?linebreak?>#include &quot;Board.h&quot;<?linebreak?>#include &quot;Game_Object.h&quot;<?linebreak?></programlisting>Include dependency graph for Board.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="Board_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="Board_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classBoard">Board</link></para>
+
+<para>Encapsulation of the game board. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_Board_8h_1a1a05c94a710872b33c83af25cc4c7139">BOARD_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><link linkend="_classGame">Game</link> <link linkend="_classBoard">Board</link> encapsulation. </para>
+
+<para>Contains a two-dimensional array representing the game board. Provides methods for dynamic two-dimensional array operations. </para>
+</section>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_Board_8h_1a1a05c94a710872b33c83af25cc4c7139"/><section>
+    <title>BOARD_H</title>
+<indexterm><primary>BOARD_H</primary><secondary>Board.h</secondary></indexterm>
+<indexterm><primary>Board.h</primary><secondary>BOARD_H</secondary></indexterm>
+<para><computeroutput>#define BOARD_H</computeroutput></para></section>
+</section>
+</section>

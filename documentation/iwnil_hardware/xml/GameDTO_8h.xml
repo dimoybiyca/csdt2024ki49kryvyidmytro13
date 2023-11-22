@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="GameDTO_8h" kind="file" language="C++">
+    <compoundname>GameDTO.h</compoundname>
+    <includes refid="tinyxml2_8h" local="no">tinyxml2.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="Game_8h" local="yes">../Game.h</includes>
+    <incdepgraph>
+      <node id="11">
+        <label>Board.h</label>
+        <link refid="Board_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>../Game.h</label>
+        <link refid="Game_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Game_Object.h</label>
+        <link refid="Game__Object_8h"/>
+      </node>
+      <node id="1">
+        <label>include/game/dto/GameDTO.h</label>
+        <link refid="GameDTO_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>tinyxml2.h</label>
+        <link refid="tinyxml2_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Arduino.h</label>
+      </node>
+      <node id="3">
+        <label>cctype</label>
+      </node>
+      <node id="4">
+        <label>climits</label>
+      </node>
+      <node id="5">
+        <label>cstdio</label>
+      </node>
+      <node id="6">
+        <label>cstdlib</label>
+      </node>
+      <node id="7">
+        <label>cstring</label>
+      </node>
+      <node id="8">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classGameDTO" prot="public">GameDTO</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="GameDTO_8h_1aec2ba4cfdb5ede364f6ac9a8c55930f3" prot="public" static="no">
+        <name>GAME_DTO_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/dto/GameDTO.h" line="14" column="9" bodyfile="include/game/dto/GameDTO.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Data Transfer Object (DTO) for serial communication. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GAME_DTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="tinyxml2_8h" kindref="compound">tinyxml2.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="GameDTO_8h_1aec2ba4cfdb5ede364f6ac9a8c55930f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_DTO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacetinyxml2" kindref="compound">tinyxml2</ref>;</highlight></codeline>
+<codeline lineno="21" refid="classGameDTO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGameDTO" kindref="compound">GameDTO</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classGameDTO_1a5bcc1db75dc129db7c0963ac6a44a22d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a5bcc1db75dc129db7c0963ac6a44a22d" kindref="member">aiType</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25" refid="classGameDTO_1ab3fcd69611a7f1dc821cc1cd62b2e2d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1ab3fcd69611a7f1dc821cc1cd62b2e2d8" kindref="member">board</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="classGameDTO_1a86c136a5d757b5f1667e7af1c7ceb3f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a86c136a5d757b5f1667e7af1c7ceb3f3" kindref="member">firstPlayer</ref>;<sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="classGameDTO_1ad6bb7384815352f1f263c6e59f065fb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1ad6bb7384815352f1f263c6e59f065fb2" kindref="member">secondPlayer</ref>;<sp/></highlight></codeline>
+<codeline lineno="28" refid="classGameDTO_1a6d642cdffa73d88c9a3da2bad48e7e1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a6d642cdffa73d88c9a3da2bad48e7e1d" kindref="member">gameStatus</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29" refid="classGameDTO_1af40b076bbc577e8c273216546747e064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1af40b076bbc577e8c273216546747e064" kindref="member">nextMove</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="classGameDTO_1a5f62e34d7591aa30b678c911d72dae78" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1a5f62e34d7591aa30b678c911d72dae78" kindref="member">rows</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="classGameDTO_1a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd" kindref="member">cols</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="classGameDTO_1a846729dc4c69d0d684cc640a9773f6ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classGameDTO" kindref="compound">GameDTO</ref><sp/>*<ref refid="classGameDTO_1a846729dc4c69d0d684cc640a9773f6ca" kindref="member">parseXML</ref>(String<sp/>xml);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classGameDTO_1a425b31fd9b508c72146e696564981cb0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a425b31fd9b508c72146e696564981cb0" kindref="member">toXml</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classGameDTO_1a4765e4c750beaf4ec0c7197cfa91fc55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGame" kindref="compound">Game</ref><sp/>*<ref refid="classGameDTO_1a4765e4c750beaf4ec0c7197cfa91fc55" kindref="member">toObject</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classGameDTO_1ac8f00c516483d6461a91e2a9ae32dd80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGameDTO_1ac8f00c516483d6461a91e2a9ae32dd80" kindref="member">GameDTO</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classGameDTO_1a2384d5f0b489557f33e058cc902c4cdd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGameDTO_1a2384d5f0b489557f33e058cc902c4cdd" kindref="member">GameDTO</ref>(<ref refid="classGame" kindref="compound">Game</ref><sp/>*game);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="classGameDTO_1a97cfc31903a83b6455ac025850e1f77d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGameDTO_1a97cfc31903a83b6455ac025850e1f77d" kindref="member">GameDTO</ref>(String<sp/><ref refid="classGameDTO_1a5bcc1db75dc129db7c0963ac6a44a22d" kindref="member">aiType</ref>,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1ab3fcd69611a7f1dc821cc1cd62b2e2d8" kindref="member">board</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a86c136a5d757b5f1667e7af1c7ceb3f3" kindref="member">firstPlayer</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1a6d642cdffa73d88c9a3da2bad48e7e1d" kindref="member">gameStatus</ref>,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1af40b076bbc577e8c273216546747e064" kindref="member">nextMove</ref>,</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>String<sp/><ref refid="classGameDTO_1ad6bb7384815352f1f263c6e59f065fb2" kindref="member">secondPlayer</ref>,</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1a5f62e34d7591aa30b678c911d72dae78" kindref="member">rows</ref>,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classGameDTO_1a6dd0ae1f3f4ac9fc5f7408d2cdecb7dd" kindref="member">cols</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/game/dto/GameDTO.h"/>
+  </compounddef>
+</doxygen>

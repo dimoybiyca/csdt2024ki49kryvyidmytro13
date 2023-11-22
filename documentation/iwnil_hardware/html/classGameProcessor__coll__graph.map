@@ -1,0 +1,9 @@
+<map id="GameProcessor" name="GameProcessor">
+<area shape="rect" id="Node000001" title="A class responsible for processing the game logic and moves." alt="" coords="67,914,256,1389"/>
+<area shape="rect" id="Node000002" href="$classGame.html" title="A class representing a game with players, status, and a game board." alt="" coords="5,460,160,849"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,848,124,897,118,898,111,849"/>
+<area shape="rect" id="Node000003" href="$classBoard.html" title="Encapsulation of the game board." alt="" coords="21,5,144,395"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,394,85,442,80,442,80,394"/>
+<area shape="rect" id="Node000004" href="$classFixedQueue.html" title="A class representing a fixed&#45;size queue of Coordinates." alt="" coords="184,577,296,732"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="231,732,204,898,199,897,225,731"/>
+</map>

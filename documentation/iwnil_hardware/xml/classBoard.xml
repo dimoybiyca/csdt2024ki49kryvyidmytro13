@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="classBoard" kind="class" language="C++" prot="public">
+    <compoundname>Board</compoundname>
+    <includes refid="Board_8h" local="no">Board.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBoard_1ab0678710e0cb026be902dbb6a8ad8c40" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <qualifiedname>Board::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="26" column="9" bodyfile="include/game/Board.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Board::cols</definition>
+        <argsstring></argsstring>
+        <name>cols</name>
+        <qualifiedname>Board::cols</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of rows in board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="27" column="9" bodyfile="include/game/Board.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBoard_1a8d09b2bcc28001ba3998579760483683" prot="private" static="no" mutable="no">
+        <type>byte **</type>
+        <definition>byte** Board::gameMap</definition>
+        <argsstring></argsstring>
+        <name>gameMap</name>
+        <qualifiedname>Board::gameMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of columns in board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="28" column="10" bodyfile="include/game/Board.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBoard_1acf67e47586ce31a13558ae88da8eebd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte **</type>
+        <definition>byte ** Board::createMap</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>createMap</name>
+        <qualifiedname>Board::createMap</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Create a Map object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Two dimensional array which represent game board </para>
+<para>Create a new two dimensional array with specified size</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of rows in new board </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of columns in new board </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>byte** pointer to new two dimensional array </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="39" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a76d88245ca9d3a3da82fd73d33984d34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::resizeTop</definition>
+        <argsstring>()</argsstring>
+        <name>resizeTop</name>
+        <qualifiedname>Board::resizeTop</qualifiedname>
+        <briefdescription>
+<para>resize array at top </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize <ref refid="classBoard" kindref="compound">Board</ref> if there are moves on the top of the board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="46" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1aa0396f479ad842cd2bfd386e8eb80162" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::resizeBottom</definition>
+        <argsstring>()</argsstring>
+        <name>resizeBottom</name>
+        <qualifiedname>Board::resizeBottom</qualifiedname>
+        <briefdescription>
+<para>resize array at bottom </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize <ref refid="classBoard" kindref="compound">Board</ref> if there are moves on the bottom of the board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="53" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a83e7136178db7b1be8f4bfbde6e8590b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::resizeLeft</definition>
+        <argsstring>()</argsstring>
+        <name>resizeLeft</name>
+        <qualifiedname>Board::resizeLeft</qualifiedname>
+        <briefdescription>
+<para>resize array at left </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize <ref refid="classBoard" kindref="compound">Board</ref> if there are moves on the left of the board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="60" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1ad58208598e6ac7d2706c12485509be69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::resizeRight</definition>
+        <argsstring>()</argsstring>
+        <name>resizeRight</name>
+        <qualifiedname>Board::resizeRight</qualifiedname>
+        <briefdescription>
+<para>resize array at left </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize <ref refid="classBoard" kindref="compound">Board</ref> if there are moves on the left of the board </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="67" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a0b13b5ed321036fe830c1b9d030f851d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::setNewMap</definition>
+        <argsstring>(byte **newMap, byte newRows, byte newCols)</argsstring>
+        <name>setNewMap</name>
+        <qualifiedname>Board::setNewMap</qualifiedname>
+        <param>
+          <type>byte **</type>
+          <declname>newMap</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>newRows</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>newCols</declname>
+        </param>
+        <briefdescription>
+<para>Set the New Map object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newMap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to a new two dimensional array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newRows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of rows in new array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newCols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of columns in new array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a17fd68e33891daf09d82eefba59dbf3c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::deleteMap</definition>
+        <argsstring>()</argsstring>
+        <name>deleteMap</name>
+        <qualifiedname>Board::deleteMap</qualifiedname>
+        <briefdescription>
+<para>Delete the current two dimensional array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="82" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBoard_1aaf26049ef790a1707f7214516c317bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(int rows, int cols)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classBoard" kindref="compound">Board</ref> object with the specified dimensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the board. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="91" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a6e7d1f85d3aef331ba4b68f2d45eaa5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::Board</definition>
+        <argsstring>(String array, int rows, int cols)</argsstring>
+        <name>Board</name>
+        <qualifiedname>Board::Board</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cols</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="classBoard" kindref="compound">Board</ref> object from a string representation of the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string representation of the board, where each element is represented by a single character. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of rows in the board. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cols</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of columns in the board. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="100" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1af73f45730119a1fd8f6670f53f959e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Board::~Board</definition>
+        <argsstring>()</argsstring>
+        <name>~Board</name>
+        <qualifiedname>Board::~Board</qualifiedname>
+        <briefdescription>
+<para>Destructor for the <ref refid="classBoard" kindref="compound">Board</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroys the two-dimensional array allocated in the constructor. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="107" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a9a687827f2edb98b2fb2e95b68d56e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Board::resize</definition>
+        <argsstring>()</argsstring>
+        <name>resize</name>
+        <qualifiedname>Board::resize</qualifiedname>
+        <briefdescription>
+<para>Resize the board to accommodate moves. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resize the board if there are moves on the top, bottom, left, or right of the board. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1aea5fab2da45ada7e6c878b5ed43d5ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Board::getRows</definition>
+        <argsstring>()</argsstring>
+        <name>getRows</name>
+        <qualifiedname>Board::getRows</qualifiedname>
+        <briefdescription>
+<para>Get the number of rows in the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of rows in the board. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="121" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1abe6f2cdf451b87b990c352229dfca6b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Board::getCols</definition>
+        <argsstring>()</argsstring>
+        <name>getCols</name>
+        <qualifiedname>Board::getCols</qualifiedname>
+        <briefdescription>
+<para>Get the number of columns in the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of columns in the board. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="128" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="classBoard_1a0825958ae7b2524a6cf19aad03394916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte **</type>
+        <definition>byte ** Board::getMap</definition>
+        <argsstring>()</argsstring>
+        <name>getMap</name>
+        <qualifiedname>Board::getMap</qualifiedname>
+        <briefdescription>
+<para>Get a pointer to the two-dimensional array representing the board. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer to the two-dimensional array representing the board. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/game/Board.h" line="135" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Encapsulation of the game board. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Board</label>
+        <link refid="classBoard"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/game/Board.h" line="23" column="1" bodyfile="include/game/Board.h" bodystart="24" bodyend="136"/>
+    <listofallmembers>
+      <member refid="classBoard_1aaf26049ef790a1707f7214516c317bad" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="classBoard_1a6e7d1f85d3aef331ba4b68f2d45eaa5f" prot="public" virt="non-virtual"><scope>Board</scope><name>Board</name></member>
+      <member refid="classBoard_1af1931f1d51e9dcfdcda8be9b7b51d371" prot="private" virt="non-virtual"><scope>Board</scope><name>cols</name></member>
+      <member refid="classBoard_1acf67e47586ce31a13558ae88da8eebd4" prot="private" virt="non-virtual"><scope>Board</scope><name>createMap</name></member>
+      <member refid="classBoard_1a17fd68e33891daf09d82eefba59dbf3c" prot="private" virt="non-virtual"><scope>Board</scope><name>deleteMap</name></member>
+      <member refid="classBoard_1a8d09b2bcc28001ba3998579760483683" prot="private" virt="non-virtual"><scope>Board</scope><name>gameMap</name></member>
+      <member refid="classBoard_1abe6f2cdf451b87b990c352229dfca6b8" prot="public" virt="non-virtual"><scope>Board</scope><name>getCols</name></member>
+      <member refid="classBoard_1a0825958ae7b2524a6cf19aad03394916" prot="public" virt="non-virtual"><scope>Board</scope><name>getMap</name></member>
+      <member refid="classBoard_1aea5fab2da45ada7e6c878b5ed43d5ea1" prot="public" virt="non-virtual"><scope>Board</scope><name>getRows</name></member>
+      <member refid="classBoard_1a9a687827f2edb98b2fb2e95b68d56e68" prot="public" virt="non-virtual"><scope>Board</scope><name>resize</name></member>
+      <member refid="classBoard_1aa0396f479ad842cd2bfd386e8eb80162" prot="private" virt="non-virtual"><scope>Board</scope><name>resizeBottom</name></member>
+      <member refid="classBoard_1a83e7136178db7b1be8f4bfbde6e8590b" prot="private" virt="non-virtual"><scope>Board</scope><name>resizeLeft</name></member>
+      <member refid="classBoard_1ad58208598e6ac7d2706c12485509be69" prot="private" virt="non-virtual"><scope>Board</scope><name>resizeRight</name></member>
+      <member refid="classBoard_1a76d88245ca9d3a3da82fd73d33984d34" prot="private" virt="non-virtual"><scope>Board</scope><name>resizeTop</name></member>
+      <member refid="classBoard_1ab0678710e0cb026be902dbb6a8ad8c40" prot="private" virt="non-virtual"><scope>Board</scope><name>rows</name></member>
+      <member refid="classBoard_1a0b13b5ed321036fe830c1b9d030f851d" prot="private" virt="non-virtual"><scope>Board</scope><name>setNewMap</name></member>
+      <member refid="classBoard_1af73f45730119a1fd8f6670f53f959e68" prot="public" virt="non-virtual"><scope>Board</scope><name>~Board</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

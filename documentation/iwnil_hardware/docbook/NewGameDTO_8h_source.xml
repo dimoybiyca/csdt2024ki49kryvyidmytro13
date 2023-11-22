@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_NewGameDTO_8h_source" xml:lang="en-US">
+<title>NewGameDTO.h</title>
+<indexterm><primary>include/game/dto/NewGameDTO.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+7 
+8 <emphasis role="preprocessor">#ifndef&#32;NEW_GAME_DTO_H</emphasis>
+9 
+10 <emphasis role="preprocessor">#include&#32;&lt;<link linkend="_tinyxml2_8h">tinyxml2.h</link>&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&quot;Arduino.h&quot;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_Game_8h">game/Game.h</link>&quot;</emphasis>
+13 
+14 <emphasis role="preprocessor">#define&#32;NEW_GAME_DTO_H</emphasis>
+15 
+16 <emphasis role="keyword">using&#32;namespace&#32;</emphasis><link linkend="_namespacetinyxml2">tinyxml2</link>;
+17 
+24 <emphasis role="keyword">class&#32;</emphasis><link linkend="_classNewGameDTO">NewGameDTO</link>
+25 {
+26 <emphasis role="keyword">public</emphasis>:
+27 &#32;&#32;&#32;&#32;String&#32;<link linkend="_classNewGameDTO_1a9f9e6726b526f120002293e15b08fdf9">firstPlayer</link>;&#32;&#32;
+28 &#32;&#32;&#32;&#32;String&#32;<link linkend="_classNewGameDTO_1a2af17b202d086a024b455b5e49b096b7">secondPlayer</link>;&#32;
+29 &#32;&#32;&#32;&#32;String&#32;<link linkend="_classNewGameDTO_1ad973e86197dc3b4cb98541bcd147d83d">aiType</link>;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+38 &#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<link linkend="_classNewGameDTO">NewGameDTO</link>&#32;*<link linkend="_classNewGameDTO_1ad93cd37ce7d14cccb7a8b2b8adb58152">parseXML</link>(String&#32;xml);
+39 };
+40 
+41 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

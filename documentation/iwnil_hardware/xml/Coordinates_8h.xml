@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="Coordinates_8h" kind="file" language="C++">
+    <compoundname>Coordinates.h</compoundname>
+    <includedby refid="GameProcessor_8h" local="yes">include/game/GameProcessor.h</includedby>
+    <includedby refid="FixedQueue_8h" local="yes">include/utils/FixedQueue.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>include/game/GameProcessor.h</label>
+        <link refid="GameProcessor_8h"/>
+      </node>
+      <node id="1">
+        <label>include/utils/Coordinates.h</label>
+        <link refid="Coordinates_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>include/utils/FixedQueue.h</label>
+        <link refid="FixedQueue_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structCoordinates" prot="public">Coordinates</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="Coordinates_8h_1a5ee5ff1d36013c0c89323bb6cf59674b" prot="public" static="no">
+        <name>COORDINATES_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utils/Coordinates.h" line="10" column="9" bodyfile="include/utils/Coordinates.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Definition of the <ref refid="structCoordinates" kindref="compound">Coordinates</ref> struct. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>COORDINATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="Coordinates_8h_1a5ee5ff1d36013c0c89323bb6cf59674b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COORDINATES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structCoordinates" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCoordinates" kindref="compound">Coordinates</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1" kindref="member">x</ref>;<sp/></highlight></codeline>
+<codeline lineno="19" refid="structCoordinates_1aae83211da8e94ae2edd3b407c19bff07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structCoordinates_1aae83211da8e94ae2edd3b407c19bff07" kindref="member">y</ref>;<sp/></highlight></codeline>
+<codeline lineno="26" refid="structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7" kindref="member">Coordinates</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_y)<sp/>:<sp/><ref refid="structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1" kindref="member">x</ref>(_x),<sp/><ref refid="structCoordinates_1aae83211da8e94ae2edd3b407c19bff07" kindref="member">y</ref>(_y){};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="include/utils/Coordinates.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_Coordinates_8h_source" xml:lang="en-US">
+<title>Coordinates.h</title>
+<indexterm><primary>include/utils/Coordinates.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
+6 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+7 
+8 <emphasis role="preprocessor">#ifndef&#32;COORDINATES_H</emphasis>
+9 
+10 <emphasis role="preprocessor">#define&#32;COORDINATES_H</emphasis>
+11 
+16 <emphasis role="keyword">struct&#32;</emphasis><link linkend="_structCoordinates">Coordinates</link>
+17 {
+18 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1">x</link>;&#32;
+19 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_structCoordinates_1aae83211da8e94ae2edd3b407c19bff07">y</link>;&#32;
+26 &#32;&#32;&#32;&#32;<link linkend="_structCoordinates_1a94259eaa33fbd1aa8da205266a407bc7">Coordinates</link>(<emphasis role="keywordtype">int</emphasis>&#32;_x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;_y)&#32;:&#32;<link linkend="_structCoordinates_1a11c878fbd2d0805c91af17d2ba2289a1">x</link>(_x),&#32;<link linkend="_structCoordinates_1aae83211da8e94ae2edd3b407c19bff07">y</link>(_y){};
+27 };
+28 
+29 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>
