@@ -1,28 +1,26 @@
 package ua.lpnu.lemoncat.iwnil.serial;
 
 import lombok.extern.log4j.Log4j2;
+import org.apache.tomcat.util.collections.SynchronizedQueue;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
 
 @Component
 @Log4j2
 public class SerialBuffer {
 
-    ArrayList<String> buffer = new ArrayList<>();
-
+    SynchronizedQueue<String> buffer = new SynchronizedQueue<>();
 
     public void push(String message) {
         log.info("message " + message);
-        this.buffer.add(message);
+        this.buffer.offer(message);
         log.info(buffer.toString());
     }
 
     public String pop() throws InterruptedException {
-        while(buffer.isEmpty()) {
-            Thread.sleep(10);
+        while(buffer.size() == 0) {
+            Thread.sleep(30);
         }
-        String mes = buffer.get(0);
+        String mes = buffer.poll();
         buffer.clear();
         return mes;
     }

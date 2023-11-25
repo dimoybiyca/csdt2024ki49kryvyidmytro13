@@ -1,5 +1,15 @@
 @import "~normalize.css";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: inherit;
+}
+
 body {
   color: #eff1f3;
   background-color: #212121;
@@ -21,6 +31,26 @@ button:focus {
 }
 
 button {
+  cursor: pointer;
+  background-color: #272727;
+  border: none;
+  color: inherit;
+  transition: all 0.3s;
+
+  &:hover {
+    color: rgb(164, 0, 0);
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
   cursor: pointer;
 }
 

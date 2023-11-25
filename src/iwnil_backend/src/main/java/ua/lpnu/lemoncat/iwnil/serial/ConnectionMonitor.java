@@ -99,12 +99,13 @@ public class ConnectionMonitor extends Thread {
         this.initPort();
         Thread.sleep(2500);
 
+        serialPort.writeString("1111");
         String read = serialPort.readString();
         log.info("Got '{}' from {}", read, port);
         if(read != null && read.startsWith("1111")) {
             log.info("port was found");
             this.port = port;
-
+            serialPort.writeString("200");
         }
     }
 
@@ -114,7 +115,7 @@ public class ConnectionMonitor extends Thread {
 
     private List<String> getPorts() {
         return Arrays.stream(SerialPortList.getPortNames())
-                .filter(port -> port.startsWith("/dev/ttyUSB"))
+                .filter(port -> port.startsWith("/dev/ttyACM"))
                 .toList();
     }
 }

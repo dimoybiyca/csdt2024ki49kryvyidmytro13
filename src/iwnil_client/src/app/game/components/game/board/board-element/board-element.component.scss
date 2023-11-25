@@ -1,0 +1,24 @@
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.element {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+.firstPlayer {
+  &:hover {
+    background-color: #f24a1e;
+  }
+}
+
+.secondPlayer {
+  &:hover {
+    background-color: #27aaff;
+  }
+}

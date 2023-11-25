@@ -1,0 +1,5 @@
+#pragma once
+
+#define IN_PROGRES "IN_PROGRES"
+#define PLAYER1_WIN "PLAYER1_WIN"
+#define PLAYER2_WIN "PLAYER2_WIN"

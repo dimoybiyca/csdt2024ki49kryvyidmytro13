@@ -1,0 +1,61 @@
+.board {
+  padding: 20px;
+  height: calc(100vh - 100px - 60px - 200px);
+  overflow: scroll;
+  min-height: 300px;
+  max-height: 800px;
+  display: flex;
+  flex-direction: column;
+
+  &-row {
+    display: flex;
+  }
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+button {
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  cursor: default;
+}
+
+.element {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border: 1px solid white;
+  transition: all 0.3s;
+}
+
+.firstPlayer {
+  &:hover {
+    background-color: #f2481eaf;
+  }
+}
+
+.secondPlayer {
+  &:hover {
+    background-color: #27aaffaf;
+  }
+}
+
+.element.toeFirst {
+  transition: all 1s;
+  background-color: #f2481eaf !important;
+  border: 1px solid #f2481eaf;
+}
+
+.element.toeSecond {
+  background-color: #27aaffaf !important;
+  border: 1px solid #27aaffaf;
+}
+
+.disabled {
+  background-color: transparent !important;
+}

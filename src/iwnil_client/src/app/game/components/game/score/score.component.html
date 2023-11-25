@@ -1,0 +1,13 @@
+<div class="score">
+  <div class="score-inner">
+    <div class="players">
+      <span class="first">{{ $firstPlayer | async }}</span>
+      <span class="vs">Vs</span>
+      <span class="second">{{ $secondPlayer | async }}</span>
+    </div>
+
+    <div class="status" *ngIf="$gameStatus | async as status">
+      {{ getStatus(status) }}
+    </div>
+  </div>
+</div>

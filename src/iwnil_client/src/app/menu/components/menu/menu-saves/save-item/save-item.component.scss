@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+
+  &-data {
+    background-color: #272727b3;
+    display: flex;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  &-control {
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+  }
+}
+
+.btn {
+  padding: 0 20px;
+}

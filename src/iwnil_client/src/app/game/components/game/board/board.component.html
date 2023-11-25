@@ -1,0 +1,25 @@
+<div class="board" #board *ngIf="myboard">
+  <div class="board-row" *ngFor="let row of myboard; let r = index">
+    <div
+      class="element"
+      *ngFor="let element of row; let c = index"
+      [ngClass]="{
+        firstPlayer: ($nextMove | async) === 1 && element === 0,
+        secondPlayer: ($nextMove | async) === 2 && element === 0,
+        toeFirst: element === 3,
+        toeSecond: element === 5,
+        disabled: ($gameStatus | async).toLocaleString() !== 'IN_PROGRES'
+      }"
+    >
+      <button
+        (click)="onCellClick(r, c)"
+        [disabled]="
+          element !== 0 ||
+          ($gameStatus | async).toLocaleString() !== 'IN_PROGRES'
+        "
+      >
+        <img *ngIf="isImage(element)" [src]="getImage(element)" alt="" />
+      </button>
+    </div>
+  </div>
+</div>

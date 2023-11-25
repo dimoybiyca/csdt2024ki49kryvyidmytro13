@@ -1,0 +1,25 @@
+.score {
+  background-color: #212121;
+  &-inner {
+    width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.players {
+  font-size: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.first {
+  color: red;
+}
+
+.second {
+  color: #27aaff;
+}
