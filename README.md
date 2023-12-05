@@ -74,6 +74,7 @@ Info how to build and run application
 docker run -e MONGO_INITDB_ROOT_USERNAME=mongodb -e MONGO_INITDB_ROOT_PASSWORD=mongodb -p 27017:27017 -d mongo
 ```
 
+
 ## Documentation
 All documentation is in the docs branch
 You can download it using the following command:
@@ -98,6 +99,8 @@ Also was generated API documentation using swagger and api-docs
 Documentation for Raspberry Pi PICO was generated using doxygen
 You can view it by opening index.html file by any browser at **docs/iwnil-hardware/html folder**
 
+=======
+
 ## References
 - [VS Code] - Code editor with extensions for versatile development.
 - [Node] - JavaScript runtime for server-side applications.
@@ -117,7 +120,6 @@ You can view it by opening index.html file by any browser at **docs/iwnil-hardwa
 - [Javadoc] - Documentation generator for generating API documentation in HTML format from Java source code.
 - [Compodoc] - Documentation tool for Angular applications, providing a comprehensive documentation for code.
 - [Swagger] - Framework for API specification that includes a set of tools to design, build, document, and use RESTful APIs.
-
 
 [Raspberry Pi]: <https://www.raspberrypi.com/>
 [MongoDB]: <https://www.mongodb.com/>
