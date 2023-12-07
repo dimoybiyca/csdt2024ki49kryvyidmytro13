@@ -8,7 +8,6 @@ import ua.lpnu.lemoncat.iwnil.DTO.GameDTO;
 import ua.lpnu.lemoncat.iwnil.DTO.NewGameDTO;
 import ua.lpnu.lemoncat.iwnil.converters.GameConverter;
 import ua.lpnu.lemoncat.iwnil.data.AIType;
-import ua.lpnu.lemoncat.iwnil.data.GameStatus;
 import ua.lpnu.lemoncat.iwnil.model.Game;
 import ua.lpnu.lemoncat.iwnil.serial.SerialBuffer;
 import ua.lpnu.lemoncat.iwnil.serial.SerialCommunicator;
@@ -20,31 +19,8 @@ import javax.xml.bind.JAXBException;
 @RequiredArgsConstructor
 public class GameService {
     private final GameConverter converter;
-    private final GameProcessor gameProcessor;
     private final SerialCommunicator serialCommunicator;
     private final SerialBuffer serialBuffer;
-
-    public Game newGame(String firstPlayer, String secondPlayer, AIType aiType) {
-        int[][] arr = new int[10][10];
-
-        for(int[] ints : arr) {
-            for(int anInt : ints) anInt = 0;
-        }
-
-        return Game.builder()
-                .gameStatus(GameStatus.IN_PROGRES)
-                .firstPlayer(firstPlayer)
-                .secondPlayer(secondPlayer)
-                .nextMove(1)
-                .aiType(aiType)
-                .board(arr)
-                .build();
-    }
-
-    public Game move(Game game) {
-
-        return gameProcessor.process(game);
-    }
 
     public Game picoMove(Game game) throws JAXBException {
         GameDTO gameDTO = converter.toDTO(game);

@@ -236,22 +236,6 @@ int Board::getCols()
     return this->cols;
 }
 
-byte Board::getElement(int row, int col) const
-{
-    if (row >= 0 && row < rows && col >= 0 && col < cols)
-    {
-        return this->gameMap[row][col];
-    }
-    return OUT_OF_BOUND;
-}
-void Board::setElement(int row, int col, byte value)
-{
-    if (row >= 0 && row < rows && col >= 0 && col < cols)
-    {
-        this->gameMap[row][col] = value;
-    }
-}
-
 byte **Board::getMap()
 {
     return this->gameMap;

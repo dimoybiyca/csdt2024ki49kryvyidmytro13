@@ -74,6 +74,33 @@ Info how to build and run application
 docker run -e MONGO_INITDB_ROOT_USERNAME=mongodb -e MONGO_INITDB_ROOT_PASSWORD=mongodb -p 27017:27017 -d mongo
 ```
 
+
+## Documentation
+All documentation is in the docs branch
+You can download it using the following command:
+```sh
+git clone -b docs https://github.com/dimoybiyca/csdt2024ki49kryvyidmytro13.git
+```
+
+### IWNIL_client
+Documentation for Angular client was generated with compdoc utility
+You can view it by opening index.html file by any browser at **docs/iwnil-client** folder
+
+### IWNIL_backend
+Documentation for Spring Boot was generated with Javadoc utility
+You can view it by opening index.html file by any browser at **docs/iwnil-backend** folder
+
+Also was generated API documentation using swagger and api-docs
+`Accesible only when server is running`
+- swagger: [*http:localhost:9000/swagger-ui*](http:localhost:9000/swagger-ui)
+- api-docs: [*http:localhost:9000/api-docs*](http:localhost:9000/api-docs)
+
+### IWNIL_hardware
+Documentation for Raspberry Pi PICO was generated using doxygen
+You can view it by opening index.html file by any browser at **docs/iwnil-hardware/html folder**
+
+=======
+
 ## References
 - [VS Code] - Code editor with extensions for versatile development.
 - [Node] - JavaScript runtime for server-side applications.
@@ -89,6 +116,10 @@ docker run -e MONGO_INITDB_ROOT_USERNAME=mongodb -e MONGO_INITDB_ROOT_PASSWORD=m
 - [Raspberry Pi] - Compact, low-cost computer board used for learning and hobby projects.
 - [PlatformIO] - Embedded development ecosystem with IoT support.
 - [MongoDB] - Popular, open-source NoSQL database management system designed for flexibility and scalability
+- [Doxygen] - Tool for generating documentation from annotated source code.
+- [Javadoc] - Documentation generator for generating API documentation in HTML format from Java source code.
+- [Compodoc] - Documentation tool for Angular applications, providing a comprehensive documentation for code.
+- [Swagger] - Framework for API specification that includes a set of tools to design, build, document, and use RESTful APIs.
 
 [Raspberry Pi]: <https://www.raspberrypi.com/>
 [MongoDB]: <https://www.mongodb.com/>
@@ -104,3 +135,7 @@ docker run -e MONGO_INITDB_ROOT_USERNAME=mongodb -e MONGO_INITDB_ROOT_PASSWORD=m
 [Docker]: <https://www.docker.com/>
 [Arduino]: <https://www.arduino.cc/>
 [PlatformIO]: <https://platformio.org/install/cli>
+[Doxygen]: <http://www.doxygen.nl/>
+[Javadoc]: <https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html>
+[Compodoc]: <https://compodoc.app/>
+[Swagger]: <https://swagger.io/>

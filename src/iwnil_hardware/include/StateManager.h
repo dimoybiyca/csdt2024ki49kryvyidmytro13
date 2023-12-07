@@ -1,3 +1,10 @@
+/**
+ * @file StateManager.h
+ * @brief Program state manager.
+ *
+ * Global class to manage the state of the program.
+ */
+
 #pragma once
 #ifndef STATE_MANAGER_H
 
@@ -6,10 +13,8 @@
 #define STATE_MANAGER_H
 
 /**
- * @file
- * @brief program state manager
- *
- * Global class to manage state of program
+ * @class StateManager
+ * @brief Program state manager.
  */
 class StateManager
 {

@@ -5,15 +5,15 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ua.lpnu.lemoncat.iwnil.services.Task1Service;
+import ua.lpnu.lemoncat.iwnil.services.Task2Service;
 
 @RestController()
 @RequestMapping("/message")
 @RequiredArgsConstructor
 @CrossOrigin(origins = {"*"}, maxAge = 3600)
-public class Task1Controller {
+public class Task2Controller {
 
-    private final Task1Service service;
+    private final Task2Service service;
 
     @PostMapping()
     public ResponseEntity<MessageResponse> task1(@RequestBody String message) throws SerialPortException, InterruptedException {
