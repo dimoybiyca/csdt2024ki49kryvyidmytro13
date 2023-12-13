@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuGameModeComponent } from './menu-game-mode.component';
+import { StoreModule } from '@ngrx/store';
+import { MenuItemComponent } from 'src/app/menu/components/menu/menu-item/menu-item.component';
 
 describe('MenuGameModeComponent', () => {
   let component: MenuGameModeComponent;
@@ -8,7 +10,8 @@ describe('MenuGameModeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuGameModeComponent]
+      imports: [StoreModule.forRoot()],
+      declarations: [MenuGameModeComponent, MenuItemComponent],
     });
     fixture = TestBed.createComponent(MenuGameModeComponent);
     component = fixture.componentInstance;

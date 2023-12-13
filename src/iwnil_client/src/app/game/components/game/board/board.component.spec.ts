@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BoardComponent } from './board.component';
+import { StoreModule } from '@ngrx/store';
 
 describe('BoardComponent', () => {
   let component: BoardComponent;
@@ -8,7 +9,8 @@ describe('BoardComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BoardComponent]
+      imports: [StoreModule.forRoot()],
+      declarations: [BoardComponent],
     });
     fixture = TestBed.createComponent(BoardComponent);
     component = fixture.componentInstance;

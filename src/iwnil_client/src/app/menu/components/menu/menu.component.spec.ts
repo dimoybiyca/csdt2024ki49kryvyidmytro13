@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MenuComponent } from './menu.component';
+import { StoreModule } from '@ngrx/store';
+import { MenuItemComponent } from 'src/app/menu/components/menu/menu-item/menu-item.component';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -8,7 +10,8 @@ describe('MenuComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuComponent]
+      imports: [StoreModule.forRoot()],
+      declarations: [MenuComponent, MenuItemComponent],
     });
     fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
